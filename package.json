@@ -16,6 +16,8 @@
     "ansicolor": "^1.1.95",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
+    "form-data": "^4.0.0",
+    "js-sha256": "^0.9.0",
     "jsbullshit": "^1.0.0",
     "jsonpath": "^1.1.1",
     "koishi": "^3.12.3",
@@ -33,6 +35,8 @@
     "minecraft-protocol": "^1.25.0",
     "mockjs": "^1.1.0",
     "moment": "^2.29.1",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.2",
     "rxjs": "^7.3.0",
     "ssh2": "^1.1.0",
     "superagent": "^6.1.0"
