@@ -23,6 +23,7 @@ module.exports =
     'koishi-plugin-eval':
       setupFiles:
         inj: path.resolve __dirname, 'inj/index.js'
+      scriptLoader: 'coffeescript'
     'koishi-plugin-schedule': {}
     'koishi-plugin-tools':
       bilibili: false
