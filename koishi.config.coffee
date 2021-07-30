@@ -38,3 +38,4 @@ module.exports =
     './plugins/d': {}
     './plugins/forward': {}
     './plugins/bullshit': {}
+    './plugins/updater': {}
