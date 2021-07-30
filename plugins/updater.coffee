@@ -7,7 +7,7 @@ module.exports = (ctx) ->
     .action ->
       try
         res = await git.pull()
-        process.exit() if res.summary.changes > 0
+        process.exit 114 if res.summary.changes > 0
         return '已是最新状态'
       catch e
         return e.toString()
