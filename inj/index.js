@@ -1,3 +1,4 @@
+require('coffeescript/register')
 let { internal } = require('koishi-plugin-eval/lib/worker')
 
 internal.setGlobal('sa', require('superagent'), false)
