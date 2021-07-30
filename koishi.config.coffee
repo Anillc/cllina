@@ -6,6 +6,8 @@ module.exports =
   nickname: ['cllina', 'Cllina', 'cl', 'na酱', 'na 酱', 'na']
   autoAssign: true
   autoAuthorize: 1
+  deamon:
+    exitCommand: true
   bots: [
     type: 'onebot'
     selfId: process.env.QQ
