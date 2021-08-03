@@ -45,3 +45,4 @@ module.exports =
     './plugins/forward': {}
     './plugins/bullshit': {}
     './plugins/updater': {}
+    './plugins/i': {}
