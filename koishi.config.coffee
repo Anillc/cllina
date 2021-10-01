@@ -32,11 +32,11 @@ module.exports =
     puppeteer:
       browser:
         args: ['--no-sandbox']
-    gosen-choyen: {}
     genshin:
       cookie: process.env.GENSHIN_COOKIE
       wish:
         enable: true
+    'gosen-choyen': {}
     './plugins/ssh': {}
     './plugins/d': {}
     './plugins/forward': {}
