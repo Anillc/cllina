@@ -15,34 +15,30 @@ module.exports =
     token: process.env.TOKEN
   ]
   plugins:
-    'mysql':
+    mysql:
       host: process.env.DATABASE_HOST
       user: process.env.DATABASE_USER
       password: process.env.DATABASE_PASSWD
       database: process.env.DATABASE
-    'common': {}
-    'teach': {}
-    'eval':
+    common: {}
+    teach: {}
+    eval:
       setupFiles:
         inj: path.resolve __dirname, 'inj/index.js'
       scriptLoader: 'coffeescript'
-    'schedule': {}
-    'tools':
+    schedule: {}
+    tools:
       bilibili: false
-    'puppeteer':
+    puppeteer:
       browser:
         args: ['--no-sandbox']
-    # 'koishi-plugin-github':
-    #   appId: 'e0af8cdb720f2ecd0ab6'
-    #   appSecret: 'b7e8b3887d0074d038beefe4ae55c3e0fdfdf736'
-    'gosen-choyen': {}
-    'genshin':
+    gosen-choyen: {}
+    genshin:
       cookie: process.env.GENSHIN_COOKIE
       wish:
         enable: true
     './plugins/ssh': {}
     './plugins/d': {}
     './plugins/forward': {}
-    './plugins/bullshit': {}
     './plugins/updater': {}
     './plugins/i': {}
