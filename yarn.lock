@@ -1789,6 +1789,13 @@ koishi-core@^3.14.2:
     koishi-utils "^4.3.0"
     lru-cache "^6.0.0"
 
+koishi-plugin-animal-picture@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npmjs.org/koishi-plugin-animal-picture/-/koishi-plugin-animal-picture-0.2.1.tgz#fd4511f82f2d52c3ea712493eb7be31159841e82"
+  integrity sha512-VnyLUPLFae9stGKT29XOlBJ1mRz9LVXMP6yY3VitcuqqUjroe6WIzslysrFr4TK2Yo0+UfezuQdeNUgWLIn9xQ==
+  dependencies:
+    axios "^0.21.1"
+
 koishi-plugin-common@^4.3.1:
   version "4.3.5"
   resolved "https://registry.npmmirror.com/koishi-plugin-common/download/koishi-plugin-common-4.3.5.tgz#d34f82fef599923d4e25c7b1812ef03c9c87da52"
