@@ -36,7 +36,8 @@ module.exports =
       cookie: process.env.GENSHIN_COOKIE
       wish:
         enable: true
-    'animal-picture': {}
+    'animal-picture':
+      inbound: true
     'gosen-choyen': {}
     './plugins/ssh': {}
     './plugins/d': {}
