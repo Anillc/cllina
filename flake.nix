@@ -25,6 +25,8 @@
                 export PATH=${with pkgs; lib.strings.makeBinPath [
                     yarn
                     chromium
+                    gawk
+                    findutils
                 ]}
                 export LD_LIBRARY_PATH=${with pkgs; lib.strings.makeLibraryPath [
                     libuuid
