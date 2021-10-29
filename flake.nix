@@ -6,7 +6,7 @@
         inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefautlSystem (system: let
+    outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefaultSystem (system: let
         pkgs = import nixpkgs { inherit system; };
     in{
         apps.build = flake-utils.lib.mkApp {
@@ -14,6 +14,7 @@
             drv = pkgs.writeScriptBin "build" ''
                 export PATH=${with pkgs; lib.strings.makeBinPath [
                     yarn
+                    cmake
                 ]}
                 yarn install
             ''; 
@@ -23,6 +24,7 @@
             drv = pkgs.writeScriptBin "run" ''
                 export PATH=${with pkgs; lib.strings.makeBinPath [
                     yarn
+                    chromium
                 ]}
                 yarn start
             '';
