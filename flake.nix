@@ -26,6 +26,9 @@
                     yarn
                     chromium
                 ]}
+                export LD_LIBRARY_PATH=${with pkgs; lib.strings.makeLibraryPath [
+                    libuuid
+                ]}
                 yarn start
             '';
         };
