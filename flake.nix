@@ -12,7 +12,7 @@
         apps.build = flake-utils.lib.mkApp {
             name = "build";
             drv = pkgs.writeScriptBin "build" ''
-                export PATH=${with pkgs; lib.strings.makeBinPath [
+                export PATH=$PATH:${with pkgs; lib.strings.makeBinPath [
                     yarn
                     cmake
                 ]}
