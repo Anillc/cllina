@@ -293,6 +293,2594 @@
   resolved "https://registry.npmmirror.com/@octokit/webhooks-types/download/@octokit/webhooks-types-4.13.1.tgz#b5f5e1306f0fdb94af1117f369c93e3aaf1a4137"
   integrity sha1-tfXhMG8P25SvERfzack+Oq8aQTc=
 
+"@stdlib/array-float32@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-float32/download/@stdlib/array-float32-0.0.5.tgz#a435c591f01b36b4d9d91fdd5cb9470b379c0e24"
+  integrity sha1-pDXFkfAbNrTZ2R/dXLlHCzecDiQ=
+  dependencies:
+    "@stdlib/assert-has-float32array-support" "^0.0.x"
+
+"@stdlib/array-float64@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-float64/download/@stdlib/array-float64-0.0.5.tgz#da2d8b0f13d07cb74f7d1ac1fcae643eb3ae0e86"
+  integrity sha1-2i2LDxPQfLdPfRrB/K5kPrOuDoY=
+  dependencies:
+    "@stdlib/assert-has-float64array-support" "^0.0.x"
+
+"@stdlib/array-int16@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-int16/download/@stdlib/array-int16-0.0.5.tgz#85f5338e4ce8ed0683e270562530e109ffced270"
+  integrity sha1-hfUzjkzo7QaD4nBWJTDhCf/O0nA=
+  dependencies:
+    "@stdlib/assert-has-int16array-support" "^0.0.x"
+
+"@stdlib/array-int32@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-int32/download/@stdlib/array-int32-0.0.5.tgz#23d5dcd51657507724b8ceb7e9a8d51bc4f424aa"
+  integrity sha1-I9Xc1RZXUHckuM636ajVG8T0JKo=
+  dependencies:
+    "@stdlib/assert-has-int32array-support" "^0.0.x"
+
+"@stdlib/array-int8@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-int8/download/@stdlib/array-int8-0.0.5.tgz#4861ce5b6a9cf18e7b36c7dc74a1a88daa1f0a2a"
+  integrity sha1-SGHOW2qc8Y57NsfcdKGojaofCio=
+  dependencies:
+    "@stdlib/assert-has-int8array-support" "^0.0.x"
+
+"@stdlib/array-to-json@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/array-to-json/download/@stdlib/array-to-json-0.0.6.tgz#b20e03fd425e58c29bfa667556b5cae37c2408f5"
+  integrity sha1-sg4D/UJeWMKb+mZ1VrXK43wkCPU=
+  dependencies:
+    "@stdlib/array-float32" "^0.0.x"
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-int16" "^0.0.x"
+    "@stdlib/array-int32" "^0.0.x"
+    "@stdlib/array-int8" "^0.0.x"
+    "@stdlib/array-uint16" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/array-uint8" "^0.0.x"
+    "@stdlib/array-uint8c" "^0.0.x"
+    "@stdlib/assert-instance-of" "^0.0.x"
+    "@stdlib/assert-is-typed-array" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constructor-name" "^0.0.x"
+    "@stdlib/utils-get-prototype-of" "^0.0.x"
+
+"@stdlib/array-uint16@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-uint16/download/@stdlib/array-uint16-0.0.5.tgz#9f919824d0aacbf4f23feb3a38af0a00a1387a52"
+  integrity sha1-n5GYJNCqy/TyP+s6OK8KAKE4elI=
+  dependencies:
+    "@stdlib/assert-has-uint16array-support" "^0.0.x"
+
+"@stdlib/array-uint32@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/array-uint32/download/@stdlib/array-uint32-0.0.5.tgz#69a83e40f7c128942570ac997e1944c35a63dc8e"
+  integrity sha1-aag+QPfBKJQlcKyZfhlEw1pj3I4=
+  dependencies:
+    "@stdlib/assert-has-uint32array-support" "^0.0.x"
+
+"@stdlib/array-uint8@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/array-uint8/download/@stdlib/array-uint8-0.0.6.tgz#4b4752ead37ca27d925f9d34a6e6a52f629d8ee6"
+  integrity sha1-S0dS6tN8on2SX500pualL2KdjuY=
+  dependencies:
+    "@stdlib/assert-has-uint8array-support" "^0.0.x"
+
+"@stdlib/array-uint8c@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/array-uint8c/download/@stdlib/array-uint8c-0.0.7.tgz#3cef9a81da3e1bd21125f6fb5434550b53d3afc3"
+  integrity sha1-PO+agdo+G9IRJfb7VDRVC1PTr8M=
+  dependencies:
+    "@stdlib/assert-has-uint8clampedarray-support" "^0.0.x"
+
+"@stdlib/assert-contains@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-contains/download/@stdlib/assert-contains-0.0.6.tgz#c06db93b9f04a7e489718a7b95c065bce6608260"
+  integrity sha1-wG25O58Ep+SJcYp7lcBlvOZggmA=
+  dependencies:
+    "@stdlib/assert-is-collection" "^0.0.x"
+    "@stdlib/assert-is-integer" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+
+"@stdlib/assert-has-float32array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-float32array-support/download/@stdlib/assert-has-float32array-support-0.0.7.tgz#75d92142ed7d68764e304fe85cea9599620d3c58"
+  integrity sha1-ddkhQu19aHZOME/oXOqVmWINPFg=
+  dependencies:
+    "@stdlib/assert-is-float32array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-float64array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-float64array-support/download/@stdlib/assert-has-float64array-support-0.0.7.tgz#70b635c18a609513727bedef7f67bc2e9d238b72"
+  integrity sha1-cLY1wYpglRNye+3vf2e8Lp0ji3I=
+  dependencies:
+    "@stdlib/assert-is-float64array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-function-name-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-function-name-support/download/@stdlib/assert-has-function-name-support-0.0.7.tgz#82196d049e80cdf74fa69d3faaec67598d7b104b"
+  integrity sha1-ghltBJ6AzfdPpp0/quxnWY17EEs=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-int16array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-int16array-support/download/@stdlib/assert-has-int16array-support-0.0.7.tgz#b9b55b7b5b41d9b7f522ccc0a822513306797b06"
+  integrity sha1-ubVbe1tB2bf1IszAqCJRMwZ5ewY=
+  dependencies:
+    "@stdlib/assert-is-int16array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-int16-max" "^0.0.x"
+    "@stdlib/constants-int16-min" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-int32array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-int32array-support/download/@stdlib/assert-has-int32array-support-0.0.7.tgz#dce1b6d5d7e21e4e90f80358e468f0cdc1de883a"
+  integrity sha1-3OG21dfiHk6Q+ANY5GjwzcHeiDo=
+  dependencies:
+    "@stdlib/assert-is-int32array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-int32-max" "^0.0.x"
+    "@stdlib/constants-int32-min" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-int8array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-int8array-support/download/@stdlib/assert-has-int8array-support-0.0.7.tgz#60e995ebcaee56498cc8bfc5293c2363dd58923c"
+  integrity sha1-YOmV68ruVkmMyL/FKTwjY91Ykjw=
+  dependencies:
+    "@stdlib/assert-is-int8array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-int8-max" "^0.0.x"
+    "@stdlib/constants-int8-min" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-node-buffer-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-node-buffer-support/download/@stdlib/assert-has-node-buffer-support-0.0.7.tgz#728711130b4145fe50f2c71775ce49cb934f12d4"
+  integrity sha1-cocREwtBRf5Q8scXdc5Jy5NPEtQ=
+  dependencies:
+    "@stdlib/assert-is-buffer" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-own-property@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-own-property/download/@stdlib/assert-has-own-property-0.0.6.tgz#dd92fde8be931c61a28d3236e73b9848607ad16b"
+  integrity sha1-3ZL96L6THGGijTI25zuYSGB60Ws=
+
+"@stdlib/assert-has-symbol-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-symbol-support/download/@stdlib/assert-has-symbol-support-0.0.7.tgz#9cf6873a6d5c35e1d27e4afb4ea8c316633bd395"
+  integrity sha1-nPaHOm1cNeHSfkr7TqjDFmM705U=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-tostringtag-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-tostringtag-support/download/@stdlib/assert-has-tostringtag-support-0.0.7.tgz#a861ce6c8440d80305937a7d285f72157cc3daaa"
+  integrity sha1-qGHObIRA2AMFk3p9KF9yFXzD2qo=
+  dependencies:
+    "@stdlib/assert-has-symbol-support" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-uint16array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-uint16array-support/download/@stdlib/assert-has-uint16array-support-0.0.7.tgz#12800bf617915575b4f4a9f38a1124caf31bafed"
+  integrity sha1-EoAL9heRVXW09KnzihEkyvMbr+0=
+  dependencies:
+    "@stdlib/assert-is-uint16array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-uint16-max" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-uint32array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-uint32array-support/download/@stdlib/assert-has-uint32array-support-0.0.7.tgz#2dc5c44664c27989cdef330a6cc3a9b8332cacaa"
+  integrity sha1-LcXERmTCeYnN7zMKbMOpuDMsrKo=
+  dependencies:
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-uint32-max" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-uint8array-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-uint8array-support/download/@stdlib/assert-has-uint8array-support-0.0.7.tgz#f60c7d451b4738bf500d16f991b353410ba873d9"
+  integrity sha1-9gx9RRtHOL9QDRb5kbNTQQuoc9k=
+  dependencies:
+    "@stdlib/assert-is-uint8array" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/constants-uint8-max" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-has-uint8clampedarray-support@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-has-uint8clampedarray-support/download/@stdlib/assert-has-uint8clampedarray-support-0.0.7.tgz#c7b715c75a62c80b8c28393cbf246d1f1eb9b13a"
+  integrity sha1-x7cVx1piyAuMKDk8vyRtHx65sTo=
+  dependencies:
+    "@stdlib/assert-is-uint8clampedarray" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-instance-of@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-instance-of/download/@stdlib/assert-instance-of-0.0.7.tgz#8eff7258525fbe5bfa12b3ea4d71d2067663a14f"
+  integrity sha1-jv9yWFJfvlv6ErPqTXHSBnZjoU8=
+
+"@stdlib/assert-is-arguments@^0.0.x":
+  version "0.0.13"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-arguments/download/@stdlib/assert-is-arguments-0.0.13.tgz#19d988864d307195740cff8723fa1ddf5f8319e9"
+  integrity sha1-GdmIhk0wcZV0DP+HI/od31+DGek=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-array" "^0.0.x"
+    "@stdlib/assert-is-enumerable-property" "^0.0.x"
+    "@stdlib/constants-uint32-max" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-array@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-array/download/@stdlib/assert-is-array-0.0.6.tgz#3885eb3998b0d016a3893d4d83896545f29e779f"
+  integrity sha1-OIXrOZiw0BajiT1Ng4llRfKed58=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-big-endian@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-big-endian/download/@stdlib/assert-is-big-endian-0.0.6.tgz#e3d2a30dbc62373391a202b80c28df827e721681"
+  integrity sha1-49KjDbxiNzORogK4DCjfgn5yFoE=
+  dependencies:
+    "@stdlib/array-uint16" "^0.0.x"
+    "@stdlib/array-uint8" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-is-boolean@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-boolean/download/@stdlib/assert-is-boolean-0.0.7.tgz#abcee534b6d2122436a717ee98c41258407342eb"
+  integrity sha1-q87lNLbSEiQ2pxfumMQSWEBzQus=
+  dependencies:
+    "@stdlib/assert-has-tostringtag-support" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-buffer@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-buffer/download/@stdlib/assert-is-buffer-0.0.7.tgz#40a5bd5cf507ed60d6af2e60bb734d7dfd72cf6c"
+  integrity sha1-QKW9XPUH7WDWry5gu3NNff1yz2w=
+  dependencies:
+    "@stdlib/assert-is-object-like" "^0.0.x"
+
+"@stdlib/assert-is-collection@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-collection/download/@stdlib/assert-is-collection-0.0.7.tgz#5b1f46eb0e29ba95c682a713ba632e39a37ed439"
+  integrity sha1-Wx9G6w4pupXGgqcTumMuOaN+1Dk=
+  dependencies:
+    "@stdlib/constants-array-max-typed-array-length" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+
+"@stdlib/assert-is-enumerable-property@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-enumerable-property/download/@stdlib/assert-is-enumerable-property-0.0.6.tgz#299333c20245a5bd41694d2a6a714db628343251"
+  integrity sha1-KZMzwgJFpb1BaU0qanFNtig0MlE=
+  dependencies:
+    "@stdlib/assert-is-integer" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+
+"@stdlib/assert-is-error@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-error/download/@stdlib/assert-is-error-0.0.7.tgz#d41035cdf482fdc1ce9e4be5e37195f8a30a52b2"
+  integrity sha1-1BA1zfSC/cHOnkvl43GV+KMKUrI=
+  dependencies:
+    "@stdlib/utils-get-prototype-of" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-float32array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-float32array/download/@stdlib/assert-is-float32array-0.0.7.tgz#ffc4cb2bcf31406710a4cef854a8d596b3891571"
+  integrity sha1-/8TLK88xQGcQpM74VKjVlrOJFXE=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-float64array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-float64array/download/@stdlib/assert-is-float64array-0.0.7.tgz#45feca04e0b7a37b1b0e536f083fdb348ef0cc9c"
+  integrity sha1-Rf7KBOC3o3sbDlNvCD/bNI7wzJw=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-function@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-function/download/@stdlib/assert-is-function-0.0.7.tgz#c6674d40c2ca7acf307c7c859a51a4b7cf976668"
+  integrity sha1-xmdNQMLKes8wfHyFmlGkt8+XZmg=
+  dependencies:
+    "@stdlib/utils-type-of" "^0.0.x"
+
+"@stdlib/assert-is-int16array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-int16array/download/@stdlib/assert-is-int16array-0.0.7.tgz#8e55252ae8c7e20533d1d888145736fac8cee6ef"
+  integrity sha1-jlUlKujH4gUz0diIFFc2+sjO5u8=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-int32array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-int32array/download/@stdlib/assert-is-int32array-0.0.7.tgz#966f7ff2d8f405f25d3e09322d1df420cb0f767f"
+  integrity sha1-lm9/8tj0BfJdPgkyLR30IMsPdn8=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-int8array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-int8array/download/@stdlib/assert-is-int8array-0.0.7.tgz#b754d41f2470aac3dd5e4c2c9f300941b26309c4"
+  integrity sha1-t1TUHyRwqsPdXkwsnzAJQbJjCcQ=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-integer@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-integer/download/@stdlib/assert-is-integer-0.0.7.tgz#0405891f66fea1f81e161659b0a3db36275745d0"
+  integrity sha1-BAWJH2b+ofgeFhZZsKPbNidXRdA=
+  dependencies:
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-little-endian@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-little-endian/download/@stdlib/assert-is-little-endian-0.0.6.tgz#2a6e07dcf2488513d411e69681937cad6612472a"
+  integrity sha1-Km4H3PJIhRPUEeaWgZN8rWYSRyo=
+  dependencies:
+    "@stdlib/array-uint16" "^0.0.x"
+    "@stdlib/array-uint8" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/assert-is-nan@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-nan/download/@stdlib/assert-is-nan-0.0.7.tgz#8937abea1042490213318f80a163b2b5f9a9016c"
+  integrity sha1-iTer6hBCSQITMY+AoWOytfmpAWw=
+  dependencies:
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-nonnegative-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-nonnegative-integer/download/@stdlib/assert-is-nonnegative-integer-0.0.6.tgz#99da35392774d3a65f66baaf1897a2990145e298"
+  integrity sha1-mdo1OSd006ZfZrqvGJeimQFF4pg=
+  dependencies:
+    "@stdlib/assert-is-integer" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-number@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-number/download/@stdlib/assert-is-number-0.0.6.tgz#08eef50c247b1edc0b56c7854241011995525cdd"
+  integrity sha1-CO71DCR7HtwLVseFQkEBGZVSXN0=
+  dependencies:
+    "@stdlib/assert-has-tostringtag-support" "^0.0.x"
+    "@stdlib/number-ctor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-object-like@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-object-like/download/@stdlib/assert-is-object-like-0.0.6.tgz#1dcd1998002c564707427c8d6929823decea766e"
+  integrity sha1-Hc0ZmAAsVkcHQnyNaSmCPezqdm4=
+  dependencies:
+    "@stdlib/assert-tools-array-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-object@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-object/download/@stdlib/assert-is-object-0.0.7.tgz#381cc709d899fa6bd49f2331ae32b07250ae6455"
+  integrity sha1-OBzHCdiZ+mvUnyMxrjKwclCuZFU=
+  dependencies:
+    "@stdlib/assert-is-array" "^0.0.x"
+
+"@stdlib/assert-is-plain-object@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-plain-object/download/@stdlib/assert-is-plain-object-0.0.6.tgz#0b87f39f29968391b76a8b966b678c6289d9e00c"
+  integrity sha1-C4fznymWg5G3aouWa2eMYonZ4Aw=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-object" "^0.0.x"
+    "@stdlib/utils-get-prototype-of" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-positive-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-positive-integer/download/@stdlib/assert-is-positive-integer-0.0.6.tgz#3bb7eea0a7620bccc0fd894e6164816e656b6cea"
+  integrity sha1-O7fuoKdiC8zA/YlOYWSBbmVrbOo=
+  dependencies:
+    "@stdlib/assert-is-integer" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-positive-number@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-positive-number/download/@stdlib/assert-is-positive-number-0.0.6.tgz#bd0164ba996d8841ac4cdf5b74f45cf8f1d0a9b2"
+  integrity sha1-vQFkupltiEGsTN9bdPRc+PHQqbI=
+  dependencies:
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-probability@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-probability/download/@stdlib/assert-is-probability-0.0.6.tgz#53eeeb0e98b6a2b3d4c281edf512084889550f4d"
+  integrity sha1-U+7rDpi2orPUwoHt9RIISIlVD00=
+  dependencies:
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/assert-is-regexp-string@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-regexp-string/download/@stdlib/assert-is-regexp-string-0.0.7.tgz#7054ce40aead3d2544ddb562b987e974a144ba6a"
+  integrity sha1-cFTOQK6tPSVE3bViuYfpdKFEumo=
+  dependencies:
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/process-read-stdin" "^0.0.x"
+    "@stdlib/regexp-eol" "^0.0.x"
+    "@stdlib/regexp-regexp" "^0.0.x"
+    "@stdlib/streams-node-stdin" "^0.0.x"
+
+"@stdlib/assert-is-regexp@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-regexp/download/@stdlib/assert-is-regexp-0.0.6.tgz#5b0997b2d9a59f74b3460d6acaf0e4caecad2aa6"
+  integrity sha1-WwmXstmln3SzRg1qyvDkyuytKqY=
+  dependencies:
+    "@stdlib/assert-has-tostringtag-support" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-string@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-string/download/@stdlib/assert-is-string-0.0.6.tgz#49b5078e469c750f877ce387e83dd443510655e7"
+  integrity sha1-SbUHjkacdQ+HfOOH6D3UQ1EGVec=
+  dependencies:
+    "@stdlib/assert-has-tostringtag-support" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-typed-array@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-typed-array/download/@stdlib/assert-is-typed-array-0.0.5.tgz#6ed229f9152de57824153f4134b2de0355c1f94e"
+  integrity sha1-btIp+RUt5XgkFT9BNLLeA1XB+U4=
+  dependencies:
+    "@stdlib/array-float32" "^0.0.x"
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-int16" "^0.0.x"
+    "@stdlib/array-int32" "^0.0.x"
+    "@stdlib/array-int8" "^0.0.x"
+    "@stdlib/array-uint16" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/array-uint8" "^0.0.x"
+    "@stdlib/array-uint8c" "^0.0.x"
+    "@stdlib/assert-has-float64array-support" "^0.0.x"
+    "@stdlib/utils-constructor-name" "^0.0.x"
+    "@stdlib/utils-function-name" "^0.0.x"
+    "@stdlib/utils-get-prototype-of" "^0.0.x"
+
+"@stdlib/assert-is-uint16array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-uint16array/download/@stdlib/assert-is-uint16array-0.0.7.tgz#2bc2f0ed64f09f69ff1f869d11e59ecc585b2786"
+  integrity sha1-K8Lw7WTwn2n/H4adEeWezFhbJ4Y=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-uint32array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-uint32array/download/@stdlib/assert-is-uint32array-0.0.7.tgz#e5c9441a72764639beacb99656b7708a5a5824df"
+  integrity sha1-5clEGnJ2Rjm+rLmWVrdwilpYJN8=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-uint8array@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-uint8array/download/@stdlib/assert-is-uint8array-0.0.7.tgz#40c2f58d49feaa60fe96f4e77d54459ab601ab51"
+  integrity sha1-QML1jUn+qmD+lvTnfVRFmrYBq1E=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-is-uint8clampedarray@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-is-uint8clampedarray/download/@stdlib/assert-is-uint8clampedarray-0.0.7.tgz#422bb9ca595c49090351f78d690a8dc1933647bc"
+  integrity sha1-Qiu5yllcSQkDUfeNaQqNwZM2R7w=
+  dependencies:
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/assert-tools-array-function@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/assert-tools-array-function/download/@stdlib/assert-tools-array-function-0.0.6.tgz#f48f80b05f8385a95c653ee2f3317fa25753fce9"
+  integrity sha1-9I+AsF+DhalcZT7i8zF/oldT/Ok=
+  dependencies:
+    "@stdlib/assert-is-array" "^0.0.x"
+
+"@stdlib/blas-base-gcopy@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/blas-base-gcopy/download/@stdlib/blas-base-gcopy-0.0.6.tgz#6e0d8debf151c8f0bdb779cb8a4cd03de70bc9f2"
+  integrity sha1-bg2N6/FRyPC9t3nLikzQPecLyfI=
+  dependencies:
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/buffer-ctor@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/buffer-ctor/download/@stdlib/buffer-ctor-0.0.6.tgz#380a9eb78a86f836b6b9616f9d72f9107a8e2b21"
+  integrity sha1-OAqet4qG+Da2uWFvnXL5EHqOKyE=
+  dependencies:
+    "@stdlib/assert-has-node-buffer-support" "^0.0.x"
+
+"@stdlib/buffer-from-buffer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/buffer-from-buffer/download/@stdlib/buffer-from-buffer-0.0.6.tgz#d2c7c91d0f8d1b0aacde5f57e315afeed2565938"
+  integrity sha1-0sfJHQ+NGwqs3l9X4xWv7tJWWTg=
+  dependencies:
+    "@stdlib/assert-is-buffer" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/buffer-ctor" "^0.0.x"
+
+"@stdlib/buffer-from-string@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/buffer-from-string/download/@stdlib/buffer-from-string-0.0.6.tgz#80885649ee9865a26ab5402b2ae829405c70c303"
+  integrity sha1-gIhWSe6YZaJqtUArKugpQFxwwwM=
+  dependencies:
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/buffer-ctor" "^0.0.x"
+
+"@stdlib/cli-ctor@^0.0.x":
+  version "0.0.2"
+  resolved "https://registry.npmmirror.com/@stdlib/cli-ctor/download/@stdlib/cli-ctor-0.0.2.tgz#9e9bdddc08d4a19568eadea53931c43e4a7de8fd"
+  integrity sha1-npvd3AjUoZVo6t6lOTHEPkp96P0=
+  dependencies:
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+    minimist "^1.2.0"
+
+"@stdlib/constants-array-max-typed-array-length@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-array-max-typed-array-length/download/@stdlib/constants-array-max-typed-array-length-0.0.6.tgz#86ec2df1c3168c78f8c30ab60662fa73fbfb8206"
+  integrity sha1-huwt8cMWjHj4wwq2BmL6c/v7ggY=
+
+"@stdlib/constants-float64-eulergamma@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-eulergamma/download/@stdlib/constants-float64-eulergamma-0.0.6.tgz#9d9c1e46ec1a4a23cf7af5587fd13e20b0090728"
+  integrity sha1-nZweRuwaSiPPevVYf9E+ILAJByg=
+
+"@stdlib/constants-float64-exponent-bias@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-exponent-bias/download/@stdlib/constants-float64-exponent-bias-0.0.6.tgz#822e020b273daa6969bda3b93e84f039b9c978cb"
+  integrity sha1-gi4CCyc9qmlpvaO5PoTwObnJeMs=
+
+"@stdlib/constants-float64-half-pi@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-half-pi/download/@stdlib/constants-float64-half-pi-0.0.6.tgz#7e70f84c81bc2b97e9cc39b54aa3e91c8e647aa6"
+  integrity sha1-fnD4TIG8K5fpzDm1SqPpHI5keqY=
+
+"@stdlib/constants-float64-high-word-exponent-mask@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-high-word-exponent-mask/download/@stdlib/constants-float64-high-word-exponent-mask-0.0.6.tgz#8c7c1e04029b44f12dba7824758b66c81ecce04e"
+  integrity sha1-jHweBAKbRPEtungkdYtmyB7M4E4=
+
+"@stdlib/constants-float64-ln-sqrt-two-pi@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-ln-sqrt-two-pi/download/@stdlib/constants-float64-ln-sqrt-two-pi-0.0.6.tgz#6cd1e89cc3a9cd5fd0569c6475caa7e848b7c6fa"
+  integrity sha1-bNHonMOpzV/QVpxkdcqn6Ei3xvo=
+
+"@stdlib/constants-float64-ln-two@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-ln-two/download/@stdlib/constants-float64-ln-two-0.0.6.tgz#3f576b61b5eb879b8000dfc0065c9cd15c182006"
+  integrity sha1-P1drYbXrh5uAAN/ABlyc0VwYIAY=
+
+"@stdlib/constants-float64-max-base2-exponent-subnormal@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-max-base2-exponent-subnormal/download/@stdlib/constants-float64-max-base2-exponent-subnormal-0.0.6.tgz#02f9d00ce2d8e639e459780f396146a61db1b28f"
+  integrity sha1-AvnQDOLY5jnkWXgPOWFGph2xso8=
+
+"@stdlib/constants-float64-max-base2-exponent@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-max-base2-exponent/download/@stdlib/constants-float64-max-base2-exponent-0.0.6.tgz#106d7f674efc157e17ce95d04ea5deb1d72f2bf4"
+  integrity sha1-EG1/Z078FX4XzpXQTqXesdcvK/Q=
+
+"@stdlib/constants-float64-max-safe-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-max-safe-integer/download/@stdlib/constants-float64-max-safe-integer-0.0.6.tgz#38dfc92b563f9be182f8cbe4d5d9b01b3acc6d47"
+  integrity sha1-ON/JK1Y/m+GC+Mvk1dmwGzrMbUc=
+
+"@stdlib/constants-float64-min-base2-exponent-subnormal@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-min-base2-exponent-subnormal/download/@stdlib/constants-float64-min-base2-exponent-subnormal-0.0.6.tgz#7168f6df0f8c56463db22993ac2851d2276b442a"
+  integrity sha1-cWj23w+MVkY9simTrChR0idrRCo=
+
+"@stdlib/constants-float64-ninf@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-ninf/download/@stdlib/constants-float64-ninf-0.0.6.tgz#a2fa727a5cf54409f0a825d000ddf123cff597f0"
+  integrity sha1-ovpyelz1RAnwqCXQAN3xI8/1l/A=
+  dependencies:
+    "@stdlib/number-ctor" "^0.0.x"
+
+"@stdlib/constants-float64-pi@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-pi/download/@stdlib/constants-float64-pi-0.0.6.tgz#892a35da792b4909d3270add2e5a599176510224"
+  integrity sha1-iSo12nkrSQnTJwrdLlpZkXZRAiQ=
+
+"@stdlib/constants-float64-pinf@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-pinf/download/@stdlib/constants-float64-pinf-0.0.6.tgz#90b19d4186b4d4bf5f6f49c660f356808d9777e0"
+  integrity sha1-kLGdQYa01L9fb0nGYPNWgI2Xd+A=
+
+"@stdlib/constants-float64-smallest-normal@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-smallest-normal/download/@stdlib/constants-float64-smallest-normal-0.0.6.tgz#355dbcfaa4bc9857b20562db5f2a1af9fdd4f57a"
+  integrity sha1-NV28+qS8mFeyBWLbXyoa+f3U9Xo=
+
+"@stdlib/constants-float64-sqrt-two-pi@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-sqrt-two-pi/download/@stdlib/constants-float64-sqrt-two-pi-0.0.6.tgz#e2576b62251f6cc14ad64c386448e4f0d9e7824c"
+  integrity sha1-4ldrYiUfbMFK1kw4ZEjk8Nnngkw=
+
+"@stdlib/constants-float64-two-pi@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-float64-two-pi/download/@stdlib/constants-float64-two-pi-0.0.6.tgz#2866dface8bba0cbb3bad86ef04acbec9c7341d3"
+  integrity sha1-KGbfrOi7oMuzuthu8ErL7JxzQdM=
+
+"@stdlib/constants-int16-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-int16-max/download/@stdlib/constants-int16-max-0.0.6.tgz#ca49e8e9bc44c5fe3e9014887bb731d1ddb0ad9b"
+  integrity sha1-ykno6bxExf4+kBSIe7cx0d2wrZs=
+
+"@stdlib/constants-int16-min@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-int16-min/download/@stdlib/constants-int16-min-0.0.6.tgz#4c82a2f193102df2a200ed98297abb648555b91a"
+  integrity sha1-TIKi8ZMQLfKiAO2YKXq7ZIVVuRo=
+
+"@stdlib/constants-int32-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-int32-max/download/@stdlib/constants-int32-max-0.0.6.tgz#a18d6b0098a4c1862089cc98905413d27a5dbefb"
+  integrity sha1-oY1rAJikwYYgicyYkFQT0npdvvs=
+
+"@stdlib/constants-int32-min@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-int32-min/download/@stdlib/constants-int32-min-0.0.6.tgz#5daa86303030310299e80b29fd0adea2c4811d0d"
+  integrity sha1-XaqGMDAwMQKZ6Asp/QreosSBHQ0=
+
+"@stdlib/constants-int8-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-int8-max/download/@stdlib/constants-int8-max-0.0.6.tgz#c90b1db4590d7075801e00901b1da9446edcb387"
+  integrity sha1-yQsdtFkNcHWAHgCQGx2pRG7cs4c=
+
+"@stdlib/constants-int8-min@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-int8-min/download/@stdlib/constants-int8-min-0.0.6.tgz#4b6ae35be12ae98cda10da53ccf32464ce3e0a4c"
+  integrity sha1-S2rjW+Eq6YzaENpTzPMkZM4+Ckw=
+
+"@stdlib/constants-uint16-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-uint16-max/download/@stdlib/constants-uint16-max-0.0.6.tgz#d6102bbdc42ba881d8a236d6e9cbb93024ab0332"
+  integrity sha1-1hArvcQrqIHYojbW6cu5MCSrAzI=
+
+"@stdlib/constants-uint32-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-uint32-max/download/@stdlib/constants-uint32-max-0.0.6.tgz#c89aae308f6e81933eb9a8a771c87d6e66c746cf"
+  integrity sha1-yJquMI9ugZM+uaincch9bmbHRs8=
+
+"@stdlib/constants-uint8-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/constants-uint8-max/download/@stdlib/constants-uint8-max-0.0.6.tgz#02963365126bf5ff377b712609b9aef33297d68a"
+  integrity sha1-ApYzZRJr9f83e3EmCbmu8zKX1oo=
+
+"@stdlib/fs-exists@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/fs-exists/download/@stdlib/fs-exists-0.0.7.tgz#976e3b069c4a9d865800b0d804154757a624ca4b"
+  integrity sha1-l247BpxKnYZYALDYBBVHV6Ykyks=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/process-cwd" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/fs-read-file@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/fs-read-file/download/@stdlib/fs-read-file-0.0.7.tgz#18136fd7aab491516f0d9884387344b027d0f6c4"
+  integrity sha1-GBNv16q0kVFvDZiEOHNEsCfQ9sQ=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/fs-resolve-parent-path@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/fs-resolve-parent-path/download/@stdlib/fs-resolve-parent-path-0.0.7.tgz#bfb71406b5a2f62db3b11627c89ab93c05362ec0"
+  integrity sha1-v7cUBrWi9i2zsRYnyJq5PAU2LsA=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-exists" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/process-cwd" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/math-base-assert-is-even@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-even/download/@stdlib/math-base-assert-is-even-0.0.6.tgz#b2555a3757d344329346884ed449d5dce6278fc8"
+  integrity sha1-slVaN1fTRDKTRohO1EnV3OYnj8g=
+  dependencies:
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+
+"@stdlib/math-base-assert-is-infinite@^0.0.x":
+  version "0.0.8"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-infinite/download/@stdlib/math-base-assert-is-infinite-0.0.8.tgz#1ffb46524cf6651297c37b0e97950c52848b3a84"
+  integrity sha1-H/tGUkz2ZRKXw3sOl5UMUoSLOoQ=
+  dependencies:
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-assert-is-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-integer/download/@stdlib/math-base-assert-is-integer-0.0.6.tgz#9907640c3921ef41ee8752e30d1d75f865d5dd14"
+  integrity sha1-mQdkDDkh70Huh1LjDR11+GXV3RQ=
+  dependencies:
+    "@stdlib/math-base-special-floor" "^0.0.x"
+
+"@stdlib/math-base-assert-is-nan@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-nan/download/@stdlib/math-base-assert-is-nan-0.0.7.tgz#07016e45d06f11e6bfddbfe5158ce26aff8f7c71"
+  integrity sha1-BwFuRdBvEea/3b/lFYziav+PfHE=
+  dependencies:
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-assert-is-negative-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-negative-integer/download/@stdlib/math-base-assert-is-negative-integer-0.0.6.tgz#fdf22db0de243cfb5e179d14fc03d29f48528a8b"
+  integrity sha1-/fItsN4kPPteF50U/APSn0hSios=
+  dependencies:
+    "@stdlib/math-base-special-floor" "^0.0.x"
+
+"@stdlib/math-base-assert-is-negative-zero@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-negative-zero/download/@stdlib/math-base-assert-is-negative-zero-0.0.7.tgz#d43bebe8516bfbcc1eae1bf6b659ba063c9112fc"
+  integrity sha1-1Dvr6FFr+8werhv2tlm6BjyREvw=
+  dependencies:
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-assert-is-nonnegative-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-nonnegative-integer/download/@stdlib/math-base-assert-is-nonnegative-integer-0.0.6.tgz#5009bb9f652beab6e5033a0346951c8c1df73737"
+  integrity sha1-UAm7n2Ur6rblAzoDRpUcjB33Nzc=
+  dependencies:
+    "@stdlib/math-base-special-floor" "^0.0.x"
+
+"@stdlib/math-base-assert-is-odd@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-odd/download/@stdlib/math-base-assert-is-odd-0.0.6.tgz#2b59117eb77dc0eae9442aef6b9a904b72be1d77"
+  integrity sha1-K1kRfrd9wOrpRCrva5qQS3K+HXc=
+  dependencies:
+    "@stdlib/math-base-assert-is-even" "^0.0.x"
+
+"@stdlib/math-base-assert-is-positive-integer@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-positive-integer/download/@stdlib/math-base-assert-is-positive-integer-0.0.6.tgz#05eedec3afa2f1d4183cfc988020ea0fe8dd7fdc"
+  integrity sha1-Be7ew6+i8dQYPPyYgCDqD+jdf9w=
+  dependencies:
+    "@stdlib/math-base-special-floor" "^0.0.x"
+
+"@stdlib/math-base-assert-is-positive-zero@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-positive-zero/download/@stdlib/math-base-assert-is-positive-zero-0.0.7.tgz#1dda7a457c600a9d0b2ac3ed56f939e48b0003f6"
+  integrity sha1-Hdp6RXxgCp0LKsPtVvk55IsAA/Y=
+  dependencies:
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-assert-is-probability@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-assert-is-probability/download/@stdlib/math-base-assert-is-probability-0.0.6.tgz#f09c1e8a5317c6c1be8a4cd36132aff478f76ac4"
+  integrity sha1-8JweilMXxsG+ikzTYTKv9Hj3asQ=
+
+"@stdlib/math-base-napi-unary@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-napi-unary/download/@stdlib/math-base-napi-unary-0.0.7.tgz#e1fab45581c30c393537b413074b9f1c028fcbb5"
+  integrity sha1-4fq0VYHDDDk1N7QTB0ufHAKPy7U=
+  dependencies:
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-abs@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-abs/download/@stdlib/math-base-special-abs-0.0.5.tgz#230af7048ba817ce8bd35174cbe8f0986b3cc15a"
+  integrity sha1-Iwr3BIuoF86L01F0y+jwmGs8wVo=
+  dependencies:
+    "@stdlib/math-base-napi-unary" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-ceil@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-ceil/download/@stdlib/math-base-special-ceil-0.0.7.tgz#2ff6311ffc185cadda28a352d348310133576275"
+  integrity sha1-L/YxH/wYXK3aKKNS00gxATNXYnU=
+  dependencies:
+    "@stdlib/math-base-napi-unary" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-copysign@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-copysign/download/@stdlib/math-base-special-copysign-0.0.5.tgz#1a2016d030a4b6c3c46db641ff324e31e68ab5a1"
+  integrity sha1-GiAW0DCktsPEbbZB/zJOMeaKtaE=
+  dependencies:
+    "@stdlib/number-float64-base-from-words" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+
+"@stdlib/math-base-special-cos@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-cos/download/@stdlib/math-base-special-cos-0.0.5.tgz#ec922cdb9c5e546d227ee9fee3681d81b1fd6081"
+  integrity sha1-7JIs25xeVG0ifun+42gdgbH9YIE=
+  dependencies:
+    "@stdlib/math-base-special-kernel-cos" "^0.0.x"
+    "@stdlib/math-base-special-kernel-sin" "^0.0.x"
+    "@stdlib/math-base-special-rempio2" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+
+"@stdlib/math-base-special-erfinv@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-erfinv/download/@stdlib/math-base-special-erfinv-0.0.5.tgz#d29c8e4e620043cc6b53f95796cfea682ece0a20"
+  integrity sha1-0pyOTmIAQ8xrU/lXls/qaC7OCiA=
+  dependencies:
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+
+"@stdlib/math-base-special-exp@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-exp/download/@stdlib/math-base-special-exp-0.0.5.tgz#a30e4809cb5fb58689d0b3924821b1c875d44645"
+  integrity sha1-ow5ICctftYaJ0LOSSCGxyHXURkU=
+  dependencies:
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ldexp" "^0.0.x"
+    "@stdlib/math-base-special-trunc" "^0.0.x"
+
+"@stdlib/math-base-special-factorial@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-factorial/download/@stdlib/math-base-special-factorial-0.0.5.tgz#18914b7d92c992bfec9659fe11f4994140cd6665"
+  integrity sha1-GJFLfZLJkr/slln+EfSZQUDNZmU=
+  dependencies:
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-gamma" "^0.0.x"
+
+"@stdlib/math-base-special-factorialln@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-factorialln/download/@stdlib/math-base-special-factorialln-0.0.5.tgz#361870f07cc71a06a41d227b2c365fedaa849dd6"
+  integrity sha1-Nhhw8HzHGgakHSJ7LDZf7aqEndY=
+  dependencies:
+    "@stdlib/math-base-assert-is-negative-integer" "^0.0.x"
+    "@stdlib/math-base-special-gammaln" "^0.0.x"
+
+"@stdlib/math-base-special-floor@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-floor/download/@stdlib/math-base-special-floor-0.0.7.tgz#67a27823870c9fa8a469179169c6f9db43d4d064"
+  integrity sha1-Z6J4I4cMn6ikaReRacb520PU0GQ=
+  dependencies:
+    "@stdlib/math-base-napi-unary" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-gamma@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-gamma/download/@stdlib/math-base-special-gamma-0.0.5.tgz#2bacf316588d1ab7606f4f473c1ad56aa36f8e21"
+  integrity sha1-K6zzFliNGrdgb09HPBrVaqNvjiE=
+  dependencies:
+    "@stdlib/constants-float64-eulergamma" "^0.0.x"
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pi" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/constants-float64-sqrt-two-pi" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-assert-is-negative-zero" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-exp" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/math-base-special-sin" "^0.0.x"
+
+"@stdlib/math-base-special-gammaln@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-gammaln/download/@stdlib/math-base-special-gammaln-0.0.5.tgz#c4574d472a5f028bd11c586a9da1c60b33f3a823"
+  integrity sha1-xFdNRypfAovRHFhqnaHGCzPzqCM=
+  dependencies:
+    "@stdlib/constants-float64-pi" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-infinite" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-sinpi" "^0.0.x"
+    "@stdlib/math-base-special-trunc" "^0.0.x"
+
+"@stdlib/math-base-special-kernel-cos@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-kernel-cos/download/@stdlib/math-base-special-kernel-cos-0.0.6.tgz#ec83b001d700b1e2018b091e5e90178cdf1f0fd6"
+  integrity sha1-7IOwAdcAseIBiwkeXpAXjN8fD9Y=
+
+"@stdlib/math-base-special-kernel-sin@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-kernel-sin/download/@stdlib/math-base-special-kernel-sin-0.0.6.tgz#dc3db135c883e01cc924fe1fe65679c5b1a0bf97"
+  integrity sha1-3D2xNciD4BzJJP4f5lZ5xbGgv5c=
+
+"@stdlib/math-base-special-kernel-tan@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-kernel-tan/download/@stdlib/math-base-special-kernel-tan-0.0.5.tgz#3a210218cded5525117c56f2363c7f5aa9079d3e"
+  integrity sha1-OiECGM3tVSURfFbyNjx/WqkHnT4=
+  dependencies:
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+    "@stdlib/number-float64-base-set-low-word" "^0.0.x"
+
+"@stdlib/math-base-special-ldexp@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-ldexp/download/@stdlib/math-base-special-ldexp-0.0.5.tgz#df5a1fc0252a6d6cc5f12126af903e7391d78aad"
+  integrity sha1-31ofwCUqbWzF8SEmr5A+c5HXiq0=
+  dependencies:
+    "@stdlib/constants-float64-exponent-bias" "^0.0.x"
+    "@stdlib/constants-float64-max-base2-exponent" "^0.0.x"
+    "@stdlib/constants-float64-max-base2-exponent-subnormal" "^0.0.x"
+    "@stdlib/constants-float64-min-base2-exponent-subnormal" "^0.0.x"
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-infinite" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-copysign" "^0.0.x"
+    "@stdlib/number-float64-base-exponent" "^0.0.x"
+    "@stdlib/number-float64-base-from-words" "^0.0.x"
+    "@stdlib/number-float64-base-normalize" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+
+"@stdlib/math-base-special-ln@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-ln/download/@stdlib/math-base-special-ln-0.0.5.tgz#74504122bc385ea985e451259fb451b092cd7eb6"
+  integrity sha1-dFBBIrw4XqmF5FEln7RRsJLNfrY=
+  dependencies:
+    "@stdlib/constants-float64-exponent-bias" "^0.0.x"
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+    "@stdlib/number-float64-base-set-high-word" "^0.0.x"
+
+"@stdlib/math-base-special-max@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-max/download/@stdlib/math-base-special-max-0.0.6.tgz#f24cff455ee57829a8c5d5df00601d2a7f9d8477"
+  integrity sha1-8kz/RV7leCmoxdXfAGAdKn+dhHc=
+  dependencies:
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-assert-is-positive-zero" "^0.0.x"
+
+"@stdlib/math-base-special-pow@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-pow/download/@stdlib/math-base-special-pow-0.0.5.tgz#851eac2b553ffea54527df973af34065ca9eed06"
+  integrity sha1-hR6sK1U//qVFJ9+XOvNAZcqe7QY=
+  dependencies:
+    "@stdlib/constants-float64-exponent-bias" "^0.0.x"
+    "@stdlib/constants-float64-ln-two" "^0.0.x"
+    "@stdlib/constants-float64-ninf" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-infinite" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-assert-is-odd" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-copysign" "^0.0.x"
+    "@stdlib/math-base-special-ldexp" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+    "@stdlib/number-float64-base-set-high-word" "^0.0.x"
+    "@stdlib/number-float64-base-set-low-word" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/number-uint32-base-to-int32" "^0.0.x"
+
+"@stdlib/math-base-special-rempio2@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-rempio2/download/@stdlib/math-base-special-rempio2-0.0.5.tgz#7042f31c399b6ea47f8d745ba9d9235ff932f212"
+  integrity sha1-cELzHDmbbqR/jXRbqdkjX/ky8hI=
+  dependencies:
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-ldexp" "^0.0.x"
+    "@stdlib/math-base-special-round" "^0.0.x"
+    "@stdlib/number-float64-base-from-words" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+    "@stdlib/number-float64-base-get-low-word" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+
+"@stdlib/math-base-special-round@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-round/download/@stdlib/math-base-special-round-0.0.6.tgz#13396e4de8fc61efa63d8aa1f6fbf1bad8db9031"
+  integrity sha1-EzluTej8Ye+mPYqh9vvxutjbkDE=
+
+"@stdlib/math-base-special-signum@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-signum/download/@stdlib/math-base-special-signum-0.0.7.tgz#263893bf9bb2701269e8014f972f701d530d1b7c"
+  integrity sha1-JjiTv5uycBJp6AFPly9wHVMNG3w=
+  dependencies:
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-napi-unary" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-sin@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-sin/download/@stdlib/math-base-special-sin-0.0.5.tgz#6225150d01ddb28cab0b0c6504b9c56b1f864d51"
+  integrity sha1-YiUVDQHdsoyrCwxlBLnFax+GTVE=
+  dependencies:
+    "@stdlib/math-base-special-kernel-cos" "^0.0.x"
+    "@stdlib/math-base-special-kernel-sin" "^0.0.x"
+    "@stdlib/math-base-special-rempio2" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+
+"@stdlib/math-base-special-sinpi@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-sinpi/download/@stdlib/math-base-special-sinpi-0.0.5.tgz#8ad42cc77a0813aa885247db9a60c1f4e0b9bbb5"
+  integrity sha1-itQsx3oIE6qIUkfbmmDB9OC5u7U=
+  dependencies:
+    "@stdlib/constants-float64-pi" "^0.0.x"
+    "@stdlib/math-base-assert-is-infinite" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-copysign" "^0.0.x"
+    "@stdlib/math-base-special-cos" "^0.0.x"
+    "@stdlib/math-base-special-sin" "^0.0.x"
+
+"@stdlib/math-base-special-sqrt@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-sqrt/download/@stdlib/math-base-special-sqrt-0.0.7.tgz#71174d0e76c081a3d9a7b31d63ad92068692a941"
+  integrity sha1-cRdNDnbAgaPZp7MdY62SBoaSqUE=
+  dependencies:
+    "@stdlib/math-base-napi-unary" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-tan@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-tan/download/@stdlib/math-base-special-tan-0.0.5.tgz#d81aa70fd8d4742979025f26e77380e31fcf9b8c"
+  integrity sha1-2BqnD9jUdCl5Al8m53OA4x/Pm4w=
+  dependencies:
+    "@stdlib/math-base-special-kernel-tan" "^0.0.x"
+    "@stdlib/math-base-special-rempio2" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+
+"@stdlib/math-base-special-trunc@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-trunc/download/@stdlib/math-base-special-trunc-0.0.7.tgz#e65f3b7383dac0b4152a6dba406a7713776cee2e"
+  integrity sha1-5l87c4PawLQVKm26QGp3E3ds7i4=
+  dependencies:
+    "@stdlib/math-base-napi-unary" "^0.0.x"
+    "@stdlib/math-base-special-ceil" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/math-base-special-uimul@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/math-base-special-uimul/download/@stdlib/math-base-special-uimul-0.0.6.tgz#f77a37e4b846ff97002d08842a8044108be6ae54"
+  integrity sha1-93o35LhG/5cALQiEKoBEEIvmrlQ=
+
+"@stdlib/number-ctor@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/number-ctor/download/@stdlib/number-ctor-0.0.6.tgz#b472c4541a5b1c38034d49d6da5e8a52990e2c87"
+  integrity sha1-tHLEVBpbHDgDTUnW2l6KUpkOLIc=
+
+"@stdlib/number-float64-base-exponent@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-exponent/download/@stdlib/number-float64-base-exponent-0.0.5.tgz#1ae8ad829cea512e06f517870953123eaa5c8ad8"
+  integrity sha1-GuitgpzqUS4G9ReHCVMSPqpcitg=
+  dependencies:
+    "@stdlib/constants-float64-exponent-bias" "^0.0.x"
+    "@stdlib/constants-float64-high-word-exponent-mask" "^0.0.x"
+    "@stdlib/number-float64-base-get-high-word" "^0.0.x"
+
+"@stdlib/number-float64-base-from-words@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-from-words/download/@stdlib/number-float64-base-from-words-0.0.5.tgz#0aaccd18ee1d97b359384d9544010d45fa0afa0a"
+  integrity sha1-CqzNGO4dl7NZOE2VRAENRfoK+go=
+  dependencies:
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-float64-base-get-high-word@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-get-high-word/download/@stdlib/number-float64-base-get-high-word-0.0.5.tgz#6ede6f1d6c92ddd358b5a219795245e74518ef60"
+  integrity sha1-bt5vHWyS3dNYtaIZeVJF50UY72A=
+  dependencies:
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-float64-base-get-low-word@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-get-low-word/download/@stdlib/number-float64-base-get-low-word-0.0.5.tgz#f9756c6e060768f437cad80dbeafdab4728540b1"
+  integrity sha1-+XVsbgYHaPQ3ytgNvq/atHKFQLE=
+  dependencies:
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-float64-base-normalize@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-normalize/download/@stdlib/number-float64-base-normalize-0.0.5.tgz#d11e2d2629b87e22b5490456dfa0414b9ac76b7b"
+  integrity sha1-0R4tJim4fiK1SQRW36BBS5rHa3s=
+  dependencies:
+    "@stdlib/constants-float64-smallest-normal" "^0.0.x"
+    "@stdlib/math-base-assert-is-infinite" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+
+"@stdlib/number-float64-base-set-high-word@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-set-high-word/download/@stdlib/number-float64-base-set-high-word-0.0.5.tgz#50e5b523fd2d830da56fb6870f5a3da5eece1d7a"
+  integrity sha1-UOW1I/0tgw2lb7aHD1o9pe7OHXo=
+  dependencies:
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-float64-base-set-low-word@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-set-low-word/download/@stdlib/number-float64-base-set-low-word-0.0.5.tgz#9f82160873345b807b9da3cc56ddd263756bfc85"
+  integrity sha1-n4IWCHM0W4B7naPMVt3SY3Vr/IU=
+  dependencies:
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/number-float64-base-to-words" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-float64-base-to-words@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/number-float64-base-to-words/download/@stdlib/number-float64-base-to-words-0.0.5.tgz#32143415504a4d6bf7fc702952752849b4f00b0c"
+  integrity sha1-MhQ0FVBKTWv3/HApUnUoSbTwCww=
+  dependencies:
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/os-byte-order" "^0.0.x"
+    "@stdlib/os-float-word-order" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-uint32-base-to-int32@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/number-uint32-base-to-int32/download/@stdlib/number-uint32-base-to-int32-0.0.6.tgz#dd9432c7d8945b9aff1fad4544d16bfabbd7819c"
+  integrity sha1-3ZQyx9iUW5r/H61FRNFr+rvXgZw=
+
+"@stdlib/os-byte-order@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/os-byte-order/download/@stdlib/os-byte-order-0.0.6.tgz#d4445b638bfcbaf8b7d38792ac4bf8bf2eed037a"
+  integrity sha1-1ERbY4v8uvi304eSrEv4vy7tA3o=
+  dependencies:
+    "@stdlib/assert-is-big-endian" "^0.0.x"
+    "@stdlib/assert-is-little-endian" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/os-float-word-order@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/os-float-word-order/download/@stdlib/os-float-word-order-0.0.6.tgz#c50d042567d3618beb8b0ec32ca825e9d1bc7332"
+  integrity sha1-xQ0EJWfTYYvriw7DLKgl6dG8czI=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/os-byte-order" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/process-cwd@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/process-cwd/download/@stdlib/process-cwd-0.0.7.tgz#93c15aac9d905dc2e601f87c56189306fba03825"
+  integrity sha1-k8FarJ2QXcLmAfh8VhiTBvugOCU=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+
+"@stdlib/process-read-stdin@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/process-read-stdin/download/@stdlib/process-read-stdin-0.0.6.tgz#d350a48be313fca6e7be3a26f75f59265ba58a25"
+  integrity sha1-01Cki+MT/Kbnvjom919ZJluliiU=
+  dependencies:
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/buffer-ctor" "^0.0.x"
+    "@stdlib/buffer-from-string" "^0.0.x"
+    "@stdlib/streams-node-stdin" "^0.0.x"
+    "@stdlib/utils-next-tick" "^0.0.x"
+
+"@stdlib/random-base-arcsine@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-arcsine/download/@stdlib/random-base-arcsine-0.0.5.tgz#3b9c77b249e80df37da7daeffcf1cb6ebe9272c4"
+  integrity sha1-O5x3sknoDfN9p9rv/PHLbr6ScsQ=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/constants-float64-half-pi" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/math-base-special-sin" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-bernoulli@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-bernoulli/download/@stdlib/random-base-bernoulli-0.0.5.tgz#f36ba25f76b996d9edd8d44ed9c39164dfae6652"
+  integrity sha1-82uiX3a5ltnt2NRO2cORZN+uZlI=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-probability" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-beta@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-beta/download/@stdlib/random-base-beta-0.0.6.tgz#41b37e7e10384410e177cadbba999293b456e17e"
+  integrity sha1-QbN+fhA4RBDhd8rbupmSk7RW4X4=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-exp" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-copy" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-betaprime@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-betaprime/download/@stdlib/random-base-betaprime-0.0.5.tgz#26cd777ad0006ba9721a5b8685d27ba40ff14abb"
+  integrity sha1-Js13etAAa6lyGluGhdJ7pA/xSrs=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-gamma" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-binomial@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-binomial/download/@stdlib/random-base-binomial-0.0.5.tgz#73fe0429b24b3697863cabfa8c61492ebc370624"
+  integrity sha1-c/4EKbJLNpeGPKv6jGFJLrw3BiQ=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-integer" "^0.0.x"
+    "@stdlib/assert-is-probability" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-assert-is-positive-integer" "^0.0.x"
+    "@stdlib/math-base-assert-is-probability" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/math-base-special-signum" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-box-muller@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-box-muller/download/@stdlib/random-base-box-muller-0.0.5.tgz#2c68ff0d229e18391727f61697f3416ac05fdebe"
+  integrity sha1-LGj/DSKeGDkXJ/YWl/NBasBf3r4=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/constants-float64-pi" "^0.0.x"
+    "@stdlib/constants-float64-two-pi" "^0.0.x"
+    "@stdlib/math-base-special-cos" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-sin" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-cauchy@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-cauchy/download/@stdlib/random-base-cauchy-0.0.5.tgz#b2a788682f183b553621b8d6413f06b87780e2d6"
+  integrity sha1-sqeIaC8YO1U2IbjWQT8GuHeA4tY=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/constants-float64-pi" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-tan" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-chi@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-chi/download/@stdlib/random-base-chi-0.0.5.tgz#6b4901d3f8071ad9ef8f4bd696d00aecfae42dc7"
+  integrity sha1-a0kB0/gHGtnvj0vWltAK7PrkLcc=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-chisquare" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-chisquare@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-chisquare/download/@stdlib/random-base-chisquare-0.0.5.tgz#fef7c58e6a468a65184bf6924e83b93d79d34bf8"
+  integrity sha1-/vfFjmpGimUYS/aSToO5PXnTS/g=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-gamma" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-cosine@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-cosine/download/@stdlib/random-base-cosine-0.0.5.tgz#8a4d530bbe71f7d4a17ead1eb45cd91707553fd2"
+  integrity sha1-ik1TC75x99Shfq0etFzZFwdVP9I=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/stats-base-dists-cosine-quantile" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-discrete-uniform@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-discrete-uniform/download/@stdlib/random-base-discrete-uniform-0.0.5.tgz#cc6c3d3bf138d3ab23b53ad6133934a6d920b3e4"
+  integrity sha1-zGw9O/E406sjtTrWEzk0ptkgs+Q=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-integer" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/constants-float64-max-safe-integer" "^0.0.x"
+    "@stdlib/math-base-assert-is-integer" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-erlang@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-erlang/download/@stdlib/random-base-erlang-0.0.5.tgz#dfd63da66901294e0cfc4540f3eefb609c8f1195"
+  integrity sha1-39Y9pmkBKU4M/EVA8+77YJyPEZU=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-integer" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-assert-is-positive-integer" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-exponential@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-exponential/download/@stdlib/random-base-exponential-0.0.5.tgz#97d842d1fde0cffd18c34c0a46c7d11482c4bd09"
+  integrity sha1-l9hC0f3gz/0Yw0wKRsfRFILEvQk=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-f@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-f/download/@stdlib/random-base-f-0.0.5.tgz#65bf7b0dc46cae653809cb0a688fa761b6eea093"
+  integrity sha1-Zb97DcRsrmU4CcsKaI+nYbbuoJM=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-chisquare" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-frechet@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-frechet/download/@stdlib/random-base-frechet-0.0.5.tgz#d6f81b9cc98f86b7c7188c4133c9607e2ad9230d"
+  integrity sha1-1vgbnMmPhrfHGIxBM8lgfirZIw0=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-gamma@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-gamma/download/@stdlib/random-base-gamma-0.0.5.tgz#4e37704533151a5a167b3e649728152e8bd72347"
+  integrity sha1-TjdwRTMVGloWez5klygVLovXI0c=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-copy" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-geometric@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-geometric/download/@stdlib/random-base-geometric-0.0.5.tgz#d6d27ac014cc76849e1c5dbd5fb51fe5f0c3a771"
+  integrity sha1-1tJ6wBTMdoSeHF29X7Uf5fDDp3E=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-probability" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-gumbel@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-gumbel/download/@stdlib/random-base-gumbel-0.0.5.tgz#fd2bebc7a81547c4c131b601a8bccc4a931a0f8d"
+  integrity sha1-/Svrx6gVR8TBMbYBqLzMSpMaD40=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-hypergeometric@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-hypergeometric/download/@stdlib/random-base-hypergeometric-0.0.5.tgz#9c73843f46fef24ef3e993a2348fc33c48a24281"
+  integrity sha1-nHOEP0b+8k7z6ZOiNI/DPEiiQoE=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nonnegative-integer" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/math-base-assert-is-nonnegative-integer" "^0.0.x"
+    "@stdlib/math-base-special-factorial" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-improved-ziggurat@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-improved-ziggurat/download/@stdlib/random-base-improved-ziggurat-0.0.5.tgz#950e78c12b6617d818a9ee39221efa3715e43960"
+  integrity sha1-lQ54wStmF9gYqe45Ih76NxXkOWA=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/constants-uint32-max" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-exp" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-invgamma@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-invgamma/download/@stdlib/random-base-invgamma-0.0.5.tgz#72a40fb9bbbac18c8706ebbd95a9277326bb8b79"
+  integrity sha1-cqQPubu6wYyHBuu9lakncya7i3k=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-gamma" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-kumaraswamy@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-kumaraswamy/download/@stdlib/random-base-kumaraswamy-0.0.5.tgz#89b4c50a4bca6246c2d36d56f331ae4063bd4610"
+  integrity sha1-ibTFCkvKYkbC021W8zGuQGO9RhA=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-laplace@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-laplace/download/@stdlib/random-base-laplace-0.0.5.tgz#3f45540eee2d09eee17f715e58a5ed2723289df9"
+  integrity sha1-P0VUDu4tCe7hf3FeWKXtJyMonfk=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-signum" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-levy@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-levy/download/@stdlib/random-base-levy-0.0.5.tgz#b3874936668daba29781b0caa2eaa340190ece26"
+  integrity sha1-s4dJNmaNq6KXgbDKouqjQBkOziY=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/stats-base-dists-normal-quantile" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-logistic@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-logistic/download/@stdlib/random-base-logistic-0.0.5.tgz#12ccf62bc34d34429134c610fa53e658f3e82dbb"
+  integrity sha1-Esz2K8NNNEKRNMYQ+lPmWPPoLbs=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-lognormal@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-lognormal/download/@stdlib/random-base-lognormal-0.0.5.tgz#af48ce957a0477ac55c41cedd189e3a2a9845cc5"
+  integrity sha1-r0jOlXoEd6xVxBzt0YnjoqmEXMU=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-exp" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-minstd-shuffle@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-minstd-shuffle/download/@stdlib/random-base-minstd-shuffle-0.0.5.tgz#1946c428e351a92daebc0b1f6eb6820a6a0cbb16"
+  integrity sha1-GUbEKONRqS2uvAsfbraCCmoMuxY=
+  dependencies:
+    "@stdlib/array-int32" "^0.0.x"
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-collection" "^0.0.x"
+    "@stdlib/assert-is-int32array" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-integer" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/constants-int32-max" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/random-base" "^0.0.x"
+    "@stdlib/random-base-minstd" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/random-base-minstd@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-minstd/download/@stdlib/random-base-minstd-0.0.5.tgz#6cddba688de644cbb00f69d054505c792471f5ee"
+  integrity sha1-bN26aI3mRMuwD2nQVFBceSRx9e4=
+  dependencies:
+    "@stdlib/array-int32" "^0.0.x"
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-collection" "^0.0.x"
+    "@stdlib/assert-is-int32array" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-integer" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/constants-int32-max" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/random-base" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/random-base-mt19937@^0.0.5", "@stdlib/random-base-mt19937@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-mt19937/download/@stdlib/random-base-mt19937-0.0.5.tgz#477c7c47015b555480411140702805435104def0"
+  integrity sha1-R3x8RwFbVVSAQRFAcCgFQ1EE3vA=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-collection" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-integer" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/constants-float64-max-safe-integer" "^0.0.x"
+    "@stdlib/constants-uint32-max" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-max" "^0.0.x"
+    "@stdlib/math-base-special-uimul" "^0.0.x"
+    "@stdlib/random-base" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/random-base-negative-binomial@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-negative-binomial/download/@stdlib/random-base-negative-binomial-0.0.5.tgz#b9bf7f8cd63dbd9cfa81070dc2d5490258322bc8"
+  integrity sha1-ub9/jNY9vZz6gQcNwtVJAlgyK8g=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-gamma" "^0.0.x"
+    "@stdlib/random-base-poisson" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-copy" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-normal@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-normal/download/@stdlib/random-base-normal-0.0.5.tgz#68c636d164856546c3b68cf4031060f459c74366"
+  integrity sha1-aMY20WSFZUbDtoz0AxBg9FnHQ2Y=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-pareto-type1@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-pareto-type1/download/@stdlib/random-base-pareto-type1-0.0.5.tgz#a81988cdbbb1db94a178af636dd3b5f12df114b5"
+  integrity sha1-qBmIzbux25SheK9jbdO18S3xFLU=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-poisson@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-poisson/download/@stdlib/random-base-poisson-0.0.5.tgz#131135c176632a1f04c3cfc5123e3c9322860e08"
+  integrity sha1-ExE1wXZjKh8Ew8/FEj48kyKGDgg=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/constants-float64-ln-sqrt-two-pi" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/math-base-special-exp" "^0.0.x"
+    "@stdlib/math-base-special-factorialln" "^0.0.x"
+    "@stdlib/math-base-special-floor" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-signum" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-randi@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-randi/download/@stdlib/random-base-randi-0.0.5.tgz#5878d3e184918fc4d5a5521789bc3ce886c8a409"
+  integrity sha1-WHjT4YSRj8TVpVIXibw86IbIpAk=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/random-base" "^0.0.x"
+    "@stdlib/random-base-minstd" "^0.0.x"
+    "@stdlib/random-base-minstd-shuffle" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/random-base-randn@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-randn/download/@stdlib/random-base-randn-0.0.7.tgz#afeaca802cd6a35e44883bc2f224e4db2c5a7148"
+  integrity sha1-r+rKgCzWo15EiDvC8iTk2yxacUg=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/random-base-box-muller" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-randu@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-randu/download/@stdlib/random-base-randu-0.0.6.tgz#c728d06028f57246f385b50071f3f56bf0b08a67"
+  integrity sha1-xyjQYCj1ckbzhbUAcfP1a/Cwimc=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/random-base" "^0.0.x"
+    "@stdlib/random-base-minstd" "^0.0.x"
+    "@stdlib/random-base-minstd-shuffle" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/random-base-rayleigh@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-rayleigh/download/@stdlib/random-base-rayleigh-0.0.5.tgz#4e85d422385d2ef3ba17dec8235c3b01edd9d0bd"
+  integrity sha1-ToXUIjhdLvO6F97II1w7Ae3Z0L0=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-reviver@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-reviver/download/@stdlib/random-base-reviver-0.0.5.tgz#e053134731e2ed896e4410a91e493d71d1e773f2"
+  integrity sha1-4FMTRzHi7YluRBCpHkk9cdHnc/I=
+  dependencies:
+    "@stdlib/array-int32" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-contains" "^0.0.x"
+    "@stdlib/assert-is-array" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/random-base-arcsine" "^0.0.x"
+    "@stdlib/random-base-bernoulli" "^0.0.x"
+    "@stdlib/random-base-beta" "^0.0.x"
+    "@stdlib/random-base-betaprime" "^0.0.x"
+    "@stdlib/random-base-binomial" "^0.0.x"
+    "@stdlib/random-base-box-muller" "^0.0.x"
+    "@stdlib/random-base-cauchy" "^0.0.x"
+    "@stdlib/random-base-chi" "^0.0.x"
+    "@stdlib/random-base-chisquare" "^0.0.x"
+    "@stdlib/random-base-cosine" "^0.0.x"
+    "@stdlib/random-base-discrete-uniform" "^0.0.x"
+    "@stdlib/random-base-erlang" "^0.0.x"
+    "@stdlib/random-base-exponential" "^0.0.x"
+    "@stdlib/random-base-f" "^0.0.x"
+    "@stdlib/random-base-frechet" "^0.0.x"
+    "@stdlib/random-base-gamma" "^0.0.x"
+    "@stdlib/random-base-geometric" "^0.0.x"
+    "@stdlib/random-base-gumbel" "^0.0.x"
+    "@stdlib/random-base-hypergeometric" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/random-base-invgamma" "^0.0.x"
+    "@stdlib/random-base-kumaraswamy" "^0.0.x"
+    "@stdlib/random-base-laplace" "^0.0.x"
+    "@stdlib/random-base-levy" "^0.0.x"
+    "@stdlib/random-base-logistic" "^0.0.x"
+    "@stdlib/random-base-lognormal" "^0.0.x"
+    "@stdlib/random-base-minstd" "^0.0.x"
+    "@stdlib/random-base-minstd-shuffle" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/random-base-negative-binomial" "^0.0.x"
+    "@stdlib/random-base-normal" "^0.0.x"
+    "@stdlib/random-base-pareto-type1" "^0.0.x"
+    "@stdlib/random-base-poisson" "^0.0.x"
+    "@stdlib/random-base-randi" "^0.0.x"
+    "@stdlib/random-base-randn" "^0.0.x"
+    "@stdlib/random-base-randu" "^0.0.x"
+    "@stdlib/random-base-rayleigh" "^0.0.x"
+    "@stdlib/random-base-t" "^0.0.x"
+    "@stdlib/random-base-triangular" "^0.0.x"
+    "@stdlib/random-base-uniform" "^0.0.x"
+    "@stdlib/random-base-weibull" "^0.0.x"
+
+"@stdlib/random-base-t@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-t/download/@stdlib/random-base-t-0.0.5.tgz#c915a6e8b573b7fdd3f79cc9aa228e7c9a50fd95"
+  integrity sha1-yRWm6LVzt/3T95zJqiKOfJpQ/ZU=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/assert-is-uint32array" "^0.0.x"
+    "@stdlib/blas-base-gcopy" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-chisquare" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-copy" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-triangular@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-triangular/download/@stdlib/random-base-triangular-0.0.5.tgz#564735947cbc1bb283f540ad10c6b198ae8b2bde"
+  integrity sha1-Vkc1lHy8G7KD9UCtEMaxmK6LK94=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-uniform@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-uniform/download/@stdlib/random-base-uniform-0.0.5.tgz#b584804afe1a55b332f66b9fc2c56a37db2d76f6"
+  integrity sha1-tYSASv4aVbMy9mufwsVqN9stdvY=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-number" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/random-base" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/random-base-randu" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base-weibull@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base-weibull/download/@stdlib/random-base-weibull-0.0.5.tgz#499a2b927817b8c2a229bcb75373d516487cbfa9"
+  integrity sha1-SZorkngXuMKiKby3U3PVFkh8v6k=
+  dependencies:
+    "@stdlib/array-to-json" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-positive-number" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-ln" "^0.0.x"
+    "@stdlib/math-base-special-pow" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-write-accessor" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+
+"@stdlib/random-base@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/random-base/download/@stdlib/random-base-0.0.5.tgz#5364cfbdf7a43fce5d46172b75a31631668e774b"
+  integrity sha1-U2TPvfekP85dRhcrdaMWMWaOd0s=
+  dependencies:
+    "@stdlib/random-base-arcsine" "^0.0.x"
+    "@stdlib/random-base-bernoulli" "^0.0.x"
+    "@stdlib/random-base-beta" "^0.0.x"
+    "@stdlib/random-base-betaprime" "^0.0.x"
+    "@stdlib/random-base-binomial" "^0.0.x"
+    "@stdlib/random-base-box-muller" "^0.0.x"
+    "@stdlib/random-base-cauchy" "^0.0.x"
+    "@stdlib/random-base-chi" "^0.0.x"
+    "@stdlib/random-base-chisquare" "^0.0.x"
+    "@stdlib/random-base-cosine" "^0.0.x"
+    "@stdlib/random-base-discrete-uniform" "^0.0.x"
+    "@stdlib/random-base-erlang" "^0.0.x"
+    "@stdlib/random-base-exponential" "^0.0.x"
+    "@stdlib/random-base-f" "^0.0.x"
+    "@stdlib/random-base-frechet" "^0.0.x"
+    "@stdlib/random-base-gamma" "^0.0.x"
+    "@stdlib/random-base-geometric" "^0.0.x"
+    "@stdlib/random-base-gumbel" "^0.0.x"
+    "@stdlib/random-base-hypergeometric" "^0.0.x"
+    "@stdlib/random-base-improved-ziggurat" "^0.0.x"
+    "@stdlib/random-base-invgamma" "^0.0.x"
+    "@stdlib/random-base-kumaraswamy" "^0.0.x"
+    "@stdlib/random-base-laplace" "^0.0.x"
+    "@stdlib/random-base-levy" "^0.0.x"
+    "@stdlib/random-base-logistic" "^0.0.x"
+    "@stdlib/random-base-lognormal" "^0.0.x"
+    "@stdlib/random-base-minstd" "^0.0.x"
+    "@stdlib/random-base-minstd-shuffle" "^0.0.x"
+    "@stdlib/random-base-mt19937" "^0.0.x"
+    "@stdlib/random-base-negative-binomial" "^0.0.x"
+    "@stdlib/random-base-normal" "^0.0.x"
+    "@stdlib/random-base-pareto-type1" "^0.0.x"
+    "@stdlib/random-base-poisson" "^0.0.x"
+    "@stdlib/random-base-randi" "^0.0.x"
+    "@stdlib/random-base-randn" "^0.0.x"
+    "@stdlib/random-base-randu" "^0.0.x"
+    "@stdlib/random-base-rayleigh" "^0.0.x"
+    "@stdlib/random-base-reviver" "^0.0.x"
+    "@stdlib/random-base-t" "^0.0.x"
+    "@stdlib/random-base-triangular" "^0.0.x"
+    "@stdlib/random-base-uniform" "^0.0.x"
+    "@stdlib/random-base-weibull" "^0.0.x"
+    "@stdlib/utils-define-read-only-property" "^0.0.x"
+    "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/regexp-eol@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/regexp-eol/download/@stdlib/regexp-eol-0.0.6.tgz#7c5307918b2f7e1467e9a35f2ed0a0dd410895d3"
+  integrity sha1-fFMHkYsvfhRn6aNfLtCg3UEIldM=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-boolean" "^0.0.x"
+    "@stdlib/assert-is-plain-object" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/regexp-extended-length-path@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/regexp-extended-length-path/download/@stdlib/regexp-extended-length-path-0.0.6.tgz#44b9b6fc04ed51b9c84a9486c78f5e3bfa37d973"
+  integrity sha1-RLm2/ATtUbnISpSGx49eO/o32XM=
+  dependencies:
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/regexp-function-name@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/regexp-function-name/download/@stdlib/regexp-function-name-0.0.6.tgz#ee4ecd08b1c367a8f20cd8915c6d6df2bab4dbb9"
+  integrity sha1-7k7NCLHDZ6jyDNiRXG1t8rq027k=
+  dependencies:
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/regexp-regexp@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/regexp-regexp/download/@stdlib/regexp-regexp-0.0.6.tgz#5e2a0412d6583317fb71b498a6af6c5abb534dbc"
+  integrity sha1-XioEEtZYMxf7cbSYpq9sWrtTTbw=
+  dependencies:
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/stats-base-dists-cosine-cdf@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/stats-base-dists-cosine-cdf/download/@stdlib/stats-base-dists-cosine-cdf-0.0.5.tgz#593779e62113fff72561800209d870dd68d52de9"
+  integrity sha1-WTd55iET//clYYACCdhw3WjVLek=
+  dependencies:
+    "@stdlib/constants-float64-pi" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-sinpi" "^0.0.x"
+    "@stdlib/stats-base-dists-degenerate-cdf" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/stats-base-dists-cosine-quantile@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/stats-base-dists-cosine-quantile/download/@stdlib/stats-base-dists-cosine-quantile-0.0.5.tgz#25e0851c02a2f0e557ff3675795ff24ff749f384"
+  integrity sha1-JeCFHAKi8OVX/zZ1eV/yT/dJ84Q=
+  dependencies:
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/stats-base-dists-cosine-cdf" "^0.0.x"
+    "@stdlib/stats-base-dists-degenerate-quantile" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/stats-base-dists-degenerate-cdf@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/stats-base-dists-degenerate-cdf/download/@stdlib/stats-base-dists-degenerate-cdf-0.0.6.tgz#cafd5acd2149986d2c7d982994dc2811213e625b"
+  integrity sha1-yv1azSFJmG0sfZgplNwoESE+Yls=
+  dependencies:
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/stats-base-dists-degenerate-quantile@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/stats-base-dists-degenerate-quantile/download/@stdlib/stats-base-dists-degenerate-quantile-0.0.6.tgz#bf96eb565c8a019d16bd5324f8a08b3b0e4383ce"
+  integrity sha1-v5brVlyKAZ0WvVMk+KCLOw5Dg84=
+  dependencies:
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/stats-base-dists-normal-quantile@^0.0.x":
+  version "0.0.5"
+  resolved "https://registry.npmmirror.com/@stdlib/stats-base-dists-normal-quantile/download/@stdlib/stats-base-dists-normal-quantile-0.0.5.tgz#abc1406b2329a656397ccea4dd1611689ddc5330"
+  integrity sha1-q8FAayMpplY5fM6k3RYRaJ3cUzA=
+  dependencies:
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-erfinv" "^0.0.x"
+    "@stdlib/math-base-special-sqrt" "^0.0.x"
+    "@stdlib/stats-base-dists-degenerate-quantile" "^0.0.x"
+    "@stdlib/utils-constant-function" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
+
+"@stdlib/streams-node-stdin@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/streams-node-stdin/download/@stdlib/streams-node-stdin-0.0.6.tgz#a0176b240fdcef42a53585701dd98d78a5a3dd5d"
+  integrity sha1-oBdrJA/c70KlNYVwHdmNeKWj3V0=
+
+"@stdlib/string-lowercase@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/string-lowercase/download/@stdlib/string-lowercase-0.0.7.tgz#ec759b12684a0837954c9410eca4636c021c0226"
+  integrity sha1-7HWbEmhKCDeVTJQQ7KRjbAIcAiY=
+  dependencies:
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/process-read-stdin" "^0.0.x"
+    "@stdlib/streams-node-stdin" "^0.0.x"
+
+"@stdlib/string-replace@^0.0.x":
+  version "0.0.9"
+  resolved "https://registry.npmmirror.com/@stdlib/string-replace/download/@stdlib/string-replace-0.0.9.tgz#ae03ed021bba0921f90648c554faf369aeef2fad"
+  integrity sha1-rgPtAhu6CSH5BkjFVPrzaa7vL60=
+  dependencies:
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/assert-is-regexp" "^0.0.x"
+    "@stdlib/assert-is-regexp-string" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/process-read-stdin" "^0.0.x"
+    "@stdlib/regexp-eol" "^0.0.x"
+    "@stdlib/streams-node-stdin" "^0.0.x"
+    "@stdlib/utils-escape-regexp-string" "^0.0.x"
+    "@stdlib/utils-regexp-from-string" "^0.0.x"
+
+"@stdlib/types@^0.0.x":
+  version "0.0.13"
+  resolved "https://registry.npmmirror.com/@stdlib/types/download/@stdlib/types-0.0.13.tgz#4cf4666286294a48c589a37c2b0b48c9076128f9"
+  integrity sha1-TPRmYoYpSkjFiaN8KwtIyQdhKPk=
+
+"@stdlib/utils-constant-function@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-constant-function/download/@stdlib/utils-constant-function-0.0.6.tgz#1f36e7d8139a39efc06870562a8ca2b25f9a4f20"
+  integrity sha1-Hzbn2BOaOe/AaHBWKoyisl+aTyA=
+
+"@stdlib/utils-constructor-name@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-constructor-name/download/@stdlib/utils-constructor-name-0.0.7.tgz#9cf85b4e216b7fa095af2410009c58f580a39390"
+  integrity sha1-nPhbTiFrf6CVryQQAJxY9YCjk5A=
+  dependencies:
+    "@stdlib/assert-is-buffer" "^0.0.x"
+    "@stdlib/regexp-function-name" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/utils-convert-path@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-convert-path/download/@stdlib/utils-convert-path-0.0.7.tgz#59c65903cd2692dda5ecf46c3215b40fe82037dc"
+  integrity sha1-WcZZA80mkt2l7PRsMhW0D+ggN9w=
+  dependencies:
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-read-file" "^0.0.x"
+    "@stdlib/process-read-stdin" "^0.0.x"
+    "@stdlib/regexp-eol" "^0.0.x"
+    "@stdlib/regexp-extended-length-path" "^0.0.x"
+    "@stdlib/streams-node-stdin" "^0.0.x"
+    "@stdlib/string-lowercase" "^0.0.x"
+    "@stdlib/string-replace" "^0.0.x"
+
+"@stdlib/utils-copy@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-copy/download/@stdlib/utils-copy-0.0.6.tgz#6d909d78f53537e9325b5c0b6b8734f3132a0672"
+  integrity sha1-bZCdePU1N+kyW1wLa4c08xMqBnI=
+  dependencies:
+    "@stdlib/array-float32" "^0.0.x"
+    "@stdlib/array-float64" "^0.0.x"
+    "@stdlib/array-int16" "^0.0.x"
+    "@stdlib/array-int32" "^0.0.x"
+    "@stdlib/array-int8" "^0.0.x"
+    "@stdlib/array-uint16" "^0.0.x"
+    "@stdlib/array-uint32" "^0.0.x"
+    "@stdlib/array-uint8" "^0.0.x"
+    "@stdlib/array-uint8c" "^0.0.x"
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-array" "^0.0.x"
+    "@stdlib/assert-is-buffer" "^0.0.x"
+    "@stdlib/assert-is-error" "^0.0.x"
+    "@stdlib/assert-is-nonnegative-integer" "^0.0.x"
+    "@stdlib/buffer-from-buffer" "^0.0.x"
+    "@stdlib/constants-float64-pinf" "^0.0.x"
+    "@stdlib/utils-define-property" "^0.0.x"
+    "@stdlib/utils-get-prototype-of" "^0.0.x"
+    "@stdlib/utils-index-of" "^0.0.x"
+    "@stdlib/utils-keys" "^0.0.x"
+    "@stdlib/utils-property-descriptor" "^0.0.x"
+    "@stdlib/utils-property-names" "^0.0.x"
+    "@stdlib/utils-regexp-from-string" "^0.0.x"
+    "@stdlib/utils-type-of" "^0.0.x"
+
+"@stdlib/utils-define-nonenumerable-read-only-accessor@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-define-nonenumerable-read-only-accessor/download/@stdlib/utils-define-nonenumerable-read-only-accessor-0.0.6.tgz#c8fa75cd43ded5aac84054e79c99b2e99b4f4246"
+  integrity sha1-yPp1zUPe1arIQFTnnJmy6ZtPQkY=
+  dependencies:
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-property" "^0.0.x"
+
+"@stdlib/utils-define-nonenumerable-read-only-property@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-define-nonenumerable-read-only-property/download/@stdlib/utils-define-nonenumerable-read-only-property-0.0.6.tgz#9f3de9c99f45ef04f5f76dcafd22ebf2c8b007d9"
+  integrity sha1-nz3pyZ9F7wT1923K/SLr8siwB9k=
+  dependencies:
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-property" "^0.0.x"
+
+"@stdlib/utils-define-nonenumerable-read-write-accessor@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-define-nonenumerable-read-write-accessor/download/@stdlib/utils-define-nonenumerable-read-write-accessor-0.0.6.tgz#b747094a70863b178feb3cb9c7106d332a0f83b2"
+  integrity sha1-t0cJSnCGOxeP6zy5xxBtMyoPg7I=
+  dependencies:
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-property" "^0.0.x"
+
+"@stdlib/utils-define-property@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-define-property/download/@stdlib/utils-define-property-0.0.7.tgz#5b1fbe95ba4c8d29d1766ee7a2b0c5c69653c127"
+  integrity sha1-Wx++lbpMjSnRdm7norDFxpZTwSc=
+  dependencies:
+    "@stdlib/types" "^0.0.x"
+
+"@stdlib/utils-define-read-only-property@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-define-read-only-property/download/@stdlib/utils-define-read-only-property-0.0.6.tgz#e984071eccd9dcb5bc8a1657ec33f72b035ef713"
+  integrity sha1-6YQHHszZ3LW8ihZX7DP3KwNe9xM=
+  dependencies:
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-property" "^0.0.x"
+
+"@stdlib/utils-escape-regexp-string@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-escape-regexp-string/download/@stdlib/utils-escape-regexp-string-0.0.7.tgz#0f1bbeb567781fc2f8c0a4b033e1c266099605b4"
+  integrity sha1-Dxu+tWd4H8L4wKSwM+HCZgmWBbQ=
+  dependencies:
+    "@stdlib/assert-is-string" "^0.0.x"
+
+"@stdlib/utils-function-name@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-function-name/download/@stdlib/utils-function-name-0.0.7.tgz#10dbd88b494accf98e54e56e90d458ec4bc0b84a"
+  integrity sha1-ENvYi0lKzPmOVOVukNRY7EvAuEo=
+  dependencies:
+    "@stdlib/assert-has-function-name-support" "^0.0.x"
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/regexp-function-name" "^0.0.x"
+
+"@stdlib/utils-get-prototype-of@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-get-prototype-of/download/@stdlib/utils-get-prototype-of-0.0.6.tgz#e6af37c7fc8c997187014bbce122eb8fbb0e1c39"
+  integrity sha1-5q83x/yMmXGHAUu84SLrj7sOHDk=
+  dependencies:
+    "@stdlib/assert-is-function" "^0.0.x"
+    "@stdlib/utils-native-class" "^0.0.x"
+
+"@stdlib/utils-global@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-global/download/@stdlib/utils-global-0.0.6.tgz#7cb809ab0399b966dd976b69d2e3e0346a0be6fa"
+  integrity sha1-fLgJqwOZuWbdl2tp0uPgNGoL5vo=
+  dependencies:
+    "@stdlib/assert-is-boolean" "^0.0.x"
+
+"@stdlib/utils-index-of@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-index-of/download/@stdlib/utils-index-of-0.0.7.tgz#8b14e54a53bb8066d7dd1f261898d61342ad2706"
+  integrity sha1-ixTlSlO7gGbX3R8mGJjWE0KtJwY=
+  dependencies:
+    "@stdlib/assert-is-collection" "^0.0.x"
+    "@stdlib/assert-is-integer" "^0.0.x"
+    "@stdlib/assert-is-nan" "^0.0.x"
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+
+"@stdlib/utils-keys@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-keys/download/@stdlib/utils-keys-0.0.6.tgz#44a18ad9c102977fc22d10f2aec1ac25892e1d6b"
+  integrity sha1-RKGK2cECl3/CLRDyrsGsJYkuHWs=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-is-arguments" "^0.0.x"
+    "@stdlib/assert-is-enumerable-property" "^0.0.x"
+    "@stdlib/assert-is-object-like" "^0.0.x"
+    "@stdlib/utils-index-of" "^0.0.x"
+    "@stdlib/utils-noop" "^0.0.x"
+    "@stdlib/utils-type-of" "^0.0.x"
+
+"@stdlib/utils-library-manifest@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-library-manifest/download/@stdlib/utils-library-manifest-0.0.7.tgz#5db59e5b0159fb0477103dfd01d35ee825dc0986"
+  integrity sha1-XbWeWwFZ+wR3ED39AdNe6CXcCYY=
+  dependencies:
+    "@stdlib/cli-ctor" "^0.0.x"
+    "@stdlib/fs-resolve-parent-path" "^0.0.x"
+    "@stdlib/utils-convert-path" "^0.0.x"
+    debug "^2.6.9"
+    resolve "^1.1.7"
+
+"@stdlib/utils-native-class@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-native-class/download/@stdlib/utils-native-class-0.0.7.tgz#d7c4e8cca72939dd0c8ddec829cc58f52a254aac"
+  integrity sha1-18TozKcpOd0Mjd7IKcxY9SolSqw=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+    "@stdlib/assert-has-tostringtag-support" "^0.0.x"
+
+"@stdlib/utils-next-tick@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-next-tick/download/@stdlib/utils-next-tick-0.0.6.tgz#a5a8b521303e68b58d5af6b182500da95f2e26df"
+  integrity sha1-pai1ITA+aLWNWvaxglANqV8uJt8=
+
+"@stdlib/utils-noop@^0.0.x":
+  version "0.0.8"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-noop/download/@stdlib/utils-noop-0.0.8.tgz#859e3cc87e0076a07a19b40d57a65fe3be136b2a"
+  integrity sha1-hZ48yH4AdqB6GbQNV6Zf474Tayo=
+
+"@stdlib/utils-property-descriptor@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-property-descriptor/download/@stdlib/utils-property-descriptor-0.0.6.tgz#8ca5478cfaeb5195d697c94196a21e3863b9e059"
+  integrity sha1-jKVHjPrrUZXWl8lBlqIeOGO54Fk=
+  dependencies:
+    "@stdlib/assert-has-own-property" "^0.0.x"
+
+"@stdlib/utils-property-names@^0.0.x":
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-property-names/download/@stdlib/utils-property-names-0.0.6.tgz#f361f6ed59a41bb949a966079175db798e02168d"
+  integrity sha1-82H27VmkG7lJqWYHkXXbeY4CFo0=
+  dependencies:
+    "@stdlib/utils-keys" "^0.0.x"
+
+"@stdlib/utils-regexp-from-string@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-regexp-from-string/download/@stdlib/utils-regexp-from-string-0.0.7.tgz#7caa3dbe13a65108c7beabc9685c8d71e7f7c45b"
+  integrity sha1-fKo9vhOmUQjHvqvJaFyNcef3xFs=
+  dependencies:
+    "@stdlib/assert-is-string" "^0.0.x"
+    "@stdlib/regexp-regexp" "^0.0.x"
+
+"@stdlib/utils-type-of@^0.0.x":
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/@stdlib/utils-type-of/download/@stdlib/utils-type-of-0.0.7.tgz#f31e1bff7c4d34b977b405827c5e1f665f55522b"
+  integrity sha1-8x4b/3xNNLl3tAWCfF4fZl9VUis=
+  dependencies:
+    "@stdlib/utils-constructor-name" "^0.0.x"
+    "@stdlib/utils-global" "^0.0.x"
+
 "@types/accepts@*":
   version "1.3.5"
   resolved "https://registry.nlark.com/@types/accepts/download/@types/accepts-1.3.5.tgz?cache=0&sync_timestamp=1629706561969&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Faccepts%2Fdownload%2F%40types%2Faccepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
@@ -937,6 +3525,13 @@ debug@4.3.1:
   integrity sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
   dependencies:
     ms "2.1.2"
+
+debug@^2.6.9:
+  version "2.6.9"
+  resolved "https://registry.nlark.com/debug/download/debug-2.6.9.tgz?cache=0&sync_timestamp=1625374675284&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fdebug%2Fdownload%2Fdebug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
+  dependencies:
+    ms "2.0.0"
 
 decamelize@^1.2.0:
   version "1.2.0"
@@ -1880,7 +4475,7 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.5:
+minimist@^1.2.0, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.nlark.com/minimist/download/minimist-1.2.5.tgz?cache=0&sync_timestamp=1618847003091&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fminimist%2Fdownload%2Fminimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
@@ -1923,6 +4518,11 @@ moment@^2.29.1:
   version "2.29.1"
   resolved "https://registry.npm.taobao.org/moment/download/moment-2.29.1.tgz?cache=0&sync_timestamp=1601983320283&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmoment%2Fdownload%2Fmoment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha1-sr52n6MZQL6e7qZGnAdeNQBvo9M=
+
+ms@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+  integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
 ms@2.1.2:
   version "2.1.2"
@@ -2396,7 +4996,7 @@ require-main-filename@^2.0.0:
   resolved "https://registry.npm.taobao.org/require-main-filename/download/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha1-0LMp7MfMD2Fkn2IhW+aa9UqomJs=
 
-resolve@^1.15.1:
+resolve@^1.1.7, resolve@^1.15.1:
   version "1.20.0"
   resolved "https://registry.npmmirror.com/resolve/download/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
   integrity sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=
