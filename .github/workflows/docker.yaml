@@ -10,13 +10,16 @@ jobs:
         uses: actions/checkout@v2
       - name: set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-      - name: login to DockerHub
+      - name: login
         uses: docker/login-action@v1
         with:
           username: anillc
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: build and push
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: anillc/cllina:latest
+        run: |
+          echo id: $(git rev-parse --short HEAD)
+          docker buildx build \
+            --tag anillc/cllina:latest \
+            --tag anillc/cllina:$(git rev-parse --short HEAD) \
+            --output "type=image,push=true" \
+            .
