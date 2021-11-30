@@ -18,6 +18,7 @@ module.exports =
     mysql:
       host: process.env.DATABASE_HOST
       user: process.env.DATABASE_USER
+      socketPath: process.env.DATABASE_SOCKET_PATH
       password: process.env.DATABASE_PASSWD
       database: process.env.DATABASE
     common: {}
