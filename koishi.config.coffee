@@ -30,6 +30,7 @@ module.exports =
     schedule: {}
     tools:
       bilibili: false
+      wolframAlphaAppId: process.env.WOLFRAMALPHA_APPID
     puppeteer:
       browser:
         args: ['--no-sandbox']
