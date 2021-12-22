@@ -1,48 +1,42 @@
 path = require 'path'
 require('dotenv').config()
 
+{ env } = process
+
 module.exports =
+  logger:
+    root: 'logs'
   prefix: '-'
-  nickname: ['cllina', 'Cllina', 'cl', 'na酱', 'na 酱', 'na']
-  autoAssign: true
+  autoAssign: 1
   autoAuthorize: 1
-  deamon:
-    exitCommand: true
-  bots: [
-    type: 'onebot'
-    selfId: process.env.QQ
-    server: process.env.SERVER
-    token: process.env.TOKEN
-  ]
+  exitCommand: true
   plugins:
-    mysql:
-      host: process.env.DATABASE_HOST
-      user: process.env.DATABASE_USER
-      socketPath: process.env.DATABASE_SOCKET_PATH
-      password: process.env.DATABASE_PASSWD
-      database: process.env.DATABASE
-    common: {}
+    'adapter-onebot':
+      selfId: env.QQ
+      endpoint: env.SERVER
+    'database-mysql':
+      database: env.DATABASE
+      user: env.DATABASE_USER
+      socketPath: env.DATABASE_SOCKET_PATH
     teach: {}
+    common: {}
+    schedule: {}
+    tools:
+      bilibili: false
+      wolframAlphaAppId: env.WOLFRAMALPHA_APPID
+      glot:
+        apiToken: env.GLOT_TOKEN
+        defaultLanguage: 'haskell'
+      translate:
+        youdaoAppKey: env.YOUDAO_KEY
+        youdaoSecret: env.YOUDAO_SECRET
+    puppeteer:
+      browser:
+        args: ['--no-sandbox']
     eval:
       setupFiles:
         inj: path.resolve __dirname, 'inj/index.js'
       scriptLoader: 'coffeescript'
-    schedule: {}
-    tools:
-      bilibili: false
-      wolframAlphaAppId: process.env.WOLFRAMALPHA_APPID
-    puppeteer:
-      browser:
-        args: ['--no-sandbox']
-    genshin:
-      cookie: process.env.GENSHIN_COOKIE
-      wish:
-        enable: true
-    'animal-picture':
-      inbound: true
-    'gosen-choyen': {}
-    './plugins/ssh': {}
-    './plugins/d': {}
-    './plugins/forward': {}
-    './plugins/updater': {}
-    './plugins/i': {}
+    './src/d': {}
+    './src/i': {}
+    './src/forward': {}
