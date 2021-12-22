@@ -24,6 +24,8 @@
     "emmet": "^2.3.5",
     "jsonpath": "^1.1.1",
     "koishi": "^4.0.0-beta.7",
+    "koishi-plugin-influxdb": "^1.0.0",
+    "koishi-plugin-influxdb-collect": "^1.0.0",
     "koishi-plugin-tools": "^3.0.3",
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",

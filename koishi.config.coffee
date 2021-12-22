@@ -37,6 +37,12 @@ module.exports =
       setupFiles:
         inj: path.resolve __dirname, 'inj/index.js'
       scriptLoader: 'coffeescript'
+    influxdb:
+      url: env.INFLUXDB_URL
+      token: env.INFLUXDB_TOKEN
+      org: 'AnillcNetwork'
+      bucket: 'bot'
+    'influxdb-collect': {}
     './src/d': {}
     './src/i': {}
     './src/forward': {}

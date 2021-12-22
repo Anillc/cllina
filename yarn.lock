@@ -246,6 +246,11 @@
   resolved "https://registry.npmjs.org/@emmetio/scanner/-/scanner-1.0.0.tgz#065b2af6233fe7474d44823e3deb89724af42b5f"
   integrity sha512-8HqW8EVqjnCmWXVpqAOZf+EGESdkR27odcMMMGefgKXtar00SoYNSryGv//TELI4T3QFsECo78p+0lmalk/CFA==
 
+"@influxdata/influxdb-client@^1.21.0":
+  version "1.21.0"
+  resolved "https://registry.npmjs.org/@influxdata/influxdb-client/-/influxdb-client-1.21.0.tgz#4d0f10db42daabf84bfa7e58ef22732ff692ad9d"
+  integrity sha512-QdugX4vGFAqO43rTMfPxR4VUrEttXk6X3mZT+edcVOmIXKiJqlg4WCj7eBxJMayAs7RqDIDWRGJVGz7OC497PA==
+
 "@koa/router@^10.1.1":
   version "10.1.1"
   resolved "https://registry.npmjs.org/@koa/router/-/router-10.1.1.tgz#8e5a85c9b243e0bc776802c0de564561e57a5f78"
@@ -1587,6 +1592,18 @@ koa@^2.13.1:
     statuses "^1.5.0"
     type-is "^1.6.16"
     vary "^1.1.2"
+
+koishi-plugin-influxdb-collect@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/koishi-plugin-influxdb-collect/-/koishi-plugin-influxdb-collect-1.0.0.tgz#656983ef822d22488c63a03e8126936d40a079d9"
+  integrity sha512-btUo/6ETZ9D++1BoNRS8uR8774Y3U8kvaEesgyaDhLSIDmcRbmFUHfOx+gD7kI/IwQUSskmtQCvANFA/oea2kw==
+
+koishi-plugin-influxdb@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/koishi-plugin-influxdb/-/koishi-plugin-influxdb-1.0.0.tgz#ff55d0ca831ef2eefc6cddbe4ffc7e1d81f65554"
+  integrity sha512-QwMlIZiKohf2PT+9ncfuuYvH5HqC9Dkckpp/HYYP70FFMQzzNhRc2phbSQvnumxFXhki1GDYHY7rF8tclStPqg==
+  dependencies:
+    "@influxdata/influxdb-client" "^1.21.0"
 
 koishi-plugin-tools@^3.0.3:
   version "3.0.3"
