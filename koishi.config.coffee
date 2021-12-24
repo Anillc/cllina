@@ -27,9 +27,8 @@ module.exports =
       glot:
         apiToken: env.GLOT_TOKEN
         defaultLanguage: 'haskell'
-      translate:
-        youdaoAppKey: env.YOUDAO_KEY
-        youdaoSecret: env.YOUDAO_SECRET
+      youdaoAppKey: env.YOUDAO_KEY
+      youdaoSecret: env.YOUDAO_SECRET
     puppeteer:
       browser:
         args: ['--no-sandbox']
