@@ -296,6 +296,11 @@
     qface "^1.2.0"
     ws "^8.2.1"
 
+"@koishijs/plugin-admin@^1.0.0-beta.5":
+  version "1.0.0-beta.5"
+  resolved "https://registry.npmjs.org/@koishijs/plugin-admin/-/plugin-admin-1.0.0-beta.5.tgz#f4324ca1f5eccf597e1521b212c44ef2df6a1e01"
+  integrity sha512-/Ki+G6Zz1IqEAaogKcZT9uB9nsaOuOfH0gIGdQcI9xWzDtGeC0XH2xg0ctqDx9meLR5tbCBriTli33QuTHwN4A==
+
 "@koishijs/plugin-common@^5.0.0-beta.5":
   version "5.0.0-beta.5"
   resolved "https://registry.npmjs.org/@koishijs/plugin-common/-/plugin-common-5.0.0-beta.5.tgz#a8251a89a54d640626a214a95aced844ba324d6a"
@@ -342,6 +347,11 @@
   resolved "https://registry.npmjs.org/@koishijs/plugin-schedule/-/plugin-schedule-4.0.0-beta.6.tgz#37b5b5e9565ad4a7ce5a01ea8725660a217758c5"
   integrity sha512-3Bb96evQqowCaMxQGd8Yf5E8Fynb6KnGs98pb3T7/TYNftuBUh8XfkD7c8OD0md4AuK/YxtbRDWqcPQzP0iwdg==
 
+"@koishijs/plugin-switch@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.npmjs.org/@koishijs/plugin-switch/-/plugin-switch-1.0.0-beta.4.tgz#1a9b1a5e9739581c184cc10857fc0d4f5fcd3e1a"
+  integrity sha512-td5TjUt0uQRYy1HuXmHxH4q76xQRUiK8ZDEhAlGEH+qiu4hGXbjZ7sM6VPw7GTGbOl0xgU3UStuIkwAfLZen6Q==
+
 "@koishijs/plugin-teach@^3.0.0-beta.7":
   version "3.0.0-beta.7"
   resolved "https://registry.npmjs.org/@koishijs/plugin-teach/-/plugin-teach-3.0.0-beta.7.tgz#dd3cf6e7f5feada99c0e68c03b1a20ee49041207"
@@ -349,6 +359,11 @@
   dependencies:
     fastest-levenshtein "^1.0.12"
     simplify-chinese "^1.1.0"
+
+"@koishijs/plugin-verifier@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.npmjs.org/@koishijs/plugin-verifier/-/plugin-verifier-1.0.0-beta.4.tgz#684e6c539969e357030354f801b9f468c12417bb"
+  integrity sha512-zkR4LJeDPaUlzTJxlwLmUH29Tj+TcpqwnRqO+swbC9Zjt53LxDF5l4p3gjlefui0HT+b7TFNhtZsVXxVfxSAig==
 
 "@koishijs/sql-utils@^1.0.0-beta.5":
   version "1.0.0-beta.5"

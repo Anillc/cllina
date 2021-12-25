@@ -20,7 +20,13 @@ module.exports =
       socketPath: env.DATABASE_SOCKET_PATH
     teach: {}
     common: {}
+    admin: {}
+    switch: {}
     schedule: {}
+    verifier:
+      onFriendRequest: 1
+      onGuildMemberRequest: 2
+      onGuildRequest: 3
     tools:
       bilibili: false
       wolframAlphaAppId: env.WOLFRAMALPHA_APPID

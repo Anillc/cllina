@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "cllina",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,15 @@
   "dependencies": {
     "@koishijs/cli": "^4.0.0-beta.7",
     "@koishijs/plugin-adapter-onebot": "^4.0.0-beta.5",
+    "@koishijs/plugin-admin": "^1.0.0-beta.5",
     "@koishijs/plugin-common": "^5.0.0-beta.5",
     "@koishijs/plugin-database-mysql": "^4.0.0-beta.7",
     "@koishijs/plugin-eval": "^4.0.0-beta.6",
     "@koishijs/plugin-puppeteer": "^3.0.0-beta.6",
     "@koishijs/plugin-schedule": "^4.0.0-beta.6",
+    "@koishijs/plugin-switch": "^1.0.0-beta.4",
     "@koishijs/plugin-teach": "^3.0.0-beta.7",
+    "@koishijs/plugin-verifier": "^1.0.0-beta.4",
     "cheerio": "^1.0.0-rc.10",
     "coffeescript": "^2.6.1",
     "dotenv": "^10.0.0",
