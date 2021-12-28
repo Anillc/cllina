@@ -15,8 +15,9 @@ function d(ctx: Context) {
         .shortcut('鹿乃动态', { args: ['316381099', '3'] })
         .action(async (_, id, index = 1) => {
             if (!id) return 'id is required'
+            let page: Page
             try {
-                const page = await ctx.puppeteer.page()
+                page = await ctx.puppeteer.page()
                 await page.setViewport({ width: 1920, height: 1080})
                 await page.goto(`https://space.bilibili.com/${id}/dynamic`)
                 const handle = await page.waitForXPath(`//*[@id="page-dynamic"]/div[1]/div/div/div[${index}]`)
@@ -25,14 +26,17 @@ function d(ctx: Context) {
             } catch (e) {
                 logger.error(e)
                 return String(e)
+            } finally {
+                page?.close()
             }
         })
     ctx.command('x <url:string> <xpath:rawtext>', { authority: 3 })
         .option('fullpage', '-f')
         .action(async ({ options }, url, xpath = '//body') => {
             if (!url) return 'url is required'
+            let page: Page
             try {
-                const page = await ctx.puppeteer.page()
+                page = await ctx.puppeteer.page()
                 let handle: ElementHandle | Page
                 const shotOptions = { encoding: 'binary' } as BinaryScreenshotOptions
                 if (options.fullpage) {
@@ -49,6 +53,8 @@ function d(ctx: Context) {
             } catch (e) {
                 logger.error(e)
                 return String(e)
+            } finally {
+                page?.close()
             }
         })
 }
