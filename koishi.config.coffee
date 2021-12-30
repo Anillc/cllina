@@ -42,6 +42,7 @@ module.exports =
       setupFiles:
         inj: path.resolve __dirname, 'inj/index.js'
       scriptLoader: 'coffeescript'
+      timeout: 30000
     influxdb:
       url: env.INFLUXDB_URL
       token: env.INFLUXDB_TOKEN
