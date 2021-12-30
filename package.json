@@ -32,7 +32,7 @@
     "koishi-plugin-tools": "^3.0.3",
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",
-    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.2",
     "rxjs": "^7.4.0",
