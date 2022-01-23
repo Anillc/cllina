@@ -52,3 +52,4 @@ module.exports =
     './src/d': {}
     './src/i': {}
     './src/forward': {}
+    './src/do': {}
