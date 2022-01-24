@@ -1635,6 +1635,11 @@ koa@^2.13.1:
     type-is "^1.6.16"
     vary "^1.1.2"
 
+koishi-plugin-forward@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/koishi-plugin-forward/-/koishi-plugin-forward-2.0.4.tgz#976408e3980e272829852bcd53831ee958bc1a3c"
+  integrity sha512-S0oFIISgzXxkadkS4uwQsnSJy1FFoduxEQNjmrnmoTh8a2HPPRZ2KVUlhsJz81T4Ta3jKUqZNt7asTW98Bph4w==
+
 koishi-plugin-influxdb-collect@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/koishi-plugin-influxdb-collect/-/koishi-plugin-influxdb-collect-1.0.0.tgz#656983ef822d22488c63a03e8126936d40a079d9"

@@ -48,6 +48,7 @@ module.exports =
       token: env.INFLUXDB_TOKEN
       org: 'AnillcNetwork'
       bucket: 'bot'
+    forward: {}
     'influxdb-collect': {}
     './src/d': {}
     './src/i': {}

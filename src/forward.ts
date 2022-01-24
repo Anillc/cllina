@@ -2,7 +2,7 @@ import { OneBotBot } from '@koishijs/plugin-adapter-onebot'
 import { Context, s } from 'koishi'
 
 export function apply(ctx: Context) {
-    ctx.platform('onebot').command('forward', { authority: 2 })
+    ctx.platform('onebot').command('fake', { authority: 2 })
         .action(async ({ session }) => {
             if (!session.channelId) return '请在 onebot 平台的群聊条件下使用该指令'
             await session.send('请发送消息（可发送多条），格式为 qq|name|msg，最后发送小写 ok 结束消息发送')
