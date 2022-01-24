@@ -8,8 +8,14 @@ export function apply(ctx: Context) {
         if (session.platform !== 'onebot' || quote?.type !== 'quote') {
             return next()
         }
-        const res1 = /^\/([^ ]+)$/.exec(session.parsed.content.trim())
-        const res2 = /^\/([^ ]+) ([^ ]+)$/.exec(session.parsed.content.trim())
+        let content = session.parsed.content
+        const segs = segment.parse(content)
+        if (segs?.[0].type === 'at') {
+            segs.shift()
+            content = segment.join(segs).trim()
+        }
+        const res1 = /^\/([^ ]+)$/.exec(content)
+        const res2 = /^\/([^ ]+) ([^ ]+)$/.exec(content)
         if (!res1 && !res2) return next()
         const replyToUsername = (await session.bot.getMessage(session.channelId, quote.data.id)).author.username
         const replyUsername = session.author.username
