@@ -7,8 +7,6 @@ module.exports =
   logger:
     root: 'logs'
   prefix: '-'
-  autoAssign: 1
-  autoAuthorize: 1
   exitCommand: true
   plugins:
     'adapter-onebot':
@@ -16,13 +14,22 @@ module.exports =
       endpoint: env.SERVER
     'database-mysql':
       database: env.DATABASE
+      host: env.DATABASE_HOST
       user: env.DATABASE_USER
+      password: env.DATABASE_PASSWORD
       socketPath: env.DATABASE_SOCKET_PATH
     teach: {}
-    common: {}
     admin: {}
+    bind: {}
+    echo: {}
+    recall: {}
+    repeater: {}
+    sudo: {}
     switch: {}
     schedule: {}
+    feedback: [
+      env.FEEDBACK
+    ]
     verifier:
       onFriendRequest: 1
       onGuildMemberRequest: 2
