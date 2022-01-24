@@ -8,10 +8,19 @@ module.exports =
     root: 'logs'
   prefix: '-'
   exitCommand: true
+  port: 8056
+  host: '0.0.0.0'
+  request:
+    proxyAgent: 'http://127.0.0.1:7890'
   plugins:
     'adapter-onebot':
       selfId: env.QQ
       endpoint: env.SERVER
+    'adapter-discord':
+      token: env.DISCORD_TOKEN
+    'adapter-telegram':
+      selfUrl: env.TELEGRAM_SELFURL
+      token: env.TELEGRAM_TOKEN
     'database-mysql':
       database: env.DATABASE
       host: env.DATABASE_HOST
