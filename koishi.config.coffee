@@ -10,8 +10,6 @@ module.exports =
   exitCommand: true
   port: 8056
   host: '0.0.0.0'
-  request:
-    proxyAgent: 'http://127.0.0.1:7890'
   plugins:
     'adapter-onebot':
       selfId: env.QQ
