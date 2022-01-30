@@ -18,9 +18,9 @@ module.exports =
       endpoint: env.SERVER
     'adapter-discord':
       token: env.DISCORD_TOKEN
-    'adapter-telegram':
-      selfUrl: env.TELEGRAM_SELFURL
-      token: env.TELEGRAM_TOKEN
+    #'adapter-telegram':
+    #  selfUrl: env.TELEGRAM_SELFURL
+    #  token: env.TELEGRAM_TOKEN
     'database-mysql':
       database: env.DATABASE
       host: env.DATABASE_HOST
