@@ -4,12 +4,11 @@ require('dotenv').config()
 { env } = process
 
 module.exports =
-  logger:
-    root: 'logs'
   prefix: '-'
   exitCommand: true
   port: 8056
   host: '0.0.0.0'
+  selfUrl: 'http://172.22.167.99:8056'
   plugins:
     'adapter-onebot':
       selfId: env.QQ
@@ -17,7 +16,7 @@ module.exports =
     'adapter-discord':
       token: env.DISCORD_TOKEN
     'adapter-telegram':
-      selfUrl: env.TELEGRAM_SELFURL
+      protocol: 'polling'
       token: env.TELEGRAM_TOKEN
     'database-mysql':
       database: env.DATABASE
@@ -63,6 +62,8 @@ module.exports =
       org: 'AnillcNetwork'
       bucket: 'bot'
     forward: {}
+    'assets-local':
+      root: path.resolve __dirname, './.koishi/assets'
     'influxdb-collect': {}
     './src/d': {}
     './src/i': {}
