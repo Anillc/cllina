@@ -31,7 +31,6 @@ module.exports =
     recall: {}
     repeater: {}
     sudo: {}
-    switch: {}
     schedule: {}
     feedback: [
       env.FEEDBACK
