@@ -3,12 +3,13 @@ require('dotenv').config()
 
 { env } = process
 
-module.exports =
+config =
   prefix: '-'
   exitCommand: true
   port: 8056
   host: '0.0.0.0'
-  selfUrl: 'http://172.22.167.99:8056'
+  selfUrl: env.SELF_URL
+  request: {}
   plugins:
     'adapter-onebot':
       selfId: env.QQ
@@ -68,3 +69,7 @@ module.exports =
     './src/i': {}
     './src/forward': {}
     './src/do': {}
+
+if env.PROXY then config.request.proxyAgent = env.PROXY
+
+module.exports = config
