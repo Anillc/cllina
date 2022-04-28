@@ -2,16 +2,17 @@ import { Context, Logger, s } from 'koishi'
 import type {} from '@koishijs/plugin-puppeteer'
 import type { Page, ElementHandle, BinaryScreenshotOptions } from 'puppeteer-core'
 
-const logger = new Logger('d')
+const logger = new Logger('ppt')
 
 export function apply(ctx: Context) {
     ctx.using(['puppeteer'], () => {
-        ctx.plugin(d)
+        ctx.plugin(ppt)
     })
 }
 
-function d(ctx: Context) {
-    ctx.command('d <id:number> <index:number>')
+function ppt(ctx: Context) {
+    ctx.command('dynamic <id:number> <index:number>')
+        .alias('d')
         .shortcut('鹿乃动态', { args: ['316381099', '3'] })
         .action(async (_, id, index = 1) => {
             if (!id) return 'id is required'

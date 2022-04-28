@@ -69,7 +69,6 @@ in {
         schedule         = {=},
         influxdb-collect = {=},
         `./src/d`        = {=},
-        `./src/i`        = {=},
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/type`     = {=},
