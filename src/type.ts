@@ -1,15 +1,15 @@
-import { Context, segment } from 'koishi';
+import { Context, Logger, segment } from 'koishi';
 import { LspServer } from 'typescript-language-server/lib/lsp-server'
 
-const logger = {
-    error() {},
-    warn() {},
-    info() {},
-    log() {},
-}
+const logger = new Logger('type')
 
 const server = new LspServer({
-    logger,
+    logger: {
+        error() {},
+        warn() {},
+        info() {},
+        log() {},
+    },
     lspClient: {
         setClientCapabilites() {},
         createProgressReporter: () => ({
@@ -47,17 +47,22 @@ export async function apply(ctx: Context) {
             code = `${code}\ntype _T = ${segment.unescape(name)}`
             const doc = createDoc(code)
             server.didOpenTextDocument({ textDocument: doc })
-            const res = await server.hover({
-                textDocument: doc,
-                position: {
-                    line: code.split('\n').length - 1,
-                    character: 6,
+            try {
+                const res = await server.hover({
+                    textDocument: doc,
+                    position: {
+                        line: code.split('\n').length - 1,
+                        character: 6,
+                    }
+                })
+                const contents = res.contents as any
+                if (contents.length == 0) {
+                    return '没有生成类型提示'
                 }
-            })
-            const contents = res.contents as any
-            if (contents.length == 0) {
-                return '没有生成类型提示'
+                return contents[0].value
+            } catch (e) {
+                logger.error(e)
+                return '生成类型提示时发生错误'
             }
-            return contents[0].value
         })
 }
