@@ -1,4 +1,6 @@
 logs/
 node_modules/
 .koishi/
-.env
+secrets.dhall
+koishi.yml
+bin

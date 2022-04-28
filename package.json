@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "koishi start -- -r ts-node/register/transpile-only -r coffeescript/register --experimental-vm-modules --enable-source-maps"
+    "start": "bash script.sh start",
+    "postinstall": "bash script.sh postinstall"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
