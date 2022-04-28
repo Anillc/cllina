@@ -40,14 +40,18 @@ config =
       onFriendRequest: 1
       onGuildMemberRequest: 2
       onGuildRequest: 3
-    tools:
-      bilibili: false
-      wolframAlphaAppId: env.WOLFRAMALPHA_APPID
-      glot:
-        apiToken: env.GLOT_TOKEN
-        defaultLanguage: 'haskell'
-      youdaoAppKey: env.YOUDAO_KEY
-      youdaoSecret: env.YOUDAO_SECRET
+    'wolfram-alpha':
+      appid: env.WOLFRAMALPHA_APPID
+    brainfuck: {}
+    mcping: {}
+    music: {}
+    qrcode: {}
+    youdao:
+      appKey: env.YOUDAO_KEY
+      secret: env.YOUDAO_SECRET
+    glot:
+      apiToken: env.GLOT_TOKEN
+      defaultLanguage: 'haskell'
     puppeteer:
       browser:
         args: ['--no-sandbox']
@@ -69,7 +73,5 @@ config =
     './src/i': {}
     './src/forward': {}
     './src/do': {}
-
-if env.PROXY then config.request.proxyAgent = env.PROXY
 
 module.exports = config
