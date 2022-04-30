@@ -19,7 +19,7 @@ function ppt(ctx: Context) {
             let page: Page
             try {
                 page = await ctx.puppeteer.page()
-                await page.setViewport({ width: 1920, height: 1080})
+                await page.setViewport({ width: 1920, height: 1080 })
                 await page.goto(`https://space.bilibili.com/${id}/dynamic`)
                 const handle = await page.waitForXPath(`//*[@id="page-dynamic"]/div[1]/div/div/div[${index}]`)
                 const shot = await handle.screenshot({ encoding: 'binary' })

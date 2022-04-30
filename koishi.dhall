@@ -73,5 +73,8 @@ in {
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/type`     = {=},
+        `./src/panel` = {
+            token = secrets.panel.token,
+        },
     },
 }
