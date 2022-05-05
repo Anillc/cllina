@@ -48,10 +48,6 @@ in {
             org    = "AnillcNetwork",
             bucket = "bot",
         },
-        repeater.onRepeat = {
-            minTimes    = 2,
-            probability = 0.5,
-        },
         assets-local.root      = pwd ++ ".koishi/assets",
         feedback               = [ secrets.feedback ],
         wolfram-alpha.appid    = secrets.wolframalpha.appid,
@@ -68,6 +64,7 @@ in {
         sudo             = {=},
         schedule         = {=},
         chess            = {=},
+        switch           = {=},
         influxdb-collect = {=},
         `./src/forward`  = {=},
         `./src/do`       = {=},

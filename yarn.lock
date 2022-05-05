@@ -458,6 +458,13 @@
   dependencies:
     "@koishijs/helpers" "^1.1.1"
 
+"@koishijs/plugin-switch@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@koishijs/plugin-switch/-/plugin-switch-1.0.3.tgz#b061a9b4bfce5dabf851e78f9b94a7977980cf85"
+  integrity sha512-tVGq+ij7DuUpZl/DzODd0nvpyM/g061RPhJGr3xqELtTL4wrxARAAlISDK8vOWu5eIUT6sRIKb5OBnLCk5LiyQ==
+  dependencies:
+    "@koishijs/helpers" "^1.1.1"
+
 "@koishijs/plugin-teach@^3.2.0":
   version "3.2.0"
   resolved "https://registry.npmjs.org/@koishijs/plugin-teach/-/plugin-teach-3.2.0.tgz#ebdad2b2180b70cd7d4377b7183f6ee2df704a48"
@@ -2121,7 +2128,7 @@ koishi-plugin-brainfuck@^2.0.3:
 
 koishi-plugin-chess@^4.0.1:
   version "4.0.1"
-  resolved "https://registry.npmjs.org/koishi-plugin-chess/-/koishi-plugin-chess-4.0.1.tgz#d9bac91543655261c8226027d5dd074c770d5781"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.0.1.tgz#d9bac91543655261c8226027d5dd074c770d5781"
   integrity sha512-DG1VB5QHWstggOsy2iW3hv0MVD6D1hZHI2WApfII9/1qFjEvfaKcqfeXSGSu3rTeY0ZjSDazJMougCrX+Z5FlQ==
 
 koishi-plugin-forward@^2.0.5:
