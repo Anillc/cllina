@@ -2138,10 +2138,10 @@ koishi-plugin-brainfuck@^2.0.3:
   resolved "https://registry.npmjs.org/koishi-plugin-brainfuck/-/koishi-plugin-brainfuck-2.0.3.tgz#da4b83b3e7406f2f30e95da5ae8e43269879b997"
   integrity sha512-Y3ipHTfhsyvWoWP3a1ghjGi35mUtksaeY2vRRELWRkFvaCt1XghLgG1IMYIm7ML7P078adWPj9y8l+cspoB6CA==
 
-koishi-plugin-chess@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.0.1.tgz#d9bac91543655261c8226027d5dd074c770d5781"
-  integrity sha512-DG1VB5QHWstggOsy2iW3hv0MVD6D1hZHI2WApfII9/1qFjEvfaKcqfeXSGSu3rTeY0ZjSDazJMougCrX+Z5FlQ==
+koishi-plugin-chess@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.0.2.tgz#6bd5efc999353e597edfe4c7ad6367248e66842c"
+  integrity sha512-N0hdnLH8EyNnpQN+9U0jS3NCcmTXw7KG8bzW4fldpMtrics4fmBA9GGXLyaRC0ZtHuq10rLEiXcmSDBhOF3pBw==
 
 koishi-plugin-forward@^2.0.5:
   version "2.0.5"
