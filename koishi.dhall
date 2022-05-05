@@ -69,6 +69,7 @@ in {
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/type`     = {=},
+        `./src/dynamic`  = {=},
         `./src/ppt` = {
             panelToken = secrets.panel.token,
         },
