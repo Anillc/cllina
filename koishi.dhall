@@ -69,12 +69,11 @@ in {
         schedule         = {=},
         chess            = {=},
         influxdb-collect = {=},
-        `./src/ppt`      = {=},
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/type`     = {=},
-        `./src/panel` = {
-            token = secrets.panel.token,
+        `./src/ppt` = {
+            panelToken = secrets.panel.token,
         },
     },
 }
