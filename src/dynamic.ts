@@ -60,7 +60,7 @@ export function apply(ctx: Context) {
                     return '添加失败'
                 }
             })
-        cmd.subcommand('.remove <uid>')
+        cmd.subcommand('.remove <uid>', { authority: 2 })
             .channelFields(['dynamic'])
             .action(async ({ session }, uid) => {
                 if (!uid) return '请输入正确的 uid'
