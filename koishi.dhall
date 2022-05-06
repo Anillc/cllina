@@ -48,7 +48,7 @@ in {
             org    = "AnillcNetwork",
             bucket = "bot",
         },
-        assets-local.root      = pwd ++ ".koishi/assets",
+        assets-local.root      = pwd ++ "/.koishi/assets",
         feedback               = [ secrets.feedback ],
         wolfram-alpha.appid    = secrets.wolframalpha.appid,
         puppeteer.browser.args = [ "--no-sandbox" ],
