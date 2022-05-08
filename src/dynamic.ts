@@ -70,7 +70,6 @@ export function apply(ctx: Context) {
                     return '该用户已不监听列表中'
                 }
                 dynamic.splice(dynamic.indexOf(user[0]), 1)
-                console.log(dynamic)
                 return '删除成功'
             })
         cmd.subcommand('.list')
@@ -111,7 +110,9 @@ async function dynamic(ctx: Context) {
                 if (!renderResult) return
                 await bot.sendMessage(user.channel.id, renderResult)
                 // TODO: save time
-            } catch (e) {}
+            } catch (e) {
+                logger.error(e)
+            }
         })
     }, 7000)
 }
