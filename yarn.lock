@@ -635,7 +635,7 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa@*":
+"@types/koa@*", "@types/koa@^2.13.4":
   version "2.13.4"
   resolved "https://registry.npmjs.org/@types/koa/-/koa-2.13.4.tgz#10620b3f24a8027ef5cbae88b393d1b31205726b"
   integrity sha512-dfHYMfU+z/vKtQB7NUrthdAEiSvnLebvBjwHtfFmpZmB7em2N3WVQdHgnFq+xvyVgxW5jKDmjWfLD3lw4g4uTw==
@@ -649,7 +649,7 @@
     "@types/koa-compose" "*"
     "@types/node" "*"
 
-"@types/koa__router@*":
+"@types/koa__router@*", "@types/koa__router@^8.0.11":
   version "8.0.11"
   resolved "https://registry.npmjs.org/@types/koa__router/-/koa__router-8.0.11.tgz#d7b37e6db934fc072ea1baa2ab92bc8ac4564f3e"
   integrity sha512-WXgKWpBsbS14kzmzD9LeFapOIa678h7zvUHxDwXwSx4ETKXhXLVUAToX6jZ/U7EihM7qwyD9W/BZvB0MRu7MTQ==
@@ -1105,6 +1105,14 @@ cosmokit@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/cosmokit/-/cosmokit-1.1.2.tgz#b697e663f2d7499ca965465e9fcb9650b63d93ee"
   integrity sha512-cSNrcyxZ3GT+tjSlUzWIzMiK7Wndq1Nm/2tlRhT65RXltSIcH5zaHdmnz1TnIhLuOViaO9qfSdnRPzxNkxMv0g==
+
+cosmotype-decorators@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/cosmotype-decorators/-/cosmotype-decorators-2.0.5.tgz#0567f804dbf8f755f1c684568d282cd8d5acc185"
+  integrity sha512-Y+OXs405l6T+IUk59CtvG3y8LU7CCTITKWLfafEm8wVUAJFMTJGKh63HtZmmq9rKl/qM3RuHG12DZA9SZvsrAg==
+  dependencies:
+    lodash "^4.17.21"
+    typed-reflector "^1.0.10"
 
 cosmotype@^1.0.6:
   version "1.0.9"
@@ -2133,6 +2141,17 @@ koa@^2.13.4:
     type-is "^1.6.16"
     vary "^1.1.2"
 
+koishi-decorators@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/koishi-decorators/-/koishi-decorators-2.0.1.tgz#8d10d1ed3632dbc839310d57a130e8fdaa2be1a1"
+  integrity sha512-dDrBS4Su1NtmrkIeCdcCKsC6uaBYTRTspDdeeoPLOMuSJf6fqqXwxa2qEosvG5475MXs9SaNQDaKjh0gq/NY6A==
+  dependencies:
+    "@types/koa" "^2.13.4"
+    "@types/koa__router" "^8.0.11"
+    lodash "^4.17.21"
+    reflect-metadata "^0.1.13"
+    typed-reflector "^1.0.10"
+
 koishi-plugin-brainfuck@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/koishi-plugin-brainfuck/-/koishi-plugin-brainfuck-2.0.3.tgz#da4b83b3e7406f2f30e95da5ae8e43269879b997"
@@ -2177,6 +2196,35 @@ koishi-plugin-music@^2.0.2:
   resolved "https://registry.npmjs.org/koishi-plugin-music/-/koishi-plugin-music-2.0.2.tgz#689161eb03f303145b1689ce89a1483b8d1e80a2"
   integrity sha512-9YKR8Gc4p+AtVM64NEcnkLU9A0RboMsz23pJ3yH7+tbiFRpJHhGpDHgTeAyHqgmBvQbeE2NyOrm0kg+/QHHiNA==
 
+koishi-plugin-pics@^9.1.3:
+  version "9.1.3"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-pics/-/koishi-plugin-pics-9.1.3.tgz#aec373b709b1a8056d4b6e8c73a1349e4e9ccf2c"
+  integrity sha512-gYgbtESbnIUZvgE3WDlhjpH645m5hjYvrcrQzSIhNyvTb90IjHwMNkJUkstIpu0MIrEPYaaPOlfgE6lDCJHqVw==
+  dependencies:
+    koishi-thirdeye "^10.0.25"
+    lodash "^4.17.21"
+
+koishi-plugin-picsource-lolicon@^9.0.4:
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-picsource-lolicon/-/koishi-plugin-picsource-lolicon-9.0.4.tgz#278394805b974341d2f655bcec716319831b47b9"
+  integrity sha512-C6RvusgQDDZ9cBqB5TY0rj6UZ+PIuQTb3ZH5Lun1NhzaQkCSxCYisHf3D++kABEvxEGVbQCfB6/AY+zwPKSGbw==
+  dependencies:
+    koishi-thirdeye "^10.0.25"
+
+koishi-plugin-picsource-miraikoi@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-picsource-miraikoi/-/koishi-plugin-picsource-miraikoi-1.0.3.tgz#ab8b979e44c09376428330e118e1de9613b42866"
+  integrity sha512-0dzYMwCGbe0BeYmrMRXIF/zrJKu17Ewb7MyFMX/nkd+7EyL2k2XVW5CjP+BnzdruGtd1ZVbw66/+wW2iMALOEQ==
+  dependencies:
+    koishi-thirdeye "^10.0.25"
+
+koishi-plugin-picsource-yande@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-picsource-yande/-/koishi-plugin-picsource-yande-2.0.4.tgz#679c6e7342b1c42da3828ca664a47f73a89b2f85"
+  integrity sha512-XKBhfrT/Rk3x9mvazPvhITn6SrWQZqqzGRRGzHgHBsSlLeaBwwGVJofgaHifzu3Vef4buiLlhGG4V4fLg1oIkg==
+  dependencies:
+    koishi-thirdeye "^10.0.25"
+
 koishi-plugin-qrcode@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/koishi-plugin-qrcode/-/koishi-plugin-qrcode-2.1.0.tgz#2e746e957ab16f0cf8fce8f98a5b2b9373bb69c0"
@@ -2195,6 +2243,20 @@ koishi-plugin-youdao@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/koishi-plugin-youdao/-/koishi-plugin-youdao-2.0.1.tgz#4aa88e9ee3a1bf0be4248b62cc291c8dd7f20d8d"
   integrity sha512-TLvb/5yAw/YoqzO5+DM8fEApQJV9mt2aO4HI/V0OeXv05qmnq5IdtkmcF1huo9fq99JSvLx7SgkAB7hBw5eLvg==
+
+koishi-thirdeye@^10.0.25:
+  version "10.0.25"
+  resolved "https://registry.yarnpkg.com/koishi-thirdeye/-/koishi-thirdeye-10.0.25.tgz#f1e5d3f1ef1da79be43ccef19d520248fe4a95f1"
+  integrity sha512-bw75VAHYD5CgN6xpnwEUG148nP9KhYiRx17gJBmIhOB53Ur62aCiAgYaU2YixUKWE7bVsoPmQQQBFdi1HZZkOw==
+  dependencies:
+    "@types/koa" "^2.13.4"
+    "@types/koa__router" "^8.0.11"
+    cosmotype-decorators "^2.0.5"
+    koishi-decorators "^2.0.1"
+    lodash "^4.17.21"
+    reflect-metadata "^0.1.13"
+    schemastery-gen "^3.1.13"
+    typed-reflector "^1.0.10"
 
 koishi@^4.6.1:
   version "4.6.1"
@@ -2752,6 +2814,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+reflect-metadata@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
+  integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
+
 reggol@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/reggol/-/reggol-1.0.2.tgz#270a46827d28e5b783a3368705433cb850bc875c"
@@ -2815,6 +2882,15 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
+
+schemastery-gen@^3.1.13:
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/schemastery-gen/-/schemastery-gen-3.1.13.tgz#0a6c672174485f3ce8d94396ffce0c3d4047040d"
+  integrity sha512-KXkjV9AuKWBlkJ8yEhLYDh7wRcM8p/M+s30Ig6g5eYlGfv7KVUGmpSVVtcH+fUZG+zS/7/UfCreMqqqFJBPdNw==
+  dependencies:
+    lodash "^4.17.21"
+    reflect-metadata "^0.1.13"
+    typed-reflector "^1.0.10"
 
 schemastery@^3.3.3:
   version "3.3.3"
@@ -3152,6 +3228,13 @@ type-is@^1.6.16:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+typed-reflector@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/typed-reflector/-/typed-reflector-1.0.10.tgz#128b48371644b281f19cb0e9d9b8a8c0c12166e0"
+  integrity sha512-AqjdFGE/DGzbyFHTJ/xDY6mPHAJJKiVhn3vQ01sXz5eEJvY82jOllPGanFJ/Bo6ObPbLWa2fAZW19kcybiFPNA==
+  dependencies:
+    reflect-metadata "^0.1.13"
 
 typescript-language-server@^0.9.7:
   version "0.9.7"
