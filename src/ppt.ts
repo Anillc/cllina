@@ -8,9 +8,9 @@ export interface PPTConfig {
     panelToken: string
 }
 
-export function apply(ctx: Context) {
+export function apply(ctx: Context, config: PPTConfig) {
     ctx.using(['puppeteer'], () => {
-        ctx.plugin(ppt)
+        ctx.plugin(ppt, config)
     })
 }
 
