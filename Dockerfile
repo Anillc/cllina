@@ -1,10 +1,13 @@
-FROM node:latest
+FROM node:lts-alpine
+
+RUN apk add --no-cache chromium nss freetype harfbuzz ca-certificates ttf-freefont font-noto-cjk
+
+ADD gai.conf /etc/gai.conf
 
 COPY ./ /root/cllina
+
 RUN cd /root/cllina && \
-    chmod +x gai.sh && ./gai.sh && \
-    apt update && \
-    apt install -y cmake make gcc chromium fonts-wqy-microhei wget && \
+    chmod +x script.sh && \
     yarn install
 
-ENTRYPOINT ["bash", "-c", "cd /root/cllina && yarn start"]
+ENTRYPOINT ["sh", "-c", "cd /root/cllina && yarn start"]

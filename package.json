@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "bash script.sh start",
-    "postinstall": "bash script.sh postinstall"
+    "start": "./script.sh start",
+    "postinstall": "./script.sh postinstall"
   },
   "devDependencies": {
     "@types/json-bigint": "^1.0.1",
