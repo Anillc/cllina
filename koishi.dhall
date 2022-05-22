@@ -82,6 +82,7 @@ in {
         `./src/do`       = {=},
         `./src/type`     = {=},
         `./src/dynamic`  = {=},
+        `./src/graphviz` = {=},
         `./src/ppt` = {
             panelToken = secrets.panel.token,
         },

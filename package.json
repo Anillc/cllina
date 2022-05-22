@@ -31,6 +31,7 @@
     "@koishijs/plugin-switch": "^1.0.3",
     "@koishijs/plugin-teach": "^3.2.0",
     "@koishijs/plugin-verifier": "^1.0.2",
+    "@ts-graphviz/node": "^0.4.0",
     "cheerio": "^1.0.0-rc.10",
     "coffeescript": "^2.7.0",
     "dotenv": "^16.0.0",
@@ -60,6 +61,7 @@
     "react": "^18.1.0",
     "rxjs": "^7.5.5",
     "superagent": "^7.1.3",
+    "ts-graphviz": "^0.16.0",
     "typescript-language-server": "^0.9.7"
   }
 }
