@@ -60,7 +60,7 @@ export function apply(ctx: Context) {
                 if (user.length === 0) {
                     return '该用户已不监听列表中'
                 }
-                dynamic.splice(dynamic.indexOf(user[0]), 1)
+                dynamic.splice(dynamic.indexOf(user[0]) + 1, 1)
                 return '删除成功'
             })
         cmd.subcommand('.list')
