@@ -131,7 +131,7 @@ async function render(ctx: Context, dynamicId: string) {
     let page: typeof Context.prototype.puppeteer.page extends () => Promise<infer T> ? T : never
     try {
         page = await ctx.puppeteer.page()
-        await page.setViewport({ width: 1920, height: 1080 })
+        await page.setViewport({ width: 1920 * 2, height: 1080 * 2 })
         await page.goto(`https://t.bilibili.com/${dynamicId}`)
         await page.waitForNetworkIdle()
         await (await page.$('.panel-area')).evaluate(e => e?.remove())
