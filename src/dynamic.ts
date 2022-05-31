@@ -17,6 +17,7 @@ export const using = ['puppeteer']
 const logger = new Logger('dynamic')
 let channels: Partial<Channel>[]
 
+let update = false
 const updateSubscriptions = async (ctx: Context) =>
     channels = await ctx.database.get('channel', {}, ['id', 'platform', 'assignee', 'dynamic'])
 
@@ -45,6 +46,7 @@ export function apply(ctx: Context) {
                         uid,
                         time: cards[0].time
                     })
+                    update = true
                     return '添加成功'
                 } catch (e) {
                     logger.error(e)
@@ -61,6 +63,7 @@ export function apply(ctx: Context) {
                     return '该用户已不监听列表中'
                 }
                 dynamic.splice(dynamic.indexOf(user[0]) + 1, 1)
+                update = true
                 return '删除成功'
             })
         cmd.subcommand('.list')
@@ -101,7 +104,10 @@ async function dynamic(ctx: Context) {
     (function start() {
         setTimeout(async () => {
             try {
-                await updateSubscriptions(ctx)
+                if (!channels || update) {
+                    await updateSubscriptions(ctx)
+                    update = false
+                }
                 await send()
             } catch (e) {
                 logger.error(e)
