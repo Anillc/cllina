@@ -81,6 +81,7 @@ in {
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/type`     = {=},
+        `./src/eval`     = {=},
         `./src/regex`    = {=},
         `./src/dynamic`  = {=},
         `./src/graphviz` = {=},
