@@ -1,4 +1,4 @@
-import { Context } from 'koishi'
+import { Context, segment } from 'koishi'
 
 export function apply(ctx: Context) {
     ctx.command('regex <regex:string> <text:rawtext>')
@@ -9,10 +9,11 @@ export function apply(ctx: Context) {
         .option('stringify', '-s stringify')
         .action(({ options }, regex, text) => {
             try {
-                let flags = ''
+                let flags = 'u'
                 if (options['global']) flags += 'g'
                 if (options['ignore-case']) flags += 'i'
                 if (options['multiline']) flags += 'm'
+                regex = segment.unescape(regex)
                 const match = new RegExp(`(${regex})`, flags).exec(text)
                 if (options.stringify) {
                     return JSON.stringify(match, null, 2)
@@ -30,10 +31,11 @@ export function apply(ctx: Context) {
         .option('multiline', '-m multiline')
         .action(({ options }, regex, replacer, text) => {
             try {
-                let flags = ''
+                let flags = 'u'
                 if (options['global']) flags += 'g'
                 if (options['ignore-case']) flags += 'i'
                 if (options['multiline']) flags += 'm'
+                regex = segment.unescape(regex)
                 return text.replace(new RegExp(regex, flags), replacer)
             } catch (e) {
                 return String(e)
