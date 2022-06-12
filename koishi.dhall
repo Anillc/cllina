@@ -80,6 +80,7 @@ in {
         influxdb-collect = {=},
         `./src/forward`  = {=},
         `./src/do`       = {=},
+        `./src/api`      = {=},
         `./src/type`     = {=},
         `./src/eval`     = {=},
         `./src/regex`    = {=},
