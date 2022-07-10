@@ -1,4 +1,4 @@
-import { Context, Logger, User, Session } from 'koishi'
+import { Context, Logger, User, Session, Router } from 'koishi'
 import { nanoid } from 'nanoid'
 import cors from '@koa/cors'
 
@@ -46,7 +46,9 @@ export function apply(ctx: Context, config: ApiConfig) {
     ctx.model.extend('user', {
         apiToken: 'string'
     })
-    ctx.using(['database'], ctx => api(ctx, config))
+    ctx.using(['database'], ctx => {
+        ctx.router.use('/api', router(ctx, config).routes())
+    })
     ctx.private().command('api.register', { authority: 3 })
         .userFields(['apiToken'])
         .option('revoke', '-r 撤销原有 token 并重新生成')
@@ -60,9 +62,10 @@ export function apply(ctx: Context, config: ApiConfig) {
         })
 }
 
-function api(ctx: Context, config: ApiConfig) {
-    const router = ctx.router.prefix('/api/:token')
-        .use(cors())
+function router(ctx: Context, config: ApiConfig) {
+    const newRouter = new Router()
+    const router = newRouter.prefix('/:token')
+    router.use(cors())
         .use(async (koaCtx, next) => {
             const { token } = koaCtx.params
             let { platform } = koaCtx.query
@@ -135,4 +138,5 @@ function api(ctx: Context, config: ApiConfig) {
             koaCtx.body = response({ code: 500, message: String(e) })
         }
     })
+    return newRouter
 }
