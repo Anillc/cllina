@@ -43,6 +43,7 @@
     "koishi": "^4.6.1",
     "koishi-plugin-brainfuck": "^2.0.3",
     "koishi-plugin-chess": "^4.0.2",
+    "koishi-plugin-dicex": "^4.2.5",
     "koishi-plugin-forward": "^2.0.5",
     "koishi-plugin-glot": "^1.0.1",
     "koishi-plugin-influxdb": "^1.1.0",

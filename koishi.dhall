@@ -78,6 +78,7 @@ in {
         chess            = {=},
         switch           = {=},
         influxdb-collect = {=},
+        dicex            = {=},
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/api`      = {=},

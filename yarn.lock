@@ -1127,7 +1127,7 @@ cosmokit@^1.1.2:
   resolved "https://registry.npmjs.org/cosmokit/-/cosmokit-1.1.2.tgz#b697e663f2d7499ca965465e9fcb9650b63d93ee"
   integrity sha512-cSNrcyxZ3GT+tjSlUzWIzMiK7Wndq1Nm/2tlRhT65RXltSIcH5zaHdmnz1TnIhLuOViaO9qfSdnRPzxNkxMv0g==
 
-cosmotype-decorators@^2.0.5:
+cosmotype-decorators@^2.0.3, cosmotype-decorators@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/cosmotype-decorators/-/cosmotype-decorators-2.0.5.tgz#0567f804dbf8f755f1c684568d282cd8d5acc185"
   integrity sha512-Y+OXs405l6T+IUk59CtvG3y8LU7CCTITKWLfafEm8wVUAJFMTJGKh63HtZmmq9rKl/qM3RuHG12DZA9SZvsrAg==
@@ -2173,6 +2173,19 @@ koishi-decorators@^2.0.1:
     reflect-metadata "^0.1.13"
     typed-reflector "^1.0.10"
 
+koishi-decorators@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/koishi-decorators/-/koishi-decorators-2.1.7.tgz#8f403719a26f12c3f48a0d4c9a49842942373b28"
+  integrity sha512-OoExVOdpVEmv8FywtdjR8JUPQtBz1P2rabkIfmt3SQpp3jrkm67EgdQNH+Nw8+6CfSDukMP3+/xWsA64VE5VEQ==
+  dependencies:
+    "@types/koa" "^2.13.4"
+    "@types/koa__router" "^8.0.11"
+    lodash "^4.17.21"
+    mustache "^4.2.0"
+    reflect-metadata "^0.1.13"
+    rxjs "^7.5.5"
+    typed-reflector "^1.0.10"
+
 koishi-plugin-brainfuck@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/koishi-plugin-brainfuck/-/koishi-plugin-brainfuck-2.0.3.tgz#da4b83b3e7406f2f30e95da5ae8e43269879b997"
@@ -2182,6 +2195,14 @@ koishi-plugin-chess@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.0.2.tgz#6bd5efc999353e597edfe4c7ad6367248e66842c"
   integrity sha512-N0hdnLH8EyNnpQN+9U0jS3NCcmTXw7KG8bzW4fldpMtrics4fmBA9GGXLyaRC0ZtHuq10rLEiXcmSDBhOF3pBw==
+
+koishi-plugin-dicex@^4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-dicex/-/koishi-plugin-dicex-4.2.5.tgz#96fc110fe329baf65edbbc0d879b2a8fb86d4f6e"
+  integrity sha512-bYFhGkoOzZ8TsnsfSBkT43xe2hAAwBrlRgUJQhAgOpyg30xiz2maLjDK4T17bWz05Onp6n6TVnnMyde+A6XdWw==
+  dependencies:
+    cosmotype-decorators "^2.0.3"
+    koishi-thirdeye "^10.3.2"
 
 koishi-plugin-forward@^2.0.5:
   version "2.0.5"
@@ -2277,6 +2298,20 @@ koishi-thirdeye@^10.0.25:
     lodash "^4.17.21"
     reflect-metadata "^0.1.13"
     schemastery-gen "^3.1.13"
+    typed-reflector "^1.0.10"
+
+koishi-thirdeye@^10.3.2:
+  version "10.3.2"
+  resolved "https://registry.yarnpkg.com/koishi-thirdeye/-/koishi-thirdeye-10.3.2.tgz#cc9d3c05a0a3718d19c66871e33bb7a26751d3f8"
+  integrity sha512-DcQ2r/wiCv0844LTX4+VJIKqwik+qtn/ykX3Q82EMPVlEt6np1rxaNy6HDtPC0fQBAPpelp4/GU6I2fqR0CM1Q==
+  dependencies:
+    "@types/koa" "^2.13.4"
+    "@types/koa__router" "^8.0.11"
+    koishi-decorators "^2.1.7"
+    lodash "^4.17.21"
+    minato-decorators "^2.0.7"
+    reflect-metadata "^0.1.13"
+    schemastery-gen "^3.1.14"
     typed-reflector "^1.0.10"
 
 koishi@^4.6.1:
@@ -2393,6 +2428,14 @@ mime@^2.5.0:
   resolved "https://registry.npmjs.org/mime/-/mime-2.6.0.tgz#a2a682a95cd4d0cb1d6257e28f83da7e35800367"
   integrity sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==
 
+minato-decorators@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/minato-decorators/-/minato-decorators-2.0.7.tgz#df7f29b958cd76671dfe042d6860f2334a749c31"
+  integrity sha512-at/tp2GlrnzZ6BIsBH8kzV6u4Od41sc4Mw8wZRVlEe3rccKMDGSBYXelrofj7sF/t66KRbwrc57xAVCg2PaFGg==
+  dependencies:
+    lodash "^4.17.21"
+    typed-reflector "^1.0.10"
+
 minimatch@^3.0.4:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -2428,6 +2471,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+mustache@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
+  integrity sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==
 
 nanoid@^3.3.4:
   version "3.3.4"
@@ -2913,6 +2961,15 @@ schemastery-gen@^3.1.13:
   version "3.1.13"
   resolved "https://registry.yarnpkg.com/schemastery-gen/-/schemastery-gen-3.1.13.tgz#0a6c672174485f3ce8d94396ffce0c3d4047040d"
   integrity sha512-KXkjV9AuKWBlkJ8yEhLYDh7wRcM8p/M+s30Ig6g5eYlGfv7KVUGmpSVVtcH+fUZG+zS/7/UfCreMqqqFJBPdNw==
+  dependencies:
+    lodash "^4.17.21"
+    reflect-metadata "^0.1.13"
+    typed-reflector "^1.0.10"
+
+schemastery-gen@^3.1.14:
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/schemastery-gen/-/schemastery-gen-3.1.14.tgz#19f9df9fe66d2d4a52aae9cbf056106e1440c420"
+  integrity sha512-yc9HVwgRu0tE2LSJpPwPCcTl3CJIm3qFyYNUHplQ1dBJqZqzKROaJUECBz+DCE5b4ttqpiHYOmI+93xEJkG4ow==
   dependencies:
     lodash "^4.17.21"
     reflect-metadata "^0.1.13"
