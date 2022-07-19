@@ -9,6 +9,7 @@ in {
     selfUrl     = secrets.selfUrl,
     plugins = {
         adapter-onebot = {
+            protocol = "ws",
             selfId   = secrets.onebot.id,
             endpoint = secrets.onebot.server,
         },
@@ -52,17 +53,22 @@ in {
         feedback                = [ secrets.feedback ],
         wolfram-alpha.appid     = secrets.wolframalpha.appid,
         puppeteer.browser.args  = [ "--no-sandbox" ],
-        pics                    = {=},
-        picsource-miraikoi.name = "miraikoi",
-        picsource-yande.instances = [{
-            name = "yande",
-        },{
-            name = "konachan",
-        }],
-        picsource-lolicon = {
-            name = "lolicon",
-            r18  = 0,
-            isDefault = True,
+        {-
+            pics                    = {=},
+            picsource-miraikoi.name = "miraikoi",
+            picsource-yande.instances = [{
+                name = "yande",
+            },{
+                name = "konachan",
+            }],
+            picsource-lolicon = {
+                name = "lolicon",
+                r18  = 0,
+                isDefault = True,
+            },
+        -}
+        help = {
+            options = False, -- TODO: koishi#758
         },
         forward          = {=},
         brainfuck        = {=},
@@ -78,7 +84,7 @@ in {
         chess            = {=},
         switch           = {=},
         influxdb-collect = {=},
-        dicex            = {=},
+        music            = {=},
         `./src/forward`  = {=},
         `./src/do`       = {=},
         `./src/api`      = {=},
