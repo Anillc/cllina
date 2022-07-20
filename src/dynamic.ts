@@ -89,7 +89,7 @@ async function dynamic(ctx: Context) {
             .filter(dynamic => dynamic.time > subscription.time)
         if (sends.length === 0) return
 
-        const bot = ctx.bots.get(`${channel.platform}:${channel.assignee}`)
+        const bot = ctx.bots[`${channel.platform}:${channel.assignee}`]
         subscription.time = sends[0].time
         await ctx.database.set('channel', { id: channel.id }, { dynamic: channel.dynamic })
         const promises = sends.reverse().map((async ({ dynamicId }) => {

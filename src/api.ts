@@ -1,4 +1,5 @@
-import { Context, Logger, User, Session, Router } from 'koishi'
+import { Context, Logger, User, Session } from 'koishi'
+import Router from '@koa/router'
 import { nanoid } from 'nanoid'
 import cors from '@koa/cors'
 
