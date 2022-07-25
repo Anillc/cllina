@@ -310,10 +310,10 @@
     methods "^1.1.2"
     path-to-regexp "^6.1.0"
 
-"@koishijs/cli@^4.8.1":
-  version "4.8.1"
-  resolved "https://registry.yarnpkg.com/@koishijs/cli/-/cli-4.8.1.tgz#9009616440dd1692f51b359194519a1778b7b194"
-  integrity sha512-WxTLb91WUip3hmL38YIEEP4JhJKaQOPG6y1S1bn/iUBODthI5vdnBnN5lA8rcCSWJcxVcmY/0ffGZAhEGhMY6g==
+"@koishijs/cli@^4.8.2":
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/@koishijs/cli/-/cli-4.8.2.tgz#36df5e760fc9e31622f6def43cfd6de76a1b8e5d"
+  integrity sha512-c+cB2YJMd7GgyFFbFO5gNT/7bqpaNXWgjn0QRYyuuk5D5ksHteE1i1/E+cEnmOjWC31fHzjP0Wv5FumA61Y8hA==
   dependencies:
     "@koishijs/loader" "^1.0.1"
     cac "^6.7.12"
@@ -324,13 +324,13 @@
     prompts "^2.4.2"
     throttle-debounce "^3.0.1"
 
-"@koishijs/core@^4.8.1":
-  version "4.8.1"
-  resolved "https://registry.yarnpkg.com/@koishijs/core/-/core-4.8.1.tgz#0442a2e39d7204e373dfa84cf3f7cf1e4a8901ae"
-  integrity sha512-dHYWOox4RdZu6YwrmazTEbafCP4QmfGKBZoDDKx6cGwJYRcU09RxZ4nNL/1mPGyJBPgqngzpiY0C+4kwD2R4cw==
+"@koishijs/core@^4.8.2":
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/@koishijs/core/-/core-4.8.2.tgz#e03f364f2e61e4e331e362e6b47d1a9298b59297"
+  integrity sha512-ojpO/egeZsEujRznrbkid479dcogh1ezWkY277BWuTcxdTCOXp/Bse87z7zjnud8up/H+iba23UVqyW6jLFPtw==
   dependencies:
     "@koishijs/utils" "^6.0.0"
-    "@satorijs/core" "^1.0.3"
+    "@satorijs/core" "^1.0.4"
     cordis "^2.0.6"
     fastest-levenshtein "^1.0.12"
     minato "^1.2.3"
@@ -354,12 +354,12 @@
   dependencies:
     "@satorijs/adapter-discord" "^3.0.2"
 
-"@koishijs/plugin-adapter-onebot@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-onebot/-/plugin-adapter-onebot-5.0.5.tgz#0fb587e2f3f52af863ab818c52fb88d919799e7d"
-  integrity sha512-Hmd5gcMCVjBbwQtbHrm4AZbr7qsbNUWox+VHJxXywqhEbTL6t2t7UxtBmRjNogGI/9MZ5edDlhHCjEig3mSkhw==
+"@koishijs/plugin-adapter-onebot@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-onebot/-/plugin-adapter-onebot-5.0.6.tgz#8d9f25a592108bcedcb4668d1f22e24af9973b28"
+  integrity sha512-6CA3aTeZsvF9jmN5wQd8T1cT8MMSpI52ZpyN4zbfncrtLYKdqLygLrdu3XSJVvR3fxLCBNL6b9w0XcZ92tKxTw==
   dependencies:
-    "@satorijs/adapter-onebot" "^5.0.5"
+    "@satorijs/adapter-onebot" "^5.0.6"
 
 "@koishijs/plugin-adapter-telegram@^3.1.1":
   version "3.1.1"
@@ -542,10 +542,10 @@
     file-type "^16.5.3"
     form-data "^4.0.0"
 
-"@satorijs/adapter-onebot@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@satorijs/adapter-onebot/-/adapter-onebot-5.0.5.tgz#9dd2115f5eabccb77d0aeda6ce18c9e4dc9fe26e"
-  integrity sha512-PqmHunrpIkQbIWJnwWjtUpkrTzzXQVt1nnBi0oMEc3udnhgs77UxQdFV/Z7Bgponi84FBFVnPLAaLxJs69vMkQ==
+"@satorijs/adapter-onebot@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@satorijs/adapter-onebot/-/adapter-onebot-5.0.6.tgz#8f2e9dbb2f3c054cec8831cda388dfe2119a9a7f"
+  integrity sha512-LU6qj5kC5jVMhhUs0MCUWoGlLGDL1lNaqKZoxIhnR6P0LRH2XuY4R0Iriy77Ka8Gx1GRZS1P/S5USbCY6d9o5g==
   dependencies:
     qface "^1.2.0"
 
@@ -558,10 +558,10 @@
     file-type "^16.5.3"
     form-data "^4.0.0"
 
-"@satorijs/core@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@satorijs/core/-/core-1.0.3.tgz#46c2c47be5223386a1e37a6c50c489f7ff023125"
-  integrity sha512-ewAZmkSeWzwzIuIPIzJ9G1xRWq1tL8+2kgmE8nf4zE/uU4xmf9DQSApSGj2ZnNs2gLhIzZW0TKghIA1R1bMUCA==
+"@satorijs/core@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@satorijs/core/-/core-1.0.4.tgz#457a24e98304f10a59b1abfc7da879bd6a294828"
+  integrity sha512-4QR3E/Z6IO4yfFwke9+VTSQY+sdNAbHNMlpbc4xYEDcjkI4NRBAb89m+WdKGohyIxmvSMSQWbkn1dkUVxAHwcg==
   dependencies:
     "@satorijs/message" "^1.0.1"
     cordis "^2.0.6"
@@ -572,13 +572,13 @@
   resolved "https://registry.yarnpkg.com/@satorijs/message/-/message-1.0.1.tgz#4717d9e90e734de9fcf317fb411e59c22ad93790"
   integrity sha512-AbWf2xsaCEM5Vu76BEHsLs8bx7SyHjIwSea74phG9mQYE5Qean1LWxClWdPfCmN7AGyosh1zkqm34SCMSPBt+w==
 
-"@satorijs/satori@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@satorijs/satori/-/satori-1.0.3.tgz#8c5c132ae6e6f7bac39cca4a11a5a1dd7d22a376"
-  integrity sha512-XQCIXtVTGqbBWdsArI87ouwIS5MxCTEzVcNooURE9jQRi1CgXz330IqSaqvR00EY673PEB4RpVdMZvDeDv4u7w==
+"@satorijs/satori@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@satorijs/satori/-/satori-1.0.4.tgz#777958cf49423ef8eafa9776d284cfab7b83d351"
+  integrity sha512-LsKjEJwvn+FMQubXhNVG0Wy/E7KPjRjlOF5xbgHhMNrP2z/snb2kDedt4QK2kkXafQNgfUdbKXNPyN/ftRPR2A==
   dependencies:
     "@koa/router" "^10.1.1"
-    "@satorijs/core" "^1.0.3"
+    "@satorijs/core" "^1.0.4"
     "@types/koa" "*"
     "@types/koa__router" "*"
     "@types/ws" "^8.5.3"
@@ -2285,14 +2285,14 @@ koishi-thirdeye@^10.3.2:
     schemastery-gen "^3.1.14"
     typed-reflector "^1.0.10"
 
-koishi@^4.8.1:
-  version "4.8.1"
-  resolved "https://registry.yarnpkg.com/koishi/-/koishi-4.8.1.tgz#ae4ceb1fbdb3ce61285a8621d478d09cd33fe28c"
-  integrity sha512-4ogJzbSmGWq4ek33rb2eLeFzdcwFM9zi6ZMUzm52tbHWDcJ+c1WqARj/0tc4tQ/7oAj5hNTC+yo3ddFOGgf0Sg==
+koishi@^4.8.2:
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/koishi/-/koishi-4.8.2.tgz#8767a6c699e461d4fa03a99b1d544e951c789030"
+  integrity sha512-M6bnA9rFsZtbVa47cx/PudCuVXjQdtv21OQt0jvtKILL1WDH47UrYG/+DQfFgM6TWB4G0kdCHYIQB00qihZofw==
   dependencies:
-    "@koishijs/core" "^4.8.1"
+    "@koishijs/core" "^4.8.2"
     "@koishijs/utils" "^6.0.0"
-    "@satorijs/satori" "^1.0.3"
+    "@satorijs/satori" "^1.0.4"
     file-type "^16.5.3"
     ns-require "^1.1.4"
 
