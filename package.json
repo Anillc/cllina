@@ -22,6 +22,7 @@
     "@koishijs/plugin-admin": "^1.1.4",
     "@koishijs/plugin-assets-local": "^2.0.6",
     "@koishijs/plugin-bind": "^1.3.0",
+    "@koishijs/plugin-console": "^4.1.1",
     "@koishijs/plugin-database-mysql": "^4.5.1",
     "@koishijs/plugin-echo": "^2.0.1",
     "@koishijs/plugin-eval": "^4.0.4",
@@ -37,6 +38,7 @@
     "@satorijs/satori": "^1.0.4",
     "@ts-graphviz/node": "^0.4.0",
     "coffeescript": "^2.7.0",
+    "cordis": "^2.0.6",
     "dotenv": "^16.0.1",
     "emmet": "^2.3.6",
     "json-bigint": "^1.0.0",
@@ -49,6 +51,7 @@
     "koishi-plugin-influxdb": "^1.1.0",
     "koishi-plugin-influxdb-collect": "^1.0.1",
     "koishi-plugin-mcping": "^2.1.0",
+    "koishi-plugin-meme": "^2.2.3",
     "koishi-plugin-music": "^2.0.3",
     "koishi-plugin-pics": "^10.0.0",
     "koishi-plugin-picsource-lolicon": "^10.0.0",
@@ -58,15 +61,15 @@
     "koishi-plugin-wolfram-alpha": "^2.0.5",
     "koishi-plugin-youdao": "^2.0.2",
     "lodash": "^4.17.21",
+    "minato": "^1.2.3",
     "mockjs": "^1.1.0",
     "moment-timezone": "^0.5.34",
     "nanoid": "^3.3.4",
     "ramda": "^0.28.0",
+    "schemastery": "^3.4.3",
     "superagent": "^8.0.0",
     "ts-graphviz": "^0.13.1",
     "typescript-language-server": "^0.11.2",
-    "cordis": "^2.0.6",
-    "minato": "^1.2.3",
-    "schemastery": "^3.4.3"
+    "vue": "^3.2.37"
   }
 }

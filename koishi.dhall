@@ -70,6 +70,7 @@ in {
         help = {
             options = False, -- TODO: koishi#758
         },
+        meme = {=},
         forward          = {=},
         brainfuck        = {=},
         mcping           = {=},

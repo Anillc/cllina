@@ -1,6 +1,10 @@
-logs/
-node_modules/
-.koishi/
+/logs
+/node_modules
+/.koishi
+/memes
+/.direnv
+/bin
 secrets.dhall
 koishi.yml
-bin
+temp.png
+temp.svg

@@ -1,6 +1,9 @@
 FROM node:lts-alpine
 
-RUN apk add --no-cache chromium nss freetype harfbuzz ca-certificates ttf-freefont font-noto-cjk graphviz
+RUN apk add --no-cache \
+    chromium nss freetype harfbuzz \
+    ca-certificates ttf-freefont \
+    font-noto-cjk graphviz inkscape
 
 ADD gai.conf /etc/gai.conf
 
