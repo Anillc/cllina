@@ -53,20 +53,20 @@ in {
         feedback                = [ secrets.feedback ],
         wolfram-alpha.appid     = secrets.wolframalpha.appid,
         puppeteer.browser.args  = [ "--no-sandbox" ],
-        {-
-            pics                    = {=},
-            picsource-miraikoi.name = "miraikoi",
-            picsource-yande.instances = [{
-                name = "yande",
-            },{
-                name = "konachan",
-            }],
-            picsource-lolicon = {
-                name = "lolicon",
-                r18  = 0,
-                isDefault = True,
-            },
-        -}
+        pics                    = {=},
+        picsource-miraikoi.name = "miraikoi",
+        `picsource-yande:yande` = {
+            name = "yande",
+        },
+        `picsource-yande:konachan` = {
+            name = "konachan",
+            endpoint = "https://konachan.com/post.json",
+        },
+        picsource-lolicon = {
+            name = "lolicon",
+            r18  = 0,
+            isDefault = True,
+        },
         help = {
             options = False, -- TODO: koishi#758
         },
@@ -85,7 +85,7 @@ in {
         switch           = {=},
         influxdb-collect = {=},
         music            = {=},
-        `./src/forward`  = {=},
+        `./src/trivial`  = {=},
         `./src/do`       = {=},
         `./src/api`      = {=},
         `./src/type`     = {=},
