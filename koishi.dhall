@@ -70,7 +70,9 @@ in {
         help = {
             options = False, -- TODO: koishi#758
         },
-        meme = {=},
+        meme = {
+            imgDir = ".koishi/memes",
+        },
         forward          = {=},
         brainfuck        = {=},
         mcping           = {=},

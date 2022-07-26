@@ -1,7 +1,6 @@
 /logs
 /node_modules
 /.koishi
-/memes
 /.direnv
 /bin
 secrets.dhall
