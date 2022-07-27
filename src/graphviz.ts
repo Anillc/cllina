@@ -4,6 +4,8 @@ import { Page } from 'puppeteer-core'
 
 const logger = new Logger('graphviz')
 
+export const name = 'graphviz'
+
 export const using = ['puppeteer']
 
 export function apply(ctx: Context) {

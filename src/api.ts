@@ -35,9 +35,9 @@ function response(res: Partial<Response>): Response {
     }
 }
 
-export const name = 'api'
-
 const logger = new Logger('api')
+
+export const name = 'api'
 
 export function apply(ctx: Context, config: ApiConfig) {
     config = {

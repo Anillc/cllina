@@ -21,6 +21,8 @@ let update = false
 const updateSubscriptions = async (ctx: Context) =>
     channels = await ctx.database.get('channel', {}, ['id', 'platform', 'assignee', 'dynamic'])
 
+export const name = 'dynamic'
+
 export function apply(ctx: Context) {
     ctx.model.extend('channel', {
         dynamic: {

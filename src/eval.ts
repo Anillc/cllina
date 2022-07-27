@@ -1,5 +1,7 @@
 import { Argv, Context, segment } from 'koishi'
 
+export const name = 'eval-enhance'
+
 export function apply(ctx: Context) {
     const evaluate = ctx.command('evaluate [expr:rawtext]')
     ctx.command('>')

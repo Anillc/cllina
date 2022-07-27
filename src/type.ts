@@ -35,6 +35,8 @@ function createDoc(code: string) {
     }
 }
 
+export const name = 'type'
+
 export async function apply(ctx: Context) {
     await server.initialize({
         processId: null,

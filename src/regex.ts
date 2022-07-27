@@ -1,5 +1,7 @@
 import { Context, segment } from 'koishi'
 
+export const name = 'regex'
+
 export function apply(ctx: Context) {
     ctx.command('regex <regex:string> <text:rawtext>')
         .alias('re')
