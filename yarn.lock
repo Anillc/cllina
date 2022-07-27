@@ -2443,6 +2443,11 @@ koishi-plugin-qrcode@^2.1.1:
   dependencies:
     qrcode "^1.5.0"
 
+koishi-plugin-tex@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-tex/-/koishi-plugin-tex-1.1.2.tgz#8306938c71a5d8704e80d509eca1a483883b442b"
+  integrity sha512-bnx5voNlv8S/Qg+qdVs2kVbFEAZ1eKXHbtJThjVuskSnj1YIvgh212FEetAhwWnEopCAfTvVbFmNSuG444yPmw==
+
 koishi-plugin-wolfram-alpha@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/koishi-plugin-wolfram-alpha/-/koishi-plugin-wolfram-alpha-2.0.5.tgz#fc5b3fc670db6275b2c62f100adb76eb6861022b"

@@ -88,6 +88,7 @@ in {
         switch           = {=},
         influxdb-collect = {=},
         music            = {=},
+        tex              = {=},
         `./src/trivial`  = {=},
         `./src/do`       = {=},
         `./src/api`      = {=},
