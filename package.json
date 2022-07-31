@@ -2,9 +2,9 @@
   "name": "cllina",
   "version": "1.0.0",
   "private": true,
+  "bin": "./start.sh",
   "scripts": {
-    "start": "./script.sh start",
-    "postinstall": "./script.sh postinstall"
+    "start": "./start.sh"
   },
   "devDependencies": {
     "@types/json-bigint": "^1.0.1",

@@ -3,7 +3,8 @@
 /.koishi
 /.direnv
 /bin
-secrets.dhall
+result
+secrets.json
 koishi.yml
 temp.png
 temp.svg
