@@ -14,7 +14,7 @@
             fixupPhase = ''
                 runHook fixupPhase
                 wrapProgram $out/bin/cllina --prefix PATH : ${with pkgs; makeBinPath [
-                    which chromium inkscape graphviz source-han-sans
+                    which chromium inkscape graphviz
                 ]}
             '';
         };
