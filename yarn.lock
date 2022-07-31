@@ -2436,12 +2436,12 @@ koishi-plugin-picsource-yande@^3.0.0:
   dependencies:
     koishi-thirdeye "^11.0.6"
 
-koishi-plugin-qrcode@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-qrcode/-/koishi-plugin-qrcode-2.1.1.tgz#b493c11a8c1751c6dd9cff7faa13ccd609c71a7c"
-  integrity sha512-S2nHqy3LOwbZ47Rvw9FsrqbzRWj30P9LDdLQ1ljb5MSwQEK0j9spvoveLk8rgq97Ig3gZE9nGdbiX+wIXGXnfw==
+koishi-plugin-qrcode@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-qrcode/-/koishi-plugin-qrcode-2.1.2.tgz#0fd263bb399f31151f0148d88817ba53173e9629"
+  integrity sha512-nTVHYtxvU2kEpR9E538eNG/bdTbyfFxBoMThENXK7cYWnRbJxy+Q42s+vq9Zl/gzad9JHnQcpz1ezt2EOxVflg==
   dependencies:
-    qrcode "^1.5.0"
+    qrcode "^1.5.1"
 
 koishi-plugin-tex@^1.1.2:
   version "1.1.2"
@@ -3003,7 +3003,7 @@ qface@^1.2.0:
   resolved "https://registry.yarnpkg.com/qface/-/qface-1.2.0.tgz#65d12e240e4d1b230f1d30addea597c5907267f6"
   integrity sha512-MZX1YphF8AXwYKwR7xS1pHar1+bNW86sN+TytI1OidLyDg4ptWzWkyY65lat1UoYzVbKkOU4KySKTbPmYDHzpg==
 
-qrcode@^1.5.0:
+qrcode@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/qrcode/-/qrcode-1.5.1.tgz#0103f97317409f7bc91772ef30793a54cd59f0cb"
   integrity sha512-nS8NJ1Z3md8uTjKtP+SGGhfqmTCs5flU/xR623oI0JX+Wepz9R8UrRVCTBTJm3qGw3rH6jJ6MUHjkDx15cxSSg==

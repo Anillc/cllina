@@ -57,7 +57,7 @@
     "koishi-plugin-picsource-lolicon": "^10.0.0",
     "koishi-plugin-picsource-miraikoi": "^2.0.0",
     "koishi-plugin-picsource-yande": "^3.0.0",
-    "koishi-plugin-qrcode": "^2.1.1",
+    "koishi-plugin-qrcode": "^2.1.2",
     "koishi-plugin-tex": "^1.1.2",
     "koishi-plugin-wolfram-alpha": "^2.0.5",
     "koishi-plugin-youdao": "^2.0.2",
