@@ -12,16 +12,19 @@ interface Subscription {
     time: number
 }
 
-export const using = ['puppeteer']
+const reverseEndpoint = 'http://10.11.1.5/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
+const bilibiliEndpoint = 'https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
 
 const logger = new Logger('dynamic')
 let channels: Partial<Channel>[]
 
 let update = false
 const updateSubscriptions = async (ctx: Context) =>
-    channels = await ctx.database.get('channel', {}, ['id', 'platform', 'assignee', 'dynamic'])
+    channels = await ctx.database.get('channel', {}, ['id', 'guildId','platform', 'assignee', 'dynamic'])
 
 export const name = 'dynamic'
+
+export const using = ['puppeteer']
 
 export function apply(ctx: Context) {
     ctx.model.extend('channel', {
@@ -42,7 +45,7 @@ export function apply(ctx: Context) {
                     if (dynamic.filter(subscription => subscription.uid === uid).length !== 0) {
                         return '该用户已在监听列表中'
                     }
-                    const cards = await request(ctx.http, uid)
+                    const cards = await requestRetry(ctx.http, uid)
                     if (!cards) throw 'cards is null'
                     dynamic.push({
                         uid,
@@ -76,34 +79,41 @@ export function apply(ctx: Context) {
     })
 }
 
-async function dynamic(ctx: Context) {
-    let i = -1
-    // TODO: random-src
+function dynamic(ctx: Context) {
     async function send() {
-        const subscriptions = channels.flatMap(channel =>
-            channel.dynamic.subscriptions.map(subscription =>
-                ({ channel, subscription })))
-        if (subscriptions.length === 0) return
-        i = i >= subscriptions.length - 1 ? 0 : i + 1
-        const { subscription, channel } = subscriptions[i]
+        const cache = new Map<string, string>
+        const subs = channels.flatMap(channel =>
+            channel.dynamic.subscriptions.map(sub =>
+                ({ channel, sub })))
 
-        const sends = (await request(ctx.http, subscription.uid))
-            .filter(dynamic => dynamic.time > subscription.time)
-        if (sends.length === 0) return
+        // get the dynamics that needs to be sent
+        const dynamics = await Promise.allSettled(
+            subs.map(async sub =>
+                [sub, await requestRetry(ctx.http, sub.sub.uid)] as const))
+        
+        // render and send
+        await Promise.all(dynamics.map(async result => {
+            if (result.status === 'rejected') return
+            const [{ sub, channel }, dynamics] = result.value
+            const bot = ctx.bots[`${channel.platform}:${channel.assignee}`]
+            const sends = dynamics.filter(dynamic => dynamic.time > sub.time)
+            if (sends.length === 0) return
 
-        const bot = ctx.bots[`${channel.platform}:${channel.assignee}`]
-        subscription.time = sends[0].time
-        await ctx.database.set('channel', { id: channel.id }, { dynamic: channel.dynamic })
-        const promises = sends.reverse().map((async ({ dynamicId }) => {
-            const renderResult = await render(ctx, dynamicId)
-            await bot.sendMessage(channel.id, renderResult)
+            sub.time = sends[0].time
+            await ctx.database.set('channel', { id: channel.id }, { dynamic: channel.dynamic })
+
+            const promises = sends.reverse().map((async ({ dynamicId }) => {
+                let renderResult = cache.get(dynamicId)
+                if (!renderResult) {
+                    renderResult = await renderRetry(ctx, dynamicId)
+                    cache.set(dynamicId, renderResult)
+                }
+                await bot.sendMessage(channel.id, renderResult, channel.guildId)
+            }))
+            await Promise.all(promises)
         }))
-        const results = (await Promise.allSettled(promises))
-            .filter(n => n.status === 'rejected')
-            .map(n => (n as PromiseRejectedResult).reason)
-        if (results.length !== 0) throw results
     }
-    (function start() {
+    (function watch() {
         setTimeout(async () => {
             try {
                 if (!channels || update) {
@@ -111,16 +121,30 @@ async function dynamic(ctx: Context) {
                     update = false
                 }
                 await send()
-            } catch (e) {
+            } catch(e) {
                 logger.error(e)
             }
-            start()
+            watch()
         }, 7000)
     })()
 }
 
-async function request(quester: Quester, uid: string) {
-    const res = await quester.get(`https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid=${uid}`, {
+async function requestRetry(quester: Quester, uid: string, times = 3): Promise<{
+    dynamicId: string,
+    time: number
+}[]> {
+    if (times <= 0) throw 'failed to request bilibili api'
+    try {
+        return await request(quester, uid, reverseEndpoint)
+            .catch(() => request(quester, uid, bilibiliEndpoint))
+    } catch(e) {
+        logger.error(e)
+        return await requestRetry(quester, uid, times - 1)
+    }
+}
+
+async function request(quester: Quester, uid: string, endpoint: string) {
+    const res = await quester.get(endpoint + uid, {
         headers: {
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
             'Referer': `https://space.bilibili.com/${uid}/`,
@@ -134,7 +158,16 @@ async function request(quester: Quester, uid: string) {
     }))
 }
 
-// TODO: cache
+async function renderRetry(ctx: Context, dynamicId: string, times: number = 3): Promise<string> {
+    if (times <= 0) throw 'failed to render dynamic'
+    try {
+        return await render(ctx, dynamicId)
+    } catch(e) {
+        logger.error(e)
+        return await renderRetry(ctx, dynamicId, times - 1)
+    }
+}
+
 async function render(ctx: Context, dynamicId: string) {
     let page: typeof Context.prototype.puppeteer.page extends () => Promise<infer T> ? T : never
     try {
