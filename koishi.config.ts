@@ -3,6 +3,10 @@ import { resolve } from 'path'
 const secrets = require(process.env.SECRETS)
 const pwd = process.env.PWD
 
+function localPlugin(path: string) {
+  return resolve(__dirname, path)
+}
+
 export default {
   prefix: '-',
   exitCommand: true,
@@ -104,15 +108,16 @@ export default {
       appKey: secrets.youdao.key,
       secret: secrets.youdao.secret,
     },
-    [resolve(__dirname, './src/api')]: {},
-    [resolve(__dirname, './src/do')]: {},
-    [resolve(__dirname, './src/dynamic')]: {},
-    [resolve(__dirname, './src/eval')]: {},
-    [resolve(__dirname, './src/graphviz')]: {},
-    [resolve(__dirname, './src/regex')]: {},
-    [resolve(__dirname, './src/trivial')]: {},
-    [resolve(__dirname, './src/type')]: {},
-    [resolve(__dirname, './src/ppt')]: {
+    [localPlugin('./src/api')]: {},
+    [localPlugin('./src/do')]: {},
+    [localPlugin('./src/dynamic')]: {},
+    [localPlugin('./src/eval')]: {},
+    [localPlugin('./src/graphviz')]: {},
+    [localPlugin('./src/regex')]: {},
+    [localPlugin('./src/trivial')]: {},
+    [localPlugin('./src/type')]: {},
+    [localPlugin('./src/notify')]: {},
+    [localPlugin('./src/ppt')]: {
       panelToken: secrets.panel.token,
     },
   },
