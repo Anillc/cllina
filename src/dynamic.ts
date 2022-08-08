@@ -62,12 +62,12 @@ export function apply(ctx: Context) {
             .channelFields(['dynamic'])
             .action(async ({ session }, uid) => {
                 if (!uid) return '请输入正确的 uid'
-                const dynamic = session.channel.dynamic.subscriptions
-                const user = dynamic.filter(subscription => subscription.uid === uid)
-                if (user.length === 0) {
-                    return '该用户已不监听列表中'
+                const { dynamic } = session.channel
+                const subs = dynamic.subscriptions.filter(sub => sub.uid !== uid)
+                if (subs.length === dynamic.subscriptions.length) {
+                    return '该用户不在监听列表中'
                 }
-                dynamic.splice(dynamic.indexOf(user[0]) + 1, 1)
+                dynamic.subscriptions = subs
                 update = true
                 return '删除成功'
             })
