@@ -8,7 +8,9 @@
     "strictBindCallApply": true,
   },
   "include": [
-    "src",
     ".",
   ],
+  "exclude": [
+    "result"
+  ]
 }

@@ -42,7 +42,7 @@ function useLock<U extends User.Field, G extends Channel.Field, A extends any[],
 
 export const name = 'dynamic'
 
-export const using = ['puppeteer', 'notify']
+export const using = ['puppeteer']
 
 export function apply(ctx: Context) {
     ctx.model.extend('channel', {
@@ -144,7 +144,6 @@ function dynamic(ctx: Context) {
                 }
                 await send()
             } catch(e) {
-                ctx.notifyError(e)
                 logger.error(e)
             }
             watch()
