@@ -1,4 +1,4 @@
-import { Context, Logger, Quester, segment, Channel } from 'koishi'
+import { Context, Logger, Quester, segment, Channel, User, Command } from 'koishi'
 import JSONBig from 'json-bigint'
 
 declare module 'koishi' {
@@ -22,6 +22,24 @@ let update = false
 const updateSubscriptions = async (ctx: Context) =>
     channels = await ctx.database.get('channel', {}, ['id', 'guildId','platform', 'assignee', 'dynamic'])
 
+function useLock<U extends User.Field, G extends Channel.Field, A extends any[], O extends {}>(
+    command: Command<U, G, A, O>
+) {
+    const promises = new Set<Promise<unknown>>()
+    return command.action(async (argv, ...args) => {
+        await Promise.all(promises)
+        let resolve: Function
+        const promise = new Promise(res => resolve = res)
+        promises.add(promise)
+        try {
+            return await argv.next()
+        } finally {
+            promises.delete(promise)
+            resolve()
+        }
+    }, true)
+}
+
 export const name = 'dynamic'
 
 export const using = ['puppeteer', 'notify']
@@ -36,31 +54,35 @@ export function apply(ctx: Context) {
     ctx.using(['database'], dynamic)
     ctx.using(['database'], ctx => {
         const cmd = ctx.command('dynamic', { authority: 2 })
-        cmd.subcommand('.add <uid>')
+        cmd.subcommand('.add <...uid:string>')
             .channelFields(['dynamic'])
-            .action(async ({ session }, uid) => {
+            .use(useLock)
+            .action(async ({ session }, ...uids) => {
                 try {
-                    if (!uid) return '请输入正确的 uid'
-                    const dynamic = session.channel.dynamic.subscriptions
-                    if (dynamic.filter(subscription => subscription.uid === uid).length !== 0) {
-                        return '该用户已在监听列表中'
+                    const subs = session.channel.dynamic.subscriptions
+                    const subUids = subs.map(sub => sub.uid)
+                    const add = uids.filter(uid => !subUids.includes(uid))
+                    const cards = await Promise.allSettled(add.map(async uid =>
+                        [uid, await requestRetry(ctx.http, uid)] as const))
+                    const added = []
+                    for (const card of cards) {
+                        if (card.status === 'rejected') continue
+                        const [uid, [{ time }]] = card.value
+                        subs.push({ uid, time })
+                        added.push(uid)
                     }
-                    const cards = await requestRetry(ctx.http, uid)
-                    if (!cards) throw new Error('cards is null')
-                    dynamic.push({
-                        uid,
-                        time: cards[0].time
-                    })
                     update = true
-                    return '添加成功'
+                    return added.length === 0
+                        ? '未添加监听'
+                        : '已添加: ' + added.join(', ')
                 } catch (e) {
                     logger.error(e)
                     return '添加失败'
                 }
             })
-        cmd.subcommand('.remove <uid>', { authority: 2 })
+        cmd.subcommand('.remove <uid:string>', { authority: 2 })
             .channelFields(['dynamic'])
-            .action(async ({ session }, uid) => {
+            .action(({ session }, uid) => {
                 if (!uid) return '请输入正确的 uid'
                 const { dynamic } = session.channel
                 const subs = dynamic.subscriptions.filter(sub => sub.uid !== uid)
