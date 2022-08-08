@@ -3,6 +3,7 @@ import { Context, Schema } from 'koishi'
 declare module 'koishi' {
     interface Context {
         notify(message: string): Promise<string[][]>
+        notifyError(error: unknown): Promise<string[][]>
     }
     interface Channel {
         notify: boolean
@@ -10,6 +11,7 @@ declare module 'koishi' {
 }
 
 Context.service('notify')
+Context.service('notifyError')
 
 export const name = 'notify'
 
@@ -30,6 +32,13 @@ export function apply(ctx: Context) {
                 const bot = ctx.bots[`${channel.platform}:${channel.assignee}`]
                 return bot.sendMessage(channel.id, message, channel.guildId)
             }))
+        }
+        ctx.notifyError = async (error) => {
+            if (error instanceof Error) {
+                return ctx.notify(`发生错误: \n${error.name} ${error.message}\n调用栈:\n${error.stack}`.trim())
+            } else {
+                return ctx.notify(`发生错误: \n${String(error)}`.trim())
+            }
         }
         ctx.channel().command('notify', { authority: 4 })
             .option('query', '-q')

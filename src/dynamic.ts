@@ -24,7 +24,7 @@ const updateSubscriptions = async (ctx: Context) =>
 
 export const name = 'dynamic'
 
-export const using = ['puppeteer']
+export const using = ['puppeteer', 'notify']
 
 export function apply(ctx: Context) {
     ctx.model.extend('channel', {
@@ -46,7 +46,7 @@ export function apply(ctx: Context) {
                         return '该用户已在监听列表中'
                     }
                     const cards = await requestRetry(ctx.http, uid)
-                    if (!cards) throw 'cards is null'
+                    if (!cards) throw new Error('cards is null')
                     dynamic.push({
                         uid,
                         time: cards[0].time
@@ -122,6 +122,7 @@ function dynamic(ctx: Context) {
                 }
                 await send()
             } catch(e) {
+                ctx.notifyError(e)
                 logger.error(e)
             }
             watch()
@@ -133,7 +134,7 @@ async function requestRetry(quester: Quester, uid: string, times = 3): Promise<{
     dynamicId: string,
     time: number
 }[]> {
-    if (times <= 0) throw 'failed to request bilibili api'
+    if (times <= 0) throw new Error('failed to request bilibili api')
     try {
         return await request(quester, uid, reverseEndpoint)
             .catch(() => request(quester, uid, bilibiliEndpoint))
@@ -159,7 +160,7 @@ async function request(quester: Quester, uid: string, endpoint: string) {
 }
 
 async function renderRetry(ctx: Context, dynamicId: string, times: number = 3): Promise<string> {
-    if (times <= 0) throw 'failed to render dynamic'
+    if (times <= 0) throw new Error('failed to render dynamic')
     try {
         return await render(ctx, dynamicId)
     } catch(e) {
