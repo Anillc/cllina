@@ -3,8 +3,10 @@
 /.koishi
 /.direnv
 /bin
+/lib
 result
 secrets.json
 koishi.yml
 temp.png
 temp.svg
+yarn-error.log

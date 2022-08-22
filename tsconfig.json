@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "es2019",
+    "target": "ESNext",
     "module": "commonjs",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "strictBindCallApply": true,
+    "skipLibCheck": true,
+    "outDir": "lib"
   },
   "include": [
-    ".",
+    "src",
   ],
   "exclude": [
     "result"
