@@ -23,9 +23,9 @@
             '';
             installPhase = ''
                 mkdir -p $out/bin
-                cp -r ${deps}/node_modules $out
-                cp -r ./lib ./start.sh $out
+                ln -s ${deps}/node_modules $out
                 ln -s $out/start.sh $out/bin/cllina
+                cp -r ./lib ./start.sh $out
             '';
             fixupPhase = ''
                 runHook fixupPhase
