@@ -1,4 +1,4 @@
-import { internal } from '@koishijs/plugin-eval/lib/worker'
+import { internal } from 'koishi-plugin-eval/lib/worker'
 import lodash from 'lodash'
 import ramda from 'ramda'
 import superagent from 'superagent'

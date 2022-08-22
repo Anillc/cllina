@@ -48,7 +48,12 @@ export default {
     'schedule': {},
     'sudo': {},
     'switch': {},
-    'teach': {},
+    'dialogue': {},
+    'dialogue-author': {},
+    'dialogue-context': {},
+    'dialogue-flow': {},
+    'dialogue-rate-limit': {},
+    'dialogue-time': {},
     'tex': {},
     'pics': {},
     'picsource-lolicon': {
