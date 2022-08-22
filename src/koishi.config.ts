@@ -8,7 +8,7 @@ function localPlugin(path: string) {
 }
 
 export default {
-  prefix: '-',
+  prefix: secrets.prefix,
   exitCommand: true,
   port: 8056,
   host: '0.0.0.0',
