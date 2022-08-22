@@ -144,7 +144,7 @@ function dynamic(ctx: Context) {
                 }
                 await send()
             } catch(e) {
-                ctx.notifyError(e)
+                ctx.notify(e)
                 logger.error(e)
             }
             watch()

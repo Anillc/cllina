@@ -8,10 +8,10 @@ export const using = ['notify']
 export function apply(ctx: Context) {
     ctx.command('pic', { authority: 2 })
     process.on('unhandledRejection', error => {
-        ctx.notifyError(error)
+        ctx.notify(error)
     })
     ctx.on('command-error', error => {
-        ctx.notifyError(error.error)
+        ctx.notify(error.error)
     })
     ctx.platform('onebot').command('fake', { authority: 2 })
         .action(async ({ session }) => {
