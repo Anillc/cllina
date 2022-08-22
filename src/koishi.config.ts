@@ -122,6 +122,7 @@ export default {
     [localPlugin('./plugins/trivial')]: {},
     [localPlugin('./plugins/type')]: {},
     [localPlugin('./plugins/notify')]: {},
+    [localPlugin('./plugins/onedice')]: {},
     [localPlugin('./plugins/ppt')]: {
       panelToken: secrets.panel.token,
     },

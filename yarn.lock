@@ -534,6 +534,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@onedice/core@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@onedice/core/-/core-1.0.1.tgz#a33634f546dc464a75aaf5d29b6b45982b6011f6"
+  integrity sha512-/wKBMBqM7uH9XPXuCwWiuICzgpFPJnCuFtMiU/1W2auM6K87B7JCnuZdLlzyqwq9MFUP1Awmmu8Haq31yNDm9A==
+
 "@satorijs/adapter-discord@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@satorijs/adapter-discord/-/adapter-discord-3.0.3.tgz#462856e66da1198fbab5db3a900571b2d6c8ce68"

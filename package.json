@@ -39,6 +39,7 @@
     "@koishijs/plugin-sudo": "^1.1.3",
     "@koishijs/plugin-switch": "^1.0.6",
     "@koishijs/plugin-verifier": "^1.0.6",
+    "@onedice/core": "^1.0.1",
     "@satorijs/satori": "^1.0.11",
     "@ts-graphviz/node": "^0.4.1",
     "coffeescript": "^2.7.0",
