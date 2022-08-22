@@ -1,4 +1,5 @@
 import { Context, Logger, Quester, segment, Channel, User, Command } from 'koishi'
+import {} from 'koishi-plugin-puppeteer'
 import JSONBig from 'json-bigint'
 
 declare module 'koishi' {
@@ -201,7 +202,7 @@ async function render(ctx: Context, dynamicId: string) {
         await (await page.$('.panel-area')).evaluate(e => e?.remove())
         const element = await page.$('.card')
         await page.evaluate(() => {
-            let popover
+            let popover: any
             while (popover = document.querySelector('.van-popover')) popover.remove()
         })
         const shot = await element.screenshot({ encoding: 'binary' })

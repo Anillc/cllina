@@ -7,11 +7,8 @@ export function apply(ctx: Context) {
     // this doesn't handle all conditions
     const prefix = ctx.options.prefix as string
     ctx.middleware((session, next) => {
-        const regex = new RegExp(`^${prefix}r(.*)$`)
-        const result = regex.exec(session.content)
-        if (!result) return next()
-        const expression = result[1]
-        return session.execute(`roll ${expression}`)
+        if (!session.content?.startsWith(`${prefix}r`)) return next()
+        return session.execute(`roll ${session.content.slice(2)}`)
     })
     // rawtext for onedice v2 []
     ctx.command('roll <expression:rawtext>')
