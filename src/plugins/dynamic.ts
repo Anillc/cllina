@@ -1,4 +1,5 @@
 import { Context, Logger, Quester, segment, Channel, User, Command } from 'koishi'
+import { Page } from 'puppeteer-core'
 import {} from 'koishi-plugin-puppeteer'
 import JSONBig from 'json-bigint'
 
@@ -182,7 +183,7 @@ async function request(quester: Quester, uid: string, endpoint: string) {
     }))
 }
 
-async function renderRetry(ctx: Context, dynamicId: string, times: number = 3): Promise<string> {
+async function renderRetry(ctx: Context, dynamicId: string, times: number = 7): Promise<string> {
     if (times <= 0) throw new Error('failed to render dynamic')
     try {
         return await render(ctx, dynamicId)
@@ -193,7 +194,7 @@ async function renderRetry(ctx: Context, dynamicId: string, times: number = 3): 
 }
 
 async function render(ctx: Context, dynamicId: string) {
-    let page: typeof Context.prototype.puppeteer.page extends () => Promise<infer T> ? T : never
+    let page: Page
     try {
         page = await ctx.puppeteer.page()
         await page.setViewport({ width: 1920 * 2, height: 1080 * 2 })

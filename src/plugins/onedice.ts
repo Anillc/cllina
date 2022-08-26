@@ -21,7 +21,7 @@ export function apply(ctx: Context) {
                 if (details.length > 500) {
                     return `${name} 投掷 ${expression} = ${value}`
                 } else {
-                    return `${name} 投掷\n${details} = ${value}`
+                    return `${name} 投掷 ${expression}\n${details} = ${value}`
                 }
             } catch (e) {
                 if (e instanceof Error) {
