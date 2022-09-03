@@ -59,7 +59,7 @@
     "koishi-plugin-eval": "^4.1.1",
     "koishi-plugin-forward": "^2.0.5",
     "koishi-plugin-glot": "^1.1.2",
-    "koishi-plugin-influxdb": "^1.1.0",
+    "koishi-plugin-influxdb": "^1.1.1",
     "koishi-plugin-influxdb-collect": "^1.0.1",
     "koishi-plugin-mcping": "^2.1.1",
     "koishi-plugin-meme": "^2.2.3",

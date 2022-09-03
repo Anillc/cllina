@@ -255,10 +255,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.5.tgz#91aef76d332cdc7c8942b600fa2307f3387e6f82"
   integrity sha512-UHkDFCfSGTuXq08oQltXxSZmH1TXyWsL+4QhZDWvvLl6mEJQqk3u7/wq1LjhrrAXYIllaTtRSzUXl4Olkf2J8A==
 
-"@influxdata/influxdb-client@^1.21.0":
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/@influxdata/influxdb-client/-/influxdb-client-1.28.0.tgz#b6762dcfe6fce3ff640b3c23f667afa9de6aaee8"
-  integrity sha512-mTNsyBpVW3qT1dn9SH/LaQDlcotpSH+64aR00E7hONXyVntVUSLEbH0ijHs+Hwk1dQS+WmvNduhdeFr/vHZ+Kw==
+"@influxdata/influxdb-client@^1.29.0":
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/@influxdata/influxdb-client/-/influxdb-client-1.29.0.tgz#b7c758fb99a677876f357fb20841a6a1c760319a"
+  integrity sha512-9cup31a0S5Px1q5Bj9oyI8d84IWfv6nhldNuL8UNsiFPDD5SPw1QesPL4Oo+rR3Lbzbilt269NJOK5JOkmPyYA==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -1362,7 +1362,7 @@ csstype@^2.6.8:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.20.tgz#9229c65ea0b260cf4d3d997cb06288e36a8d6dda"
   integrity sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==
 
-csv-parse@^5.0.3:
+csv-parse@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.3.0.tgz#85cc02fc9d1c89bd1b02e69069c960f8b8064322"
   integrity sha512-UXJCGwvJ2fep39purtAn27OUYmxB1JQto+zhZ4QlJpzsirtSFbzLvip1aIgziqNdZp/TptvsKEV5BZSxe10/DQ==
@@ -1498,7 +1498,7 @@ dotenv@^16.0.1:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.1.tgz#8f8f9d94876c35dac989876a5d3a82a267fdce1d"
   integrity sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==
 
-echarts@^5.2.2:
+echarts@^5.3.3:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.3.3.tgz#df97b09c4c0e2ffcdfb44acf518d50c50e0b838e"
   integrity sha512-BRw2serInRwO5SIwRviZ6Xgm5Lb7irgz+sLiFMmy/HOaf4SQ+7oYqxKzRHAKp4xHQ05AuHw1xvoQWJjDQq/FGw==
@@ -2575,14 +2575,14 @@ koishi-plugin-influxdb-collect@^1.0.1:
   resolved "https://registry.yarnpkg.com/koishi-plugin-influxdb-collect/-/koishi-plugin-influxdb-collect-1.0.1.tgz#b03936381823307ccf58272350695f2046850df8"
   integrity sha512-IkfBEOET0ReRxEafNKSnTmvcwN48MgcyAuRFPiTdJzK56MGKadl8V9rEOpAUxd+HThbXoJNvzoRsTmdLJNUTLg==
 
-koishi-plugin-influxdb@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-influxdb/-/koishi-plugin-influxdb-1.1.0.tgz#fcd69571f92f1f60258d4fde1038da71bb10a97f"
-  integrity sha512-AphID+6PJvbYA6+CYdKICCQKFvsiPypaqTZ9risUY6//zFA1MBlh9EAvz7lcK6GLjcEafpe54qQITZSsrZsFcg==
+koishi-plugin-influxdb@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-influxdb/-/koishi-plugin-influxdb-1.1.1.tgz#99a91f4256c3ab0cdaa6cb5bb3bae60cf6e8645e"
+  integrity sha512-mRAt3NmvvI2vUqGBOWlVKzB58BTFSb2DVgfKD4mWIe/wbC4OVkrzaybW89xwF+KlwSEw7ltrnZGSSrmisc3ivA==
   dependencies:
-    "@influxdata/influxdb-client" "^1.21.0"
-    csv-parse "^5.0.3"
-    echarts "^5.2.2"
+    "@influxdata/influxdb-client" "^1.29.0"
+    csv-parse "^5.3.0"
+    echarts "^5.3.3"
 
 koishi-plugin-mcping@^2.1.1:
   version "2.1.1"
