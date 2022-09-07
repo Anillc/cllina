@@ -14,7 +14,7 @@ interface Subscription {
     time: number
 }
 
-const reverseEndpoint = 'http://10.11.1.5/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
+const reverseEndpoint = 'http://biliapi.a/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
 const bilibiliEndpoint = 'https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
 
 const logger = new Logger('dynamic')
