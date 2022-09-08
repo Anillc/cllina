@@ -1,5 +1,5 @@
 import { Context, Logger, segment } from 'koishi'
-import type {} from '@koishijs/plugin-puppeteer'
+import type {} from 'koishi-plugin-puppeteer'
 import type { Page, ElementHandle, BinaryScreenshotOptions } from 'puppeteer-core'
 
 const logger = new Logger('ppt')
@@ -17,7 +17,7 @@ export function apply(ctx: Context, config: PPTConfig) {
 }
 
 function ppt(ctx: Context, config: PPTConfig) {
-    ctx.command('dynamic <id:number> <index:number>')
+    ctx.command('renderdynamic <id:number> <index:number>')
         .alias('d')
         .shortcut('鹿乃动态', { args: ['316381099', '3'] })
         .action(async (_, id, index = 1) => {

@@ -111,46 +111,55 @@ function dynamic(ctx: Context) {
                 ({ channel, sub })))
 
         // get the dynamics that needs to be sent
-        const dynamics = await Promise.allSettled(
-            subs.map(async sub =>
-                [sub, await requestRetry(ctx.http, sub.sub.uid)] as const))
+        const dynamics: [
+            typeof subs[number],
+            { dynamicId: string, time: number }[],
+        ][] = []
+        for (const sub of subs) {
+            try {
+                dynamics.push([sub, await requestRetry(ctx.http, sub.sub.uid)])
+            } catch (e) {
+                ctx.notify(e)
+            }
+        }
         
         // render and send
-        await Promise.all(dynamics.map(async result => {
-            if (result.status === 'rejected') return
-            const [{ sub, channel }, dynamics] = result.value
+        for (const [{ sub, channel }, dynamic] of dynamics) {
             const bot = ctx.bots[`${channel.platform}:${channel.assignee}`]
-            const sends = dynamics.filter(dynamic => dynamic.time > sub.time)
-            if (sends.length === 0) return
+            const sends = dynamic.filter(dynamic => dynamic.time > sub.time)
+            if (sends.length === 0) continue
 
             sub.time = sends[0].time
             await ctx.database.set('channel', { id: channel.id }, { dynamic: channel.dynamic })
 
-            const promises = sends.reverse().map((async ({ dynamicId }) => {
+            for (const { dynamicId } of sends.reverse()) {
                 let renderResult = cache.get(dynamicId)
                 if (!renderResult) {
                     renderResult = await renderRetry(ctx, dynamicId)
                     cache.set(dynamicId, renderResult)
                 }
-                await bot.sendMessage(channel.id, renderResult, channel.guildId)
-            }))
-            await Promise.all(promises)
-        }))
+                bot.sendMessage(channel.id, renderResult, channel.guildId)
+            }
+        }
     }
     (function watch() {
         setTimeout(async () => {
             try {
                 if (!channels || update) {
-                    await updateSubscriptions(ctx)
                     update = false
+                    await updateSubscriptions(ctx)
                 }
+            } catch (e) {
+                update = true
+            }
+            try {
                 await send()
             } catch(e) {
                 ctx.notify(e)
                 logger.error(e)
             }
             watch()
-        }, 7000)
+        }, 60 * 1000)
     })()
 }
 
@@ -158,12 +167,12 @@ async function requestRetry(quester: Quester, uid: string, times = 3): Promise<{
     dynamicId: string,
     time: number
 }[]> {
-    if (times <= 0) throw new Error('failed to request bilibili api')
     try {
         return await request(quester, uid, reverseEndpoint)
             .catch(() => request(quester, uid, bilibiliEndpoint))
     } catch(e) {
         logger.error(e)
+        if (times - 1 <= 0) throw e
         return await requestRetry(quester, uid, times - 1)
     }
 }
@@ -184,11 +193,11 @@ async function request(quester: Quester, uid: string, endpoint: string) {
 }
 
 async function renderRetry(ctx: Context, dynamicId: string, times: number = 7): Promise<string> {
-    if (times <= 0) throw new Error('failed to render dynamic')
     try {
         return await render(ctx, dynamicId)
     } catch(e) {
         logger.error(e)
+        if (times - 1 <= 0) e
         return await renderRetry(ctx, dynamicId, times - 1)
     }
 }
