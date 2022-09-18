@@ -56,7 +56,7 @@
     "koishi-plugin-dialogue-flow": "^1.0.1",
     "koishi-plugin-dialogue-rate-limit": "^1.0.1",
     "koishi-plugin-dialogue-time": "^1.0.1",
-    "koishi-plugin-eval": "^4.1.1",
+    "koishi-plugin-eval": "^4.1.3",
     "koishi-plugin-forward": "^2.0.5",
     "koishi-plugin-glot": "^1.1.2",
     "koishi-plugin-influxdb": "^1.1.1",
