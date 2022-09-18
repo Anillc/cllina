@@ -2,6 +2,7 @@ import { Context, Logger, Quester, segment, Channel, User, Command } from 'koish
 import { Page } from 'puppeteer-core'
 import {} from 'koishi-plugin-puppeteer'
 import JSONBig from 'json-bigint'
+import ProxyAgent from 'proxy-agent'
 
 declare module 'koishi' {
     interface Channel {
@@ -13,9 +14,6 @@ interface Subscription {
     uid: string
     time: number
 }
-
-const reverseEndpoint = 'http://biliapi.a/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
-const bilibiliEndpoint = 'https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid='
 
 const logger = new Logger('dynamic')
 let channels: Partial<Channel>[]
@@ -168,8 +166,7 @@ async function requestRetry(quester: Quester, uid: string, times = 3): Promise<{
     time: number
 }[]> {
     try {
-        return await request(quester, uid, reverseEndpoint)
-            .catch(() => request(quester, uid, bilibiliEndpoint))
+        return await request(quester, uid)
     } catch(e) {
         logger.error(e)
         if (times - 1 <= 0) throw e
@@ -177,13 +174,21 @@ async function requestRetry(quester: Quester, uid: string, times = 3): Promise<{
     }
 }
 
-async function request(quester: Quester, uid: string, endpoint: string) {
-    const res = await quester.get(endpoint + uid, {
+async function request(quester: Quester, uid: string) {
+    const res = await quester.get('https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid=' + uid, {
         headers: {
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
             'Referer': `https://space.bilibili.com/${uid}/`,
         },
-        transformResponse: data => JSONBig.parse(data)
+        httpsAgent: new ProxyAgent('http://rsrc.a:1080'),
+        transformResponse: data => {
+            try {
+                return JSONBig.parse(data)
+            } catch (e) {
+                console.log(data);
+                
+            }
+        }
     })
     if (res.code !== 0) throw new Error(`Failed to get dynamics. ${res}`)
     return (res.data.cards as any[]).map(card => ({

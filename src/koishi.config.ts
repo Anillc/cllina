@@ -72,7 +72,7 @@ export default {
       name: 'yande',
     },
     'puppeteer': {
-      args: ['--no-sandbox'],
+      args: ['--no-sandbox', '--ignore-certificate-errors'],
     },
     'assets-local': {
       root: resolve(pwd, '.koishi/assets')
