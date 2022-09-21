@@ -207,12 +207,13 @@ async function render(ctx: Context, dynamicId: string) {
         await page.setViewport({ width: 1920 * 2, height: 1080 * 2 })
         await page.goto(`https://t.bilibili.com/${dynamicId}`)
         await page.waitForNetworkIdle()
-        await (await page.$('.panel-area')).evaluate(e => e?.remove())
-        const element = await page.$('.card')
+        await (await page.$('.login-tip'))?.evaluate(e => e.remove())
+        await (await page.$('.bili-dyn-item__panel')).evaluate(e => e.remove())
         await page.evaluate(() => {
             let popover: any
             while (popover = document.querySelector('.van-popover')) popover.remove()
         })
+        const element = await page.$('.bili-dyn-item')
         const shot = await element.screenshot({ encoding: 'binary' })
         return segment.image(shot)
     } catch (e) {
