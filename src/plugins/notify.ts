@@ -25,6 +25,9 @@ export function apply(ctx: Context) {
             if (message instanceof Error) {
                 message = `发生错误: \n${message.name} ${message.message}\n调用栈:\n${message.stack}`.trim()
             }
+            if (message.length > 500) {
+                message = message.slice(0, 500)
+            }
             const channels = await ctx.database.get('channel', { notify: {
                 $eq: true
             } })

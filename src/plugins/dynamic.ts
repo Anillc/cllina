@@ -181,14 +181,7 @@ async function request(quester: Quester, uid: string) {
             'Referer': `https://space.bilibili.com/${uid}/`,
         },
         httpsAgent: new ProxyAgent('http://rsrc.a:1080'),
-        transformResponse: data => {
-            try {
-                return JSONBig.parse(data)
-            } catch (e) {
-                console.log(data);
-                
-            }
-        }
+        transformResponse: data => JSONBig.parse(data)
     })
     if (res.code !== 0) throw new Error(`Failed to get dynamics. ${res}`)
     return (res.data.cards as any[]).map(card => ({
@@ -202,7 +195,7 @@ async function renderRetry(ctx: Context, dynamicId: string, times: number = 7): 
         return await render(ctx, dynamicId)
     } catch(e) {
         logger.error(e)
-        if (times - 1 <= 0) e
+        if (times - 1 <= 0) throw e
         return await renderRetry(ctx, dynamicId, times - 1)
     }
 }
