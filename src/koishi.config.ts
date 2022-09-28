@@ -78,11 +78,14 @@ export default {
       root: resolve(pwd, '.koishi/assets')
     },
     'eval': {
+      root: resolve(pwd, '.koishi/eval'),
+      storageFile: 'storage',
+      cacheFile: 'cache',
+      dataKeys: ['storageFile', 'cacheFile', 'inspect', 'moduleLoaders', 'setupFiles', 'loaderConfig', 'serializer'],
       scriptLoader: 'coffeescript',
       setupFiles: {
         'inj': resolve(__dirname, './inj/index.js'),
       },
-      storageFile: resolve(pwd, '.koishi/storage'),
       timeout: 3000
     },
     'feedback': [secrets.feedback],
