@@ -114,6 +114,9 @@ export default {
       appKey: secrets.youdao.key,
       secret: secrets.youdao.secret,
     },
+    'shorturl': {
+      selfUrl: secrets.shorturl.url,
+    },
     [localPlugin('./plugins/api')]: {},
     [localPlugin('./plugins/do')]: {},
     [localPlugin('./plugins/dynamic')]: {},

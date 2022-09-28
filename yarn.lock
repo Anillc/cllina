@@ -2797,6 +2797,11 @@ koishi-plugin-qrcode@^2.1.2:
   dependencies:
     qrcode "^1.5.1"
 
+koishi-plugin-shorturl@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-shorturl/-/koishi-plugin-shorturl-1.1.1.tgz#b98ffdfe94d61520695369ef5bc4601bddf62a83"
+  integrity sha512-7hFXCGHoHvfk2L/94A5xplsRVADSvBM+yr7s2an2J9lO3j96/0dO5Q7rOQdO5ikWJyAtF8eQdE3c9ymEpeLBVQ==
+
 koishi-plugin-tex@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/koishi-plugin-tex/-/koishi-plugin-tex-1.2.0.tgz#41a878f6518376fe97961f938b02a7f2734f93ec"
