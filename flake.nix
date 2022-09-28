@@ -30,13 +30,13 @@
             fixupPhase = ''
                 runHook fixupPhase
                 wrapProgram $out/bin/cllina --prefix PATH : ${with pkgs; makeBinPath [
-                    which chromium inkscape graphviz
+                    which chromium inkscape graphviz git
                 ]}
             '';
         };
         devShell = pkgs.mkShell {
             nativeBuildInputs = with pkgs; [
-                inkscape graphviz
+                inkscape graphviz git
             ];
         };
     });
