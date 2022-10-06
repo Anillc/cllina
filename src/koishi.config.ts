@@ -117,6 +117,9 @@ export default {
     'shorturl': {
       selfUrl: secrets.shorturl.url,
     },
+    'novelai': {
+      token: secrets.novelai.token,
+    },
     [localPlugin('./plugins/api')]: {},
     [localPlugin('./plugins/do')]: {},
     [localPlugin('./plugins/dynamic')]: {},

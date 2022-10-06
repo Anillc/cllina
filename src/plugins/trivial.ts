@@ -7,6 +7,7 @@ export const using = ['notify']
 
 export function apply(ctx: Context) {
     ctx.command('pic', { authority: 2 })
+    ctx.command('novelai', { authority: 2 })
     process.on('unhandledRejection', error => {
         ctx.notify(error)
     })
