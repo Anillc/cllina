@@ -118,6 +118,9 @@ export default {
       selfUrl: secrets.shorturl.url,
     },
     'novelai': {
+      model: 'safe',
+      allowAnlas: false,
+      recallTimeout: 30000,
       token: secrets.novelai.token,
     },
     [localPlugin('./plugins/api')]: {},

@@ -398,12 +398,12 @@
   dependencies:
     "@satorijs/adapter-discord" "^3.2.2"
 
-"@koishijs/plugin-adapter-onebot@^5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-onebot/-/plugin-adapter-onebot-5.2.0.tgz#dd24007dd32f4ed276543f1f1521bdb5f83b0156"
-  integrity sha512-dS1E3gFaxG+XCw3GpqVVE/N7E1PrufzuZMjb0IQwMImx6Rh4nKH0UW4Ng+Y9uPLuBg/NL+48llNXUd6K0xJejg==
+"@koishijs/plugin-adapter-onebot@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-onebot/-/plugin-adapter-onebot-5.2.2.tgz#5d28e4de087f4d9221992c166d62e0e6269e98c8"
+  integrity sha512-5CuHXnh9hcxFX0LM/R9gUd6FO4HzXowTLe7Qj7H1UlzQbs8nrdK1GOlS6bNY2YTe/SBNUwju/L6sObxEsbr6QA==
   dependencies:
-    "@satorijs/adapter-onebot" "^5.2.0"
+    "@satorijs/adapter-onebot" "^5.2.2"
 
 "@koishijs/plugin-adapter-telegram@^3.4.2":
   version "3.4.2"
@@ -583,10 +583,10 @@
     file-type "^16.5.4"
     form-data "^4.0.0"
 
-"@satorijs/adapter-onebot@^5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@satorijs/adapter-onebot/-/adapter-onebot-5.2.0.tgz#1132ebc7f1dbbb86dbe1da9950a898a506826d5f"
-  integrity sha512-94rl0zMvwZDsvQSj2EXFbiYDMI5iw/m2BYBncHgbOOtM6n7Di5yTjIZa4/VFTTiV/kqHRH0qdqCT7bJIcMnG+w==
+"@satorijs/adapter-onebot@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@satorijs/adapter-onebot/-/adapter-onebot-5.2.2.tgz#f1586058ac62ca5989b3a68643ad4738417e5473"
+  integrity sha512-9zpAwbL7qz/InXmEc6DbbURU8dYAJPNSo6jDNCu66ykEtMyD9yoL7BMX0lAKV4CBgyEkZZDqvBJabBdz/2DCEA==
   dependencies:
     qface "^1.2.0"
 
@@ -2366,6 +2366,13 @@ ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
+image-size@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-1.0.2.tgz#d778b6d0ab75b2737c1556dd631652eb963bc486"
+  integrity sha512-xfOoWjceHntRb3qFCrh5ZFORYH8XCdYpASltMhZ/Q0KZiOwjdE/Yl2QCiWdwD+lygV5bMCvauzgu5PxBX/Yerg==
+  dependencies:
+    queue "6.0.2"
+
 inaba@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/inaba/-/inaba-1.1.1.tgz#c861c8022f05d74a60e7d665e547b64eabb96562"
@@ -2801,10 +2808,12 @@ koishi-plugin-music@^2.0.4:
   resolved "https://registry.yarnpkg.com/koishi-plugin-music/-/koishi-plugin-music-2.0.4.tgz#6bdd55421195682c1b1de967858268e7e5b1fc1c"
   integrity sha512-v4iKbNU8bqOidI4eAfmrD5RnDLl88DLeCeZ7MaTYMB7/EBEN7YJ8StCuErOwV00bjMDKF+Igx7VpCc/7u5813g==
 
-koishi-plugin-novelai@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-novelai/-/koishi-plugin-novelai-1.2.5.tgz#137cc66ee722d92d50c06395254f68bd2e8455de"
-  integrity sha512-WZAWnDGpqIaywPkjGCNRZx1KjYhuwK4Xrzplhb7/0GMdD5yxB264XFPaZOxgTl8qhco6XDWVkAYYZ74MO/6cMQ==
+koishi-plugin-novelai@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-novelai/-/koishi-plugin-novelai-1.5.4.tgz#b48c8699065642477d12a80d02fec80104bb95c3"
+  integrity sha512-NHFB5MWD4HldN9xpk2C8rqm4zLoLQjd7BQQ5JkMnyj2t3CKuysZl280khwysKW0aa7n2FavpcTh3CygKRFC5qg==
+  dependencies:
+    image-size "^1.0.2"
 
 koishi-plugin-pics@^10.2.2:
   version "10.2.2"
@@ -3435,6 +3444,13 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+queue@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/queue/-/queue-6.0.2.tgz#b91525283e2315c7553d2efa18d83e76432fed65"
+  integrity sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==
+  dependencies:
+    inherits "~2.0.3"
 
 ramda@^0.28.0:
   version "0.28.0"
