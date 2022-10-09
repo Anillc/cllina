@@ -120,8 +120,9 @@ export default {
     'novelai': {
       model: 'safe',
       allowAnlas: false,
-      recallTimeout: 30000,
+      recallTimeout: 120000,
       token: secrets.novelai.token,
+      basePrompt: '',
     },
     [localPlugin('./plugins/api')]: {},
     [localPlugin('./plugins/do')]: {},
