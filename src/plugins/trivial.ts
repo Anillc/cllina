@@ -10,7 +10,8 @@ export function apply(ctx: Context) {
     ctx.command('novelai')
         .userFields(['authority'])
         .before(({ session }) => {
-            if (session.platform === 'onebot' && session.user.authority < 2) {
+            if ((session.platform === 'onebot' || session.platform === 'qqguild')
+                    && session.user.authority < 2) {
                 return '权限不足。'
             }
         })
