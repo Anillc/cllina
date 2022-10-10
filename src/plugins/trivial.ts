@@ -15,9 +15,6 @@ export function apply(ctx: Context) {
                 return '权限不足。'
             }
         })
-    process.on('unhandledRejection', error => {
-        ctx.notify(error)
-    })
     ctx.on('command-error', error => {
         ctx.notify(error.error)
     })
