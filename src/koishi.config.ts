@@ -118,9 +118,8 @@ export default {
       selfUrl: secrets.shorturl.url,
     },
     'novelai': {
-      model: 'safe',
+      model: 'nai',
       allowAnlas: false,
-      recallTimeout: 120000,
       token: secrets.novelai.token,
       basePrompt: '',
     },
