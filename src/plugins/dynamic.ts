@@ -188,6 +188,7 @@ async function request(uid: string) {
             requestCert: true,
         }),
     })
+    // TODO: find better solution
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
     const res = (await req).data
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '1'

@@ -51,7 +51,7 @@ export default {
     'dialogue': {},
     'dialogue-author': {},
     'dialogue-context': {},
-    'dialogue-flow': {},
+    // 'dialogue-flow': {},
     'dialogue-rate-limit': {},
     'dialogue-time': {},
     'tex': {},
