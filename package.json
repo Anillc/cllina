@@ -42,6 +42,7 @@
     "@onedice/core": "^1.0.1",
     "@satorijs/satori": "^1.1.11",
     "@ts-graphviz/node": "^0.4.1",
+    "axios": "^1.1.2",
     "coffeescript": "^2.7.0",
     "cordis": "^2.4.4",
     "emmet": "^2.3.6",

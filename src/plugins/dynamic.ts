@@ -1,8 +1,9 @@
 import { Context, Logger, Quester, segment, Channel, User, Command } from 'koishi'
 import { Page } from 'puppeteer-core'
 import {} from 'koishi-plugin-puppeteer'
-import JSONBig from 'json-bigint'
-import ProxyAgent from 'proxy-agent'
+import HttpsProxyProxy from 'https-proxy-agent'
+// TODO: remove after upgrading of axios of koishi
+import axios from 'axios'
 
 declare module 'koishi' {
     interface Channel {
@@ -63,7 +64,7 @@ export function apply(ctx: Context) {
                     const subUids = subs.map(sub => sub.uid)
                     const add = uids.filter(uid => !subUids.includes(uid))
                     const cards = await Promise.allSettled(add.map(async uid =>
-                        [uid, await requestRetry(ctx.http, uid)] as const))
+                        [uid, await requestRetry(uid)] as const))
                     const added = []
                     for (const card of cards) {
                         if (card.status === 'rejected') continue
@@ -103,7 +104,7 @@ export function apply(ctx: Context) {
 
 function dynamic(ctx: Context) {
     async function send() {
-        const cache = new Map<string, string>
+        const cache = new Map<string, segment>
         const subs = channels.flatMap(channel =>
             channel.dynamic.subscriptions.map(sub =>
                 ({ channel, sub })))
@@ -115,7 +116,7 @@ function dynamic(ctx: Context) {
         ][] = []
         for (const sub of subs) {
             try {
-                dynamics.push([sub, await requestRetry(ctx.http, sub.sub.uid)])
+                dynamics.push([sub, await requestRetry(sub.sub.uid)])
             } catch (e) {
                 ctx.notify(e)
             }
@@ -161,36 +162,43 @@ function dynamic(ctx: Context) {
     })()
 }
 
-async function requestRetry(quester: Quester, uid: string, times = 3): Promise<{
+async function requestRetry(uid: string, times = 3): Promise<{
     dynamicId: string,
     time: number
 }[]> {
     try {
-        return await request(quester, uid)
+        return await request(uid)
     } catch(e) {
         logger.error(e)
         if (times - 1 <= 0) throw e
-        return await requestRetry(quester, uid, times - 1)
+        return await requestRetry(uid, times - 1)
     }
 }
 
-async function request(quester: Quester, uid: string) {
-    const res = await quester.get('https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?host_uid=' + uid, {
+async function request(uid: string) {
+    const req = axios.get('https://[240e:f7:e01f:f1::30]/x/polymer/web-dynamic/v1/feed/space?host_mid=' + uid, {
         headers: {
+            'Host': 'api.bilibili.com',
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
-            'Referer': `https://space.bilibili.com/${uid}/`,
+            'Referer': `https://space.bilibili.com/${uid}/dynamic`,
         },
-        httpsAgent: new ProxyAgent('http://rsrc.a:1080'),
-        transformResponse: data => JSONBig.parse(data)
+        httpsAgent: HttpsProxyProxy({
+            host: 'rsrc.a',
+            port: '1080',
+            requestCert: true,
+        }),
     })
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+    const res = (await req).data
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '1'
     if (res.code !== 0) throw new Error(`Failed to get dynamics. ${res}`)
-    return (res.data.cards as any[]).map(card => ({
-        dynamicId: String(card.desc.dynamic_id),
-        time: card.desc.timestamp as number
+    return (res.data.items as any[]).map(item => ({
+        dynamicId: item.id_str,
+        time: item.modules.module_author.pub_ts as number
     }))
 }
 
-async function renderRetry(ctx: Context, dynamicId: string, times: number = 7): Promise<string> {
+async function renderRetry(ctx: Context, dynamicId: string, times: number = 7): Promise<segment> {
     try {
         return await render(ctx, dynamicId)
     } catch(e) {
