@@ -125,7 +125,8 @@ export default {
     },
     [localPlugin('./plugins/api')]: {},
     [localPlugin('./plugins/do')]: {},
-    [localPlugin('./plugins/dynamic')]: {},
+    // TODO: wait for axios of koishi update
+    // [localPlugin('./plugins/dynamic')]: {},
     [localPlugin('./plugins/eval')]: {},
     [localPlugin('./plugins/graphviz')]: {},
     [localPlugin('./plugins/regex')]: {},
