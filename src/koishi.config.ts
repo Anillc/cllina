@@ -118,9 +118,10 @@ export default {
       selfUrl: secrets.shorturl.url,
     },
     'novelai': {
+      type: 'token',
+      token: secrets.novelai.token,
       model: 'nai',
       allowAnlas: false,
-      token: secrets.novelai.token,
       basePrompt: '',
     },
     [localPlugin('./plugins/api')]: {},
