@@ -58,6 +58,7 @@
     "koishi-plugin-dialogue-time": "^1.0.1",
     "koishi-plugin-eval": "^4.1.3",
     "koishi-plugin-forward": "^3.0.0",
+    "koishi-plugin-github": "^5.2.1",
     "koishi-plugin-glot": "^1.1.3",
     "koishi-plugin-influxdb": "^1.1.1",
     "koishi-plugin-influxdb-collect": "^1.0.1",

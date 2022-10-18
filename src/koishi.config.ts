@@ -124,6 +124,10 @@ export default {
       allowAnlas: false,
       basePrompt: '',
     },
+    'github': {
+      appId: secrets.github.appId,
+      appSecret: secrets.github.appSecret,
+    },
     [localPlugin('./plugins/api')]: {},
     [localPlugin('./plugins/do')]: {},
     // TODO: wait for axios of koishi update
