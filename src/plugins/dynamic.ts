@@ -1,9 +1,7 @@
 import { Context, Logger, Quester, segment, Channel, User, Command } from 'koishi'
 import { Page } from 'puppeteer-core'
 import {} from 'koishi-plugin-puppeteer'
-import HttpsProxyProxy from 'https-proxy-agent'
-// TODO: remove after upgrading of axios of koishi
-import axios from 'axios'
+import ProxyAgent from 'proxy-agent'
 
 declare module 'koishi' {
     interface Channel {
@@ -64,7 +62,7 @@ export function apply(ctx: Context) {
                     const subUids = subs.map(sub => sub.uid)
                     const add = uids.filter(uid => !subUids.includes(uid))
                     const cards = await Promise.allSettled(add.map(async uid =>
-                        [uid, await requestRetry(uid)] as const))
+                        [uid, await requestRetry(uid, ctx.http)] as const))
                     const added = []
                     for (const card of cards) {
                         if (card.status === 'rejected') continue
@@ -116,7 +114,7 @@ function dynamic(ctx: Context) {
         ][] = []
         for (const sub of subs) {
             try {
-                dynamics.push([sub, await requestRetry(sub.sub.uid)])
+                dynamics.push([sub, await requestRetry(sub.sub.uid, ctx.http)])
             } catch (e) {
                 ctx.notify(e)
             }
@@ -162,36 +160,27 @@ function dynamic(ctx: Context) {
     })()
 }
 
-async function requestRetry(uid: string, times = 3): Promise<{
+async function requestRetry(uid: string, http: Quester, times = 3): Promise<{
     dynamicId: string,
     time: number
 }[]> {
     try {
-        return await request(uid)
+        return await request(uid, http)
     } catch(e) {
         logger.error(e)
         if (times - 1 <= 0) throw e
-        return await requestRetry(uid, times - 1)
+        return await requestRetry(uid, http, times - 1)
     }
 }
 
-async function request(uid: string) {
-    const req = axios.get('https://[240e:f7:e01f:f1::30]/x/polymer/web-dynamic/v1/feed/space?host_mid=' + uid, {
+async function request(uid: string, http: Quester) {
+    const res = await http.get('https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/space?host_mid=' + uid, {
         headers: {
-            'Host': 'api.bilibili.com',
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
             'Referer': `https://space.bilibili.com/${uid}/dynamic`,
         },
-        httpsAgent: HttpsProxyProxy({
-            host: 'rsrc.a',
-            port: '1080',
-            requestCert: true,
-        }),
+        httpsAgent: new ProxyAgent('http://rsrc.a:1080'),
     })
-    // TODO: find better solution
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
-    const res = (await req).data
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '1'
     if (res.code !== 0) throw new Error(`Failed to get dynamics. ${res}`)
     return (res.data.items as any[]).map(item => ({
         dynamicId: item.id_str,
