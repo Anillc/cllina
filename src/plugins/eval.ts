@@ -4,7 +4,7 @@ export const name = 'eval-enhance'
 
 export function apply(ctx: Context) {
     const evaluate = ctx.command('evaluate [expr:rawtext]')
-    ctx.command('>')
+    ctx.command('!')
         .action(({ session }) => {
             const { content } = session.parsed
             const expr = segment.unescape(content.slice(2))
