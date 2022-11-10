@@ -72,6 +72,7 @@
     "koishi-plugin-picsource-lolicon": "^10.2.0",
     "koishi-plugin-picsource-miraikoi": "^2.2.0",
     "koishi-plugin-picsource-yande": "^3.2.0",
+    "koishi-plugin-pointfree": "^1.0.0",
     "koishi-plugin-puppeteer": "^3.0.2",
     "koishi-plugin-qrcode": "^2.1.2",
     "koishi-plugin-shorturl": "^1.1.1",

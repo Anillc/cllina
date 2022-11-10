@@ -56,6 +56,7 @@ export default {
     'dialogue-time': {},
     'tex': {},
     'pics': {},
+    'pointfree': {},
     'picsource-lolicon': {
       isDefault: true,
       name: 'lolicon',

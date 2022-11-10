@@ -2815,6 +2815,11 @@ koishi-plugin-picsource-yande@^3.2.0:
   dependencies:
     koishi-thirdeye "^11.1.11"
 
+koishi-plugin-pointfree@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-pointfree/-/koishi-plugin-pointfree-1.0.0.tgz#2f15fa84bdb1d04f4c975c22944358339aba7ada"
+  integrity sha512-yh9m0erYYk3II/xod2VaL0tt7WFfstMBQN1crVFWwLFlCwCmsRl5J7cpoYFWBtTIvexJuqUkXD7EmkQFczJA/A==
+
 koishi-plugin-puppeteer@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/koishi-plugin-puppeteer/-/koishi-plugin-puppeteer-3.0.2.tgz#687d0e756d2afa7cfce0d365e50e0dd258e7b150"
