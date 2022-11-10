@@ -119,10 +119,8 @@ export default {
       selfUrl: secrets.shorturl.url,
     },
     'novelai': {
-      type: 'token',
-      token: secrets.novelai.token,
-      model: 'nai',
-      allowAnlas: false,
+      type: 'sd-webui',
+      endpoint: secrets.novelai.endpoint,
       basePrompt: '',
     },
     'github': {
