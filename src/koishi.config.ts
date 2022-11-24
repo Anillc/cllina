@@ -8,6 +8,7 @@ function localPlugin(path: string) {
 }
 
 export default {
+  nickname: 'cllina',
   prefix: secrets.prefix,
   exitCommand: true,
   port: 8056,

@@ -139,25 +139,22 @@ function dynamic(ctx: Context) {
             }
         }
     }
-    (function watch() {
-        setTimeout(async () => {
-            try {
-                if (!channels || update) {
-                    update = false
-                    await updateSubscriptions(ctx)
-                }
-            } catch (e) {
-                update = true
+    setInterval(async () => {
+        try {
+            if (!channels || update) {
+                update = false
+                await updateSubscriptions(ctx)
             }
-            try {
-                await send()
-            } catch(e) {
-                ctx.notify(e)
-                logger.error(e)
-            }
-            watch()
-        }, 60 * 1000)
-    })()
+        } catch (e) {
+            update = true
+        }
+        try {
+            await send()
+        } catch(e) {
+            ctx.notify(e)
+            logger.error(e)
+        }
+    }, 60 * 1000)
 }
 
 async function requestRetry(uid: string, http: Quester, times = 3): Promise<{

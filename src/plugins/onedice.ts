@@ -5,7 +5,7 @@ export const name = 'onedice'
 
 export function apply(ctx: Context) {
     // this doesn't handle all conditions
-    const prefix = ctx.options.prefix as string
+    const prefix = ctx.root.config.prefix as string
     ctx.middleware((session, next) => {
         if (!session.content?.startsWith(`${prefix}r`)) return next()
         return session.execute(`roll ${session.content.slice(2)}`)

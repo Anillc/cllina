@@ -28,9 +28,7 @@ export function apply(ctx: Context) {
             if (message.length > 500) {
                 message = message.slice(0, 500)
             }
-            const channels = await ctx.database.get('channel', { notify: {
-                $eq: true
-            } })
+            const channels = await ctx.database.get('channel', { notify: { $eq: true }})
             if (channels.length === 0) return []
             return await Promise.all(channels.map(channel => {
                 const bot = ctx.bots[`${channel.platform}:${channel.assignee}`]
