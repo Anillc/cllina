@@ -124,6 +124,10 @@ export default {
       endpoint: secrets.novelai.endpoint,
       basePrompt: '',
     },
+    'chatgpt': {
+      prefix: '*',
+      sessionToken: secrets.openai.token,
+    },
     'github': {
       appId: secrets.github.appId,
       appSecret: secrets.github.appSecret,
