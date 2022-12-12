@@ -1994,11 +1994,6 @@ eventemitter3@^4.0.4:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
-eventsource-parser@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/eventsource-parser/-/eventsource-parser-0.0.5.tgz#6041bf765ebced8ac83de9dc78754b7b919b7342"
-  integrity sha512-BAq82bC3ZW9fPYYZlofXBOAfbpmDzXIOsj+GOehQwgTUYsQZ6HtHs6zuRtge7Ph8OhS6lNH1kJF8q9dj17RcmA==
-
 execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
@@ -2013,13 +2008,6 @@ execa@^5.1.1:
     onetime "^5.1.2"
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
-
-expiry-map@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/expiry-map/-/expiry-map-2.0.0.tgz#b441ee8e8865291ad9a542783076d33bae0f3582"
-  integrity sha512-K1I5wJe2fiqjyUZf/xhxwTpaopw3F+19DsO7Oggl20+3SVTXDIevVRJav0aBMfposQdkl2E4+gnuOKd3j2X0sA==
-  dependencies:
-    map-age-cleaner "^0.2.0"
 
 extract-zip@2.0.1:
   version "2.0.1"
@@ -2699,16 +2687,6 @@ koishi-plugin-brainfuck@^2.0.4:
   resolved "https://registry.yarnpkg.com/koishi-plugin-brainfuck/-/koishi-plugin-brainfuck-2.0.4.tgz#ae26fbfadc21e9b8b688296c0b183d34cd35009b"
   integrity sha512-ruT/6SF29ndkylYydF3Ssz11CkBavyli87JbVnqcSX6g0oWhm72cuMaXJ2e70iqt0N678X7qm13IAT3ZIgSzpQ==
 
-koishi-plugin-chatgpt@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-chatgpt/-/koishi-plugin-chatgpt-1.3.2.tgz#7fc54205625f825cf36711cf9a37d1fbe90330fa"
-  integrity sha512-0LCSrmQAalg2MYJCAhBZcQtcGhEcEet2Qct9vDwSubNuRdIU/FN08xf8tt1peZIw/dnnQEaZN2EdLDy8Waox6A==
-  dependencies:
-    eventsource-parser "^0.0.5"
-    expiry-map "^2.0.0"
-    marked "^4.2.3"
-    uuid "^9.0.0"
-
 koishi-plugin-chess@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.1.1.tgz#6210fb124e30a3ecb9d6bda7f1d983c1bf1dc320"
@@ -3012,22 +2990,10 @@ make-error@^1.1.1:
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.6.tgz#2eb2e37ea9b67c4891f684a1394799af484cf7a2"
   integrity sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
 
-map-age-cleaner@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/map-age-cleaner/-/map-age-cleaner-0.2.0.tgz#0196bc278f7244ddeb7ca0cb3df329b06241a44b"
-  integrity sha512-AvxTC6id0fzSf6OyNBTp1syyCuKO7nOJvHgYlhT0Qkkjvk40zZo+av3ayVgXlxnF/DxEzEfY9mMdd7FHsd+wKQ==
-  dependencies:
-    p-defer "^1.0.0"
-
 marked@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/marked/-/marked-4.1.1.tgz#2f709a4462abf65a283f2453dc1c42ab177d302e"
   integrity sha512-0cNMnTcUJPxbA6uWmCmjWz4NJRe/0Xfk2NhXCUHjew9qJzFN20krFnsUe7QynwqOwa5m1fZ4UDg0ycKFVC0ccw==
-
-marked@^4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-4.2.3.tgz#bd76a5eb510ff1d8421bc6c3b2f0b93488c15bea"
-  integrity sha512-slWRdJkbTZ+PjkyJnE30Uid64eHwbwa1Q25INCAYfZlK4o6ylagBy/Le9eWntqJFoFT93ikUKMv47GZ4gTwHkw==
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -3272,11 +3238,6 @@ p-debounce@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/p-debounce/-/p-debounce-2.1.0.tgz#e79f70c6e325cbb9bddbcbec0b81025084671ad3"
   integrity sha512-M9bMt62TTnozdZhqFgs+V7XD2MnuKCaz+7fZdlu2/T7xruI3uIE5CicQ0vx1hV7HIUYF0jF+4/R1AgfOkl74Qw==
-
-p-defer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
-  integrity sha512-wB3wfAxZpk2AzOfUMJNL+d36xothRSyj8EXOa4f6GMqYDN9BJaaSISbsk+wS9abmnebVw95C2Kb5t85UmpCxuw==
 
 p-finally@^1.0.0:
   version "1.0.0"
@@ -4218,11 +4179,6 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
-  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
