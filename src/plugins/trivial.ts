@@ -3,27 +3,7 @@ import { Context, segment } from 'koishi'
 
 export const name = 'trivial'
 
-export const using = ['notify']
-
 export function apply(ctx: Context) {
-    ctx.command('pic', { authority: 2 })
-    ctx.command('novelai')
-        .userFields(['authority'])
-        .before(({ session }) => {
-            if (session.platform === 'onebot' || session.platform === 'qqguild') {
-                return '当前已禁止在 QQ 使用 novelai 画图，请使用 about 指令查看 telegram 群聊链接。'
-            }
-        })
-    ctx.command('about')
-        .action(() => {
-            return `Cllina version 114514
-本机器人使用 koishi (https://github.com/koishijs/koishi) 开发，开源于 https://github.com/Anillc/cllina
-群聊: 710212023
-telegram 群组: https://t.me/+kkya4BWiJCNiZmEx`
-        })
-    ctx.on('command-error', error => {
-        ctx.notify(error.error)
-    })
     ctx.platform('onebot').command('fake', { authority: 2 })
         .action(async ({ session }) => {
             if (!session.channelId) return '请在 onebot 平台的群聊条件下使用该指令'
