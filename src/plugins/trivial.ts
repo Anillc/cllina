@@ -1,5 +1,5 @@
 import { OneBotBot } from '@koishijs/plugin-adapter-onebot'
-import { Context, segment } from 'koishi'
+import { Argv, Context, segment } from 'koishi'
 
 export const name = 'trivial'
 
@@ -29,5 +29,16 @@ export function apply(ctx: Context) {
             }
             if (nodes.length === 0) return '请至少发送一条正确的消息'
             return (session.bot as unknown as OneBotBot).internal.sendGroupForwardMsgAsync(session.channelId, nodes)
+        })
+    const evaluate = ctx.command('evaluate [expr:rawtext]')
+    ctx.command('!')
+        .action(({ session }) => {
+            const { content } = session.parsed
+            const expr = segment.unescape(content.slice(2))
+            const argv: Argv = {
+                command: evaluate,
+                args: [expr],
+            }
+            return session.execute(argv)
         })
 }

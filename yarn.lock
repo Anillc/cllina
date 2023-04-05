@@ -401,6 +401,11 @@
   dependencies:
     file-type "^16.5.4"
 
+"@koishijs/censor@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@koishijs/censor/-/censor-1.0.2.tgz#1ce075fa510a06de4f45e2a09aa4edaa8c3c06a8"
+  integrity sha512-pC3U7BdA2uRQSPNO00R5cgDRgWiQ2NdR16B9HR7RGihiWeBkiRE7IXDvCtfIr2TE8e1dZbzglqwCdRv+oinIkg==
+
 "@koishijs/core@4.12.3":
   version "4.12.3"
   resolved "https://registry.yarnpkg.com/@koishijs/core/-/core-4.12.3.tgz#3e74c870c564954dd4665dba5a1a59ef289a6596"
@@ -1512,6 +1517,13 @@ ieee754@^1.1.13, ieee754@^1.2.1:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
+image-size@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-1.0.2.tgz#d778b6d0ab75b2737c1556dd631652eb963bc486"
+  integrity sha512-xfOoWjceHntRb3qFCrh5ZFORYH8XCdYpASltMhZ/Q0KZiOwjdE/Yl2QCiWdwD+lygV5bMCvauzgu5PxBX/Yerg==
+  dependencies:
+    queue "6.0.2"
+
 inaba@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/inaba/-/inaba-1.1.1.tgz#c861c8022f05d74a60e7d665e547b64eabb96562"
@@ -1680,10 +1692,10 @@ koishi-plugin-chess@^4.1.1:
   resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.1.1.tgz#6210fb124e30a3ecb9d6bda7f1d983c1bf1dc320"
   integrity sha512-2I9+bqNDkSE7H8rY4oiEfjAH0i3owK4SnvrwfKcEEjYwIAvtFRflVeNESdgWSrZuioy3MsizFFhxFVfe1slLOg==
 
-koishi-plugin-command@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-command/-/koishi-plugin-command-0.0.1.tgz#f2ee1a58610deca04ef54df9139ff5cf21589558"
-  integrity sha512-0d6Qt+RAvgBpR5dmrJdAc3F6QNnjFUl8HTiJjbTLWTai1yonUhz9jmqJEMhYESykh7bMAtPXM8B8ZEGbQzHHLw==
+koishi-plugin-command@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-command/-/koishi-plugin-command-0.0.2.tgz#c796fdb409068d46b771a6977d07514c1680dc25"
+  integrity sha512-rw8mU91YS2lc5UmMkdCYeCIdnDKVE/5nG1f6FRh5ynb+MPoVNcplU9yh8h+IlqLjSstqzJ6cAk56bdZ4t76+Qg==
   dependencies:
     iberis "^0.0.2"
 
@@ -1797,6 +1809,20 @@ koishi-plugin-recall@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/koishi-plugin-recall/-/koishi-plugin-recall-1.3.0.tgz#f5a7f4db0b3e1d1eaa45810e7067339dd04f41c9"
   integrity sha512-eaKG51u38zzFrNHG0nFXP+BwH432Fw/8abCh7SJe1EsTRTLTKahypO2KO4tUWJC0xJZrrLSq9hj8GihueTF7xA==
+
+koishi-plugin-rr-image-censor@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-rr-image-censor/-/koishi-plugin-rr-image-censor-2.0.1.tgz#7007612bf48ba964c3efa13371fefa70e10df05e"
+  integrity sha512-IHS5Ihue//2WIMtquMU+8grzeHe4pvTmrq/D+LwZZIxB70teLHMZK5/L9NRVJALfTvZpI6sYbDjidPIsslPtzg==
+  dependencies:
+    "@koishijs/censor" "^1.0.1"
+
+koishi-plugin-rryth@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-rryth/-/koishi-plugin-rryth-2.4.3.tgz#425d6de389b0fe9e5d1d19da0884d0de1f8e8763"
+  integrity sha512-EirTTVObdHkMnIB7qoyL7MpH2zqSrk+Ux+X1ttEyp7oWom8fEmjmP52YUXjcjZIjiDkIraYhl/GTgZeDRfxd3w==
+  dependencies:
+    image-size "^1.0.2"
 
 koishi-plugin-schedule@^4.4.2:
   version "4.4.2"
@@ -2150,6 +2176,13 @@ qs@^6.5.2:
   integrity sha512-0wsrzgTz/kAVIeuxSjnpGC56rzYtr6JT/2BwEvMaPhFIoYa1aGO8LbzuU1R0uUYQkLpWBTOj0l/CLAJB64J6nQ==
   dependencies:
     side-channel "^1.0.4"
+
+queue@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/queue/-/queue-6.0.2.tgz#b91525283e2315c7553d2efa18d83e76432fed65"
+  integrity sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==
+  dependencies:
+    inherits "~2.0.3"
 
 raw-body@^2.2.0, raw-body@^2.3.3:
   version "2.5.2"

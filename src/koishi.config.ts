@@ -4,8 +4,11 @@ import ProxyAgent from 'proxy-agent'
 const secrets = require(process.env.SECRETS)
 const pwd = process.env.PWD
 
-function localPlugin(path: string) {
-  return resolve(__dirname, path)
+function local(plugins: Record<string, any>) {
+  return Object.fromEntries(Object.entries(plugins).map(([name, config]) => ([
+    resolve(__dirname, `./plugins/${name}`),
+    config,
+  ])))
 }
 
 export default {
@@ -56,6 +59,11 @@ export default {
     'dialogue-rate-limit': {},
     'dialogue-time': {},
     'tex': {},
+    'rr-image-censor': {},
+    'rryth': {
+      censor: true,
+      output: 'minimal',
+    },
     'bilibili': {
       dynamic: {
         enable: true,
@@ -105,10 +113,11 @@ export default {
       appId: secrets.github.appId,
       appSecret: secrets.github.appSecret,
     },
-    [localPlugin('./plugins/api')]: {},
-    [localPlugin('./plugins/do')]: {},
-    [localPlugin('./plugins/eval')]: {},
-    [localPlugin('./plugins/regex')]: {},
-    [localPlugin('./plugins/trivial')]: {},
+    ...local({
+      'api': {},
+      'do': {},
+      'regex': {},
+      'trivial': {},
+    }),
   },
 }

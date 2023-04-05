@@ -1,4 +1,4 @@
-import { Context, segment } from 'koishi'
+import { Context } from 'koishi'
 
 export const name = 'do'
 
@@ -7,12 +7,13 @@ export function apply(ctx: Context) {
         if (!session.quote) {
             return next()
         }
-        let content = session.parsed.content
-        const segs = segment.parse(content)
-        if (segs?.[0].type === 'at') {
-            segs.shift()
-            content = segs.join().trim()
+        const elements = [...session.elements]
+        while (elements[0]?.type === 'at') {
+            elements.shift()
         }
+        if (elements.length === 0) return next()
+        if (elements.find(element => element.type !== 'text')) return next()
+        const content = elements.join('')
         const res1 = /^\/([^ ]+)$/.exec(content)
         const res2 = /^\/([^ ]+) ([^ ]+)$/.exec(content)
         if (!res1 && !res2) return next()
