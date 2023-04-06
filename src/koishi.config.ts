@@ -59,6 +59,7 @@ export default {
     'dialogue-rate-limit': {},
     'dialogue-time': {},
     'tex': {},
+    'screenshot': {},
     'rr-image-censor': {},
     'rryth': {
       censor: true,

@@ -1692,10 +1692,10 @@ koishi-plugin-chess@^4.1.1:
   resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.1.1.tgz#6210fb124e30a3ecb9d6bda7f1d983c1bf1dc320"
   integrity sha512-2I9+bqNDkSE7H8rY4oiEfjAH0i3owK4SnvrwfKcEEjYwIAvtFRflVeNESdgWSrZuioy3MsizFFhxFVfe1slLOg==
 
-koishi-plugin-command@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-command/-/koishi-plugin-command-0.0.2.tgz#c796fdb409068d46b771a6977d07514c1680dc25"
-  integrity sha512-rw8mU91YS2lc5UmMkdCYeCIdnDKVE/5nG1f6FRh5ynb+MPoVNcplU9yh8h+IlqLjSstqzJ6cAk56bdZ4t76+Qg==
+koishi-plugin-command@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-command/-/koishi-plugin-command-0.0.3.tgz#8a67554ea80d8c17fac0df7edae2ea6fdcfdd355"
+  integrity sha512-f85YrY4FD/3ofX4lv33AWOPDApVJizPsP06kQjTH6hZyLlB/UnV9FbH9ktWZrpcj2xC7v7fYtAGkIS7t5oJ5Kw==
   dependencies:
     iberis "^0.0.2"
 
@@ -1828,6 +1828,13 @@ koishi-plugin-schedule@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/koishi-plugin-schedule/-/koishi-plugin-schedule-4.4.2.tgz#2a679750d559edf0bcd919be0f0d203e8985d667"
   integrity sha512-KEPrLIAQh5Z+iDnhXVMBMjZQzCtAErOb2aKJbiQN5YIUD89w/daMATD9Q10f9xzjZkQP+E8ftjwHgbuhslGByQ==
+
+koishi-plugin-screenshot@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-screenshot/-/koishi-plugin-screenshot-1.0.4.tgz#088639af988da36f64e7a1a03027596939c5a26c"
+  integrity sha512-4/rddFh95ge5RWd33PuIlllDIuq6s4uEXx98kr0Wg6iKcJcyANwfFqe4GpOPNWFs/47l02022tiY+wVHs95SWQ==
+  dependencies:
+    pngjs "^6.0.0"
 
 koishi-plugin-sudo@^1.2.0:
   version "1.2.0"
@@ -2096,6 +2103,11 @@ pngjs@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-5.0.0.tgz#e79dd2b215767fd9c04561c01236df960bce7fbb"
   integrity sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==
+
+pngjs@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-6.0.0.tgz#ca9e5d2aa48db0228a52c419c3308e87720da821"
+  integrity sha512-TRzzuFRRmEoSW/p1KVAmiOgPco2Irlah+bGFCeNfJXxxYGwSw7YwAOAcd7X28K/m5bjBWKsC29KyoMfHbypayg==
 
 prelude-ls@~1.1.2:
   version "1.1.2"
