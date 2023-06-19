@@ -1500,11 +1500,6 @@ https-proxy-agent@5, https-proxy-agent@5.0.1, https-proxy-agent@^5.0.0, https-pr
     agent-base "6"
     debug "4"
 
-iberis@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/iberis/-/iberis-0.0.2.tgz#95034c931e4ed96e546e8307935fcc31a5a681b1"
-  integrity sha512-xCg5QQm0LK2kKaXywv0tqBYs7UAzd49JDj3C6boKPDXqBYTcbea7OcJ/JVJSHf1Y0SPkbO06XbgHs6hHYSf5Ag==
-
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -1682,22 +1677,15 @@ koishi-plugin-assets-local@^3.0.3:
     "@koishijs/assets" "^1.0.2"
     file-type "^16.5.4"
 
-koishi-plugin-bilibili@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-bilibili/-/koishi-plugin-bilibili-0.1.2.tgz#5b4ad6f9331056057e3904b05a476e3d17043592"
-  integrity sha512-uAGhssEzr33nk8ymUNuU7Jw5sefF+UNvuCJSgMjjYh10bfnJrCso8ZvINMszJUMxZjXiVzygmDjQxq9pdhVlAQ==
+koishi-plugin-bilibili@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-bilibili/-/koishi-plugin-bilibili-0.1.5.tgz#b2027f18bd4771903b1d5618f5c93fbd37195886"
+  integrity sha512-dKYFtApE3q/6cSjiukI3KVXWloA/C3LtT+bVOUw20rGsdQSbzvik20VKrArmbFasSG3iN6UYKQy97IsHo5cGtA==
 
 koishi-plugin-chess@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/koishi-plugin-chess/-/koishi-plugin-chess-4.1.1.tgz#6210fb124e30a3ecb9d6bda7f1d983c1bf1dc320"
   integrity sha512-2I9+bqNDkSE7H8rY4oiEfjAH0i3owK4SnvrwfKcEEjYwIAvtFRflVeNESdgWSrZuioy3MsizFFhxFVfe1slLOg==
-
-koishi-plugin-command@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/koishi-plugin-command/-/koishi-plugin-command-0.0.3.tgz#8a67554ea80d8c17fac0df7edae2ea6fdcfdd355"
-  integrity sha512-f85YrY4FD/3ofX4lv33AWOPDApVJizPsP06kQjTH6hZyLlB/UnV9FbH9ktWZrpcj2xC7v7fYtAGkIS7t5oJ5Kw==
-  dependencies:
-    iberis "^0.0.2"
 
 koishi-plugin-dialogue-author@^1.0.4:
   version "1.0.4"

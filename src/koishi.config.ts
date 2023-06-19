@@ -39,7 +39,6 @@ export default {
       socketPath: secrets.database.socket,
     },
     'console': {},
-    'command': {},
     'help': {},
     'admin': {},
     'bind': {},
