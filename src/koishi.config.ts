@@ -59,6 +59,9 @@ export default {
     'dialogue-time': {},
     'tex': {},
     'screenshot': {},
+    // messages 有个 maxAge 选项，但是代码里没有用
+    // 下次更新的时候再检查一下
+    'messages': {},
     'rr-image-censor': {},
     'rryth': {
       censor: true,

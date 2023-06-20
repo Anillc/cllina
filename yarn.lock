@@ -1773,6 +1773,11 @@ koishi-plugin-markdown@^1.1.1:
   dependencies:
     marked "^4.2.12"
 
+koishi-plugin-messages@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/koishi-plugin-messages/-/koishi-plugin-messages-0.1.0.tgz#d6aba73c2f4f8028486f0764b2e2ba45b2ed2a0e"
+  integrity sha512-E5cyPENbBjCL0Sbr7Ws2bUKHESsiojOwOwgXYyT8FCJZfMQP/rVw5f8ncXyPNHcYLQ02+rl5TYQxGJqdhJnurQ==
+
 koishi-plugin-music@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/koishi-plugin-music/-/koishi-plugin-music-2.2.1.tgz#be4fb9119ac9cdac6a57c40e7b0b7178b95375ac"
