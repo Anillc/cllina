@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import ProxyAgent from 'proxy-agent'
+import { HttpProxyAgent } from 'http-proxy-agent'
 
 const secrets = require(process.env.SECRETS)
 const pwd = process.env.PWD
@@ -19,13 +19,12 @@ export default {
   host: '0.0.0.0',
   selfUrl: secrets.selfUrl,
   plugins: {
+    '@chronocat/adapter': {
+      endpoint: secrets.chronocat.endpoint,
+      token: secrets.chronocat.token,
+    },
     'adapter-discord': {
       token: secrets.discord.token,
-    },
-    'adapter-onebot': {
-      protocol: 'ws',
-      endpoint: secrets.onebot.server,
-      selfId: secrets.onebot.id,
     },
     'adapter-telegram': {
       protocol: 'polling',
@@ -70,7 +69,7 @@ export default {
     'bilibili': {
       dynamic: {
         enable: true,
-        httpsAgent: new ProxyAgent('http://rsrc.a:1080'),
+        httpsAgent: new HttpProxyAgent('http://rsrc.a:1080'),
       },
     },
     'puppeteer': {
