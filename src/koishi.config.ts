@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { HttpProxyAgent } from 'http-proxy-agent'
+import { HttpsProxyAgent } from 'https-proxy-agent'
 
 const secrets = require(process.env.SECRETS)
 const pwd = process.env.PWD
@@ -67,9 +67,10 @@ export default {
       output: 'minimal',
     },
     'bilibili': {
+      useragent: 'Mozilla/5.0',
       dynamic: {
         enable: true,
-        httpsAgent: new HttpProxyAgent('http://rsrc.a:1080'),
+        httpsAgent: new HttpsProxyAgent('http://rsrc.a:1080'),
       },
     },
     'puppeteer': {

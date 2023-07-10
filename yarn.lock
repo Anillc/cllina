@@ -221,19 +221,19 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@chronocat/koishi-plugin-adapter@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@chronocat/koishi-plugin-adapter/-/koishi-plugin-adapter-0.0.7.tgz#3080485a5eb2e2ac947f729002a1541dbdd6cfc1"
-  integrity sha512-Y6gcOMrgSY5/jU2HuuhLzwWjcDAZCUP08uWMAky/YHqDf/WIGuaqMNZzJMmhCSMf1KntyBSPxbSOhcOP+UD0Ug==
+"@chronocat/koishi-plugin-adapter@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@chronocat/koishi-plugin-adapter/-/koishi-plugin-adapter-0.0.12.tgz#a90e60342564af6bc8155b4acd0f41a303e9283d"
+  integrity sha512-WmL0zlUIzX0AXXHXybm6qIVwQRgfWlebiwbb9lZLdsF6v0GvOcCt+5BBC0BedX2XjKYcjlHaVaadfFYqusSeJQ==
   dependencies:
     "@swc/helpers" "^0.5.1"
   optionalDependencies:
     "@chronocat/koishi-plugin-launcher" "*"
 
 "@chronocat/koishi-plugin-launcher@*":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@chronocat/koishi-plugin-launcher/-/koishi-plugin-launcher-0.0.7.tgz#9a0ac5ff51f101f5996c55120e007951f3bf0b67"
-  integrity sha512-JeC3l1HQ2jWizR1fQZ7sbhUYmW63OU97hK+3r4YCJXIEV4MBjF/PPMf9Phti8bAfkGOzwPSTftdTLRyWPbFeWA==
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@chronocat/koishi-plugin-launcher/-/koishi-plugin-launcher-0.0.12.tgz#e0709cbacc62906dcfc9e3dea28dc0c739619aff"
+  integrity sha512-vEpJDWBkOQj06kbFJeWRAmGEleWTH+cwT/4op9p8V5aDGmrkPmdlP5VeEMfKIhsOCwmRHiA5m/OeGP8NCPB4qg==
   dependencies:
     "@swc/helpers" "^0.5.1"
     execa "^5"
@@ -420,16 +420,16 @@
   resolved "https://registry.yarnpkg.com/@koishijs/censor/-/censor-1.0.2.tgz#1ce075fa510a06de4f45e2a09aa4edaa8c3c06a8"
   integrity sha512-pC3U7BdA2uRQSPNO00R5cgDRgWiQ2NdR16B9HR7RGihiWeBkiRE7IXDvCtfIr2TE8e1dZbzglqwCdRv+oinIkg==
 
-"@koishijs/core@4.13.6":
-  version "4.13.6"
-  resolved "https://registry.yarnpkg.com/@koishijs/core/-/core-4.13.6.tgz#df8e72f2b603981129439587141c3c840a0cebaa"
-  integrity sha512-7uvIsAmVanuhcQUU6gYOae6Z74FS6gNy500sha5Ynv5bZ0EZnUDXu3TEZUDjc3hYN4e11fYQPQS/+DoZpi0JNg==
+"@koishijs/core@4.13.7":
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/@koishijs/core/-/core-4.13.7.tgz#0f3950cb52ce82793a03fb0450b6021301229702"
+  integrity sha512-M5hKYsiF2iBec88D02pBxUjIFKdzSm+39lJjp+7GPkkz2P37gjxJUsJZ0UPsJfKOaFZNOSs3lUuanRXY6E//DQ==
   dependencies:
     "@koishijs/i18n-utils" "^1.0.0"
     "@koishijs/utils" "^7.0.2"
     "@minatojs/core" "^2.3.2"
     "@satorijs/core" "^2.5.0"
-    cordis "^2.8.0"
+    cordis "^2.8.2"
     cosmokit "^1.4.2"
     fastest-levenshtein "^1.0.16"
 
@@ -440,28 +440,28 @@
   dependencies:
     cosmokit "^1.4.2"
 
-"@koishijs/loader@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@koishijs/loader/-/loader-4.0.1.tgz#eeb25160045a5f36d5b3f898847e619a836196c2"
-  integrity sha512-2W0DxE1FdjDyiRHykaPSur4P6bbWXT7SuMYhJuvbdsz9Pd+SDQ/XYTKMiNxhKxnGYWcb/ZbT5o3eOxRa4nd+6g==
+"@koishijs/loader@4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@koishijs/loader/-/loader-4.0.3.tgz#c73fa41d11cde46fa255dabb20c4a3ae0f1099f9"
+  integrity sha512-b6GetEWBdpH/RAnvVIJf+cEqv5rnxpj6nvmJSX3hZqSH1gZnRrrRO5b/8HJBOMi92t83ft+kL4b08V6GO3DjaA==
   dependencies:
     dotenv "^16.0.3"
     js-yaml "^4.1.0"
     ns-require "^1.1.4"
 
-"@koishijs/plugin-adapter-discord@^3.8.1":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-discord/-/plugin-adapter-discord-3.8.1.tgz#54ee99a56400ed4263865865dcf8e3f483c1e3e4"
-  integrity sha512-+MLTWtyXrj76FfxTt8JDB8lLGksRJpoVnMPc15P3jmUBmAe84HO8ljIfxcc/kW3d2RLqFbHyF6vT2Jh3j5lwEg==
+"@koishijs/plugin-adapter-discord@^3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-discord/-/plugin-adapter-discord-3.8.2.tgz#7c29c6e6b27739716428c3bf5c16e5501df0a635"
+  integrity sha512-SB6uSH45LKFqxADurj+8ZEyTU3gQW5cceR6Htgqgw7C7yNhGWw2vhTCkIhnPg0lhIG43Oj2fDjqwv3Tx7GPiWQ==
   dependencies:
-    "@satorijs/adapter-discord" "^3.8.1"
+    "@satorijs/adapter-discord" "^3.8.2"
 
-"@koishijs/plugin-adapter-telegram@^3.7.10":
-  version "3.7.10"
-  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-telegram/-/plugin-adapter-telegram-3.7.10.tgz#0450c96a687d1e8f5ba7277bf5f2d6fef8bdc732"
-  integrity sha512-5Ocj8JdqKlBC22vwSU4HF4lHbjYJpdbz4jSqe701sBeOIp1DdX0lJgorbFj/6ucGrmldKBVINRR4J7oBp1uL7A==
+"@koishijs/plugin-adapter-telegram@^3.7.12":
+  version "3.7.12"
+  resolved "https://registry.yarnpkg.com/@koishijs/plugin-adapter-telegram/-/plugin-adapter-telegram-3.7.12.tgz#4ecf24531c4c54471ec51603387aee49927550b6"
+  integrity sha512-s8X1Zqgc1C49M5ohRZssjm5dvV4WWI4MJS0lbOh4I9z88lW0H469WavJKcArBFKkX1xaWLCiz8jw0PUqUeprIA==
   dependencies:
-    "@satorijs/adapter-telegram" "^3.7.10"
+    "@satorijs/adapter-telegram" "^3.7.12"
 
 "@koishijs/plugin-admin@^1.3.1":
   version "1.3.1"
@@ -473,10 +473,10 @@
   resolved "https://registry.yarnpkg.com/@koishijs/plugin-bind/-/plugin-bind-1.4.2.tgz#e67f48eaa568ad162d201e1d6d0498568dfd6bc2"
   integrity sha512-+Qv8Jol/YyRUGxQxgD8LAds4KMZCTk1As4GdkFLFB9whNylBh/mF8jmdnt4fJeQly6zc3Q15nIAtWg/dSqIsmg==
 
-"@koishijs/plugin-console@^5.11.8":
-  version "5.11.8"
-  resolved "https://registry.yarnpkg.com/@koishijs/plugin-console/-/plugin-console-5.11.8.tgz#52fd2c6ed8fdeb050d0df2b38df6dcfdeff52f55"
-  integrity sha512-AzfAkYOqOtAWnEAOIr1twF9IpvNxyN+CIzowINTTq2W31zxnqYG4q/jkT8H/FUCt+pZ2guvkPphPshHtJTPJxQ==
+"@koishijs/plugin-console@^5.11.9":
+  version "5.11.9"
+  resolved "https://registry.yarnpkg.com/@koishijs/plugin-console/-/plugin-console-5.11.9.tgz#65ec04b8bc573bead49e852798236f8b76339be0"
+  integrity sha512-kQjBK3DQ6/2jLosWkY1IeVcxI6Uy6SbigRHslpSEqi/kGp5gN7rmc+IuME4sNTL5Oj4kFGOJzHWwOCstSn6DpQ==
   dependencies:
     open "^8.4.2"
     uuid "^8.3.2"
@@ -572,27 +572,27 @@
     unbzip2-stream "1.4.3"
     yargs "17.7.1"
 
-"@satorijs/adapter-discord@^3.8.1":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@satorijs/adapter-discord/-/adapter-discord-3.8.1.tgz#2e5e6cd8c4269c075b090b1d20b3c12f6b743ddc"
-  integrity sha512-nijCq7McAB2L80Aqir4KXtVDaU/KcsWddieuIQTEyHu2JJ3gHMp8C5Li3kjQL5iaWkPSfGv8qJYvZ5qGBWncsQ==
+"@satorijs/adapter-discord@^3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@satorijs/adapter-discord/-/adapter-discord-3.8.2.tgz#2cece53ba64b6063a2dba0b4030070cfdc2fcb39"
+  integrity sha512-1OEwb/3zPnZakhYGPbAvs2vjTBHiwrnkufPYWKnNFshq0LizxmJl/Ko6uXF2nwTyGiRLYz/JVXCmUbb06z2tQA==
   dependencies:
     form-data "^4.0.0"
 
-"@satorijs/adapter-telegram@^3.7.10":
-  version "3.7.10"
-  resolved "https://registry.yarnpkg.com/@satorijs/adapter-telegram/-/adapter-telegram-3.7.10.tgz#86ab0be3747048bf636e8f3d78dc6cc16016d271"
-  integrity sha512-Ck60QqPfgPc/sFgKzMXuWkynnw4PO4GpM/bwnoSD0q4mYCFdk+2QOye0r0KHKsh3UDIJI6p5jGprzT9K3HwgRw==
+"@satorijs/adapter-telegram@^3.7.12":
+  version "3.7.12"
+  resolved "https://registry.yarnpkg.com/@satorijs/adapter-telegram/-/adapter-telegram-3.7.12.tgz#e2587dda482f0cf306bfb1daf1abec690ddddb44"
+  integrity sha512-/obKgKj+WcmHntyYNvYJDZLuYqR8c55B9OmK9vAZg++Pbt6I4SRbm1ViUP2svtYzy3rb94z1Jc+WZV22OV6KXA==
   dependencies:
     form-data "^4.0.0"
 
-"@satorijs/core@2.5.0", "@satorijs/core@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@satorijs/core/-/core-2.5.0.tgz#374b83f45fd0cf1d25607a789f414b4ff1e78400"
-  integrity sha512-aJfFu3cnhjOgLUR2Qf+UmsDTkd8asH1OPPuJ+Mb6XaLH0hVx0iBmBzZ6HGg/xTioOKNBKSU81WXoOQX5s3qxaQ==
+"@satorijs/core@2.5.1", "@satorijs/core@^2.5.0":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@satorijs/core/-/core-2.5.1.tgz#d8cd5b5787581fc66a0920b35e1d4d0486a68ee9"
+  integrity sha512-AAU8cWFMa6hdHrxm2BsFwaawv+YQqy4fiKpusdWQjxtS0F6sdTIuAWId+wpelZHhtZ9PNKXGhhCYmg2eHfnLQQ==
   dependencies:
     "@satorijs/element" "^2.4.2"
-    cordis "^2.8.0"
+    cordis "^2.8.2"
     cordis-axios "^3.1.2"
     cosmokit "^1.4.2"
     reggol "^1.4.4"
@@ -607,12 +607,12 @@
     cosmokit "^1.4.2"
 
 "@satorijs/satori@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@satorijs/satori/-/satori-2.5.0.tgz#dbba5660db452b3e238f2411520d0ff6f1e27199"
-  integrity sha512-JzF3xjObbgnlalk73JTfa6chcCTi7PvK6wTjeyI+U+3yO7CZmP/NWjzdHdwOQnQu2wtdF/VUlLIE5NXCwVFLOg==
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@satorijs/satori/-/satori-2.5.1.tgz#f0659517f7bbf3419a42d50e084bdb060d6fd20f"
+  integrity sha512-KsNXdgUsMtEEPZ3L1IttQqRVHPboiUwvHMxdsBWrgVlEupERADiQl2aCQsC3wlpIYtBZNMdZl9w5ZZUOczlFLg==
   dependencies:
     "@koa/router" "^10.1.1"
-    "@satorijs/core" "2.5.0"
+    "@satorijs/core" "2.5.1"
     "@types/koa" "*"
     "@types/koa__router" "*"
     "@types/ws" "^8.5.4"
@@ -765,10 +765,10 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/node@*", "@types/node@^20.4.0":
-  version "20.4.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.0.tgz#01d637d1891e419bc85763b46f42809cd2d5addb"
-  integrity sha512-jfT7iTf/4kOQ9S7CHV9BIyRaQqHu67mOjsIQBC3BKZvzvUB6zLxEwJ6sBE3ozcvP8kF6Uk5PXN0Q+c0dfhGX0g==
+"@types/node@*", "@types/node@^20.4.1":
+  version "20.4.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.1.tgz#a6033a8718653c50ac4962977e14d0f984d9527d"
+  integrity sha512-JIzsAvJeA/5iY6Y/OxZbv1lUcc8dNSE77lb2gnBH+/PJ3lFR1Ccvgwl5JWnHAkNHcRsT0TbpVOsiMKZ1F/yyJg==
 
 "@types/qs@*":
   version "6.9.7"
@@ -836,7 +836,7 @@ agent-base@6, agent-base@^6.0.2:
   dependencies:
     debug "4"
 
-agent-base@^7.1.0:
+agent-base@^7.0.2:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-7.1.0.tgz#536802b76bc0b34aa50195eb2442276d613e3434"
   integrity sha512-o/zjMZRhJxny7OyEF+Op8X+efiELC7k7yOjMzgfzVqOzXqkBkWI79YoTdOtsuWd5BWhAGAuOY/Xa6xpiaWXiNg==
@@ -955,9 +955,9 @@ camelcase@^5.0.0:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001503:
-  version "1.0.30001513"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001513.tgz#382fe5fbfb0f7abbaf8c55ca3ac71a0307a752e9"
-  integrity sha512-pnjGJo7SOOjAGytZZ203Em95MRM8Cr6jhCXNF/FAXTpCTRTECnqQWLpiTRqrFtdYcth8hf4WECUpkezuYsMVww==
+  version "1.0.30001514"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001514.tgz#e2a7e184a23affc9367b7c8d734e7ec4628c1309"
+  integrity sha512-ENcIpYBmwAAOm/V2cXgM7rZUrKKaqisZl4ZAI520FIkqGXUxJjmaIssbRW5HVVR5tyV6ygTLIm15aU8LUmQSaQ==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1088,7 +1088,7 @@ cordis-axios@^3.1.2:
     cosmokit "^1.4.2"
     mime-db "^1.52.0"
 
-cordis@^2.8.0:
+cordis@^2.8.2:
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/cordis/-/cordis-2.8.2.tgz#bc03647fb977b48e82b91d494580629ba4e7947a"
   integrity sha512-E7TyLy4ZHNL8hAkzjkVa8OpaH0wxwbYNoJ/WMOoetmq1P/m+a69XnTd+/FZtFbLH8ZFtKFs1qJ0mT5Ah+IAOjA==
@@ -1202,9 +1202,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.431:
-  version "1.4.453"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.453.tgz#0a81fdc1943db202e8724d9f61369a71f0dd51e8"
-  integrity sha512-BU8UtQz6CB3T7RIGhId4BjmjJVXQDujb0+amGL8jpcluFJr6lwspBOvkUbnttfpZCm4zFMHmjrX1QrdPWBBMjQ==
+  version "1.4.454"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.454.tgz#774dc7cb5e58576d0125939ec34a4182f3ccc87d"
+  integrity sha512-pmf1rbAStw8UEQ0sr2cdJtWl48ZMuPD9Sto8HVQOq9vx9j2WgDEN6lYoaqFvqEHYOmGA9oRGn7LqWI9ta0YugQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -1465,20 +1465,20 @@ http-proxy-agent@^5.0.0:
     agent-base "6"
     debug "4"
 
-http-proxy-agent@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/http-proxy-agent/-/http-proxy-agent-7.0.0.tgz#e9096c5afd071a3fce56e6252bb321583c124673"
-  integrity sha512-+ZT+iBxVUQ1asugqnD6oWoRiS25AkjNfG085dKJGtGxkdwLQrMKU5wJr2bOOFAXzKcTuqq+7fZlTMgG3SRfIYQ==
-  dependencies:
-    agent-base "^7.1.0"
-    debug "^4.3.4"
-
 https-proxy-agent@5.0.1, https-proxy-agent@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz#c59ef224a04fe8b754f3db0063a25ea30d0005d6"
   integrity sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==
   dependencies:
     agent-base "6"
+    debug "4"
+
+https-proxy-agent@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-7.0.0.tgz#75cb70d04811685667183b31ab158d006750418a"
+  integrity sha512-0euwPCRyAPSgGdzD1IVN9nJYHtBhJwb6XPfbpQcYbPCwrBidX6GzxmchnaF4sfF/jPb74Ojx5g4yTg3sixlyPw==
+  dependencies:
+    agent-base "^7.0.2"
     debug "4"
 
 human-signals@^2.1.0:
@@ -1838,13 +1838,13 @@ koishi-plugin-wolfram-alpha@^2.0.5:
   dependencies:
     xml-js "^1.6.11"
 
-koishi@^4.13.6:
-  version "4.13.6"
-  resolved "https://registry.yarnpkg.com/koishi/-/koishi-4.13.6.tgz#a2f2beeb3b6a709152fc37789410c360cc5f964c"
-  integrity sha512-TN28yeeXkM/Bwqv2cx78sb92DU2qG6JZqPkWl5pBytowri8Ds82xixFox9YPlpxDGXJqhCxZ2nycz1+eqinhww==
+koishi@^4.13.7:
+  version "4.13.7"
+  resolved "https://registry.yarnpkg.com/koishi/-/koishi-4.13.7.tgz#7eeb38a88a6698fb85f5e1af9681ce453a388b36"
+  integrity sha512-G2DMoO9VdgIjfQ9FZ9viqYRZIqOH0aa8b+lJsE7yAcOLp6E9znkizzJbEvgaGMmnsrykBqTZgjoud1syy29gag==
   dependencies:
-    "@koishijs/core" "4.13.6"
-    "@koishijs/loader" "4.0.1"
+    "@koishijs/core" "4.13.7"
+    "@koishijs/loader" "4.0.3"
     "@koishijs/utils" "^7.0.2"
     "@satorijs/satori" "^2.5.0"
     cac "^6.7.14"
