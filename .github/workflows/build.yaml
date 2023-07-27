@@ -6,16 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install nix
-      uses: cachix/install-nix-action@v15
+      uses: cachix/install-nix-action@v22
 
     - name: setup cachix
-      uses: cachix/cachix-action@v10
+      uses: cachix/cachix-action@v12
       with:
         name: anillc
         authToken: ${{ secrets.CACHIX_TOKEN }}
 
     - name: checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: build
       run: nix build .
