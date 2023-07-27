@@ -15,7 +15,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@chronocat/koishi-plugin-adapter": "^0.0.12",
+    "@chronocat/koishi-plugin-adapter": "^0.0.30",
     "@koa/cors": "^4.0.0",
     "@koishijs/plugin-adapter-discord": "^3.8.2",
     "@koishijs/plugin-adapter-telegram": "^3.7.12",

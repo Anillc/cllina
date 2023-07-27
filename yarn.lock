@@ -221,10 +221,10 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@chronocat/koishi-plugin-adapter@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@chronocat/koishi-plugin-adapter/-/koishi-plugin-adapter-0.0.12.tgz#a90e60342564af6bc8155b4acd0f41a303e9283d"
-  integrity sha512-WmL0zlUIzX0AXXHXybm6qIVwQRgfWlebiwbb9lZLdsF6v0GvOcCt+5BBC0BedX2XjKYcjlHaVaadfFYqusSeJQ==
+"@chronocat/koishi-plugin-adapter@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@chronocat/koishi-plugin-adapter/-/koishi-plugin-adapter-0.0.30.tgz#c895331f8ea006997c43e284f56ddb799db2b7e2"
+  integrity sha512-Ses66DATdRFBCm4+RYzyEUAGmBUwLwUvo5myODRwyg6DkyjcPV/qFuc4y4Fp8MOdwp8VihtQoppS4BIpyb3jsA==
   dependencies:
     "@swc/helpers" "^0.5.1"
   optionalDependencies:

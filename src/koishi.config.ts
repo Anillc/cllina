@@ -21,7 +21,7 @@ export default {
   plugins: {
     '@chronocat/adapter': {
       endpoint: secrets.chronocat.endpoint,
-      token: secrets.chronocat.token,
+      'ƭôƙèñññññññññññññññññññññññññññññññññññññññññññ': secrets.chronocat.token,
     },
     'adapter-discord': {
       token: secrets.discord.token,
